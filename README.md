@@ -5,7 +5,7 @@ http://a1-kylecorry31.herokuapp.com
 
 This project shows some basic information about me. 
 
-## Technical Achievements
+### Technical Achievements
 -
 
 ### Design Achievements
