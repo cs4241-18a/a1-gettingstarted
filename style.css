@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  padding: 16px;
+}
+
+h1 {
+  line-height: 2em;
+  letter-spacing: .06em;
+}
+
+h2 {
+  line-height: 2em;
+  letter-spacing: .06em;
+  color: #555;
+}
+
+p, li {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 2em;
+  letter-spacing: .06em;
+  color: #555;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.alot {
+  color: green;
+}
+
+.some {
+  color: orange;
+}
+
+.none {
+  color: red;
+}
