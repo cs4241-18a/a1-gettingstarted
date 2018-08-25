@@ -1,7 +1,7 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
 ===
 Kyle Corry
-http://kylecorry31-a1.herokuapp.com
+http://a1-kylecorry31.herokuapp.com
 
 This project shows some basic information about me. 
 
