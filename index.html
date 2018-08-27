@@ -44,6 +44,8 @@
         <li>unit testing - <span class="some">Some</span> (Depends on language)</li>
       </ul>
     </p>
+    <br>
+    <p id="overwatch" class="center"></p>
 
   </body>
 
@@ -59,7 +61,7 @@
     fetch("/overwatch").then(function(data){
       return data.json();
     }).then(function(json){
-      console.log(json);
+      document.getElementById('overwatch').innerHTML = "Overwatch rank: " + json["competitive"]['rank'];
     });
 
   </script>

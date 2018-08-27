@@ -43,3 +43,7 @@ p, li {
 .none {
   color: red;
 }
+
+.center {
+  text-align: center;
+}
