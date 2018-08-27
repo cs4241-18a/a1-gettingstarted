@@ -59,9 +59,15 @@
     });
 
     fetch("/overwatch").then(function(data){
-      return data.json();
+      if (data.status == 200) {
+        return data.json();
+      } else {
+        return undefined;
+      }
     }).then(function(json){
-      document.getElementById('overwatch').innerHTML = "Overwatch rank: " + json["competitive"]['rank'];
+      if (json !== undefined){
+        document.getElementById('overwatch').innerHTML = "Overwatch rank: " + json['rank'];
+      }
     });
 
   </script>

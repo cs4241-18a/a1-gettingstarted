@@ -54,7 +54,12 @@ function sendJSON(res, data){
 
 function getOverwatchProfile(res){
   overwatch.getProfile(platform, region, tag, (err, json) => {
-    if (err) console.error(err);
-    else sendJSON(res, json)
+    if (err){
+      console.error(err)
+      res.statusCode = 500;
+      res.end('500 error getting rank')
+    } else {
+      sendJSON(res, { rank: json.competitive.rank })
+    }
   });
 }
