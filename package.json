@@ -2,10 +2,11 @@
   "name": "lh-4241-simple-node",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Lane Harrison",
+  "author": "Ethan Schutzman",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "postinstall": "gulp build"
   },
   "dependencies": {
   }
