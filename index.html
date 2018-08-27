@@ -2,26 +2,74 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Kyle Corry</h1>
+    <h2>
+      Class of 2020
+    </h2>
     <p>
-      [Self introduction]
+      I'm a Computer Science major, with no minor.
     </p>
     <p>
-      [Major and other information]
+      I enjoy hiking, nature photography, wilderness survival, and open source programming. My GitHub contains <span id="repo-count" class="bold">0</span> public repositories and <span id="gist-count" class="bold">0</span> public gists.
     </p>
+    <p class="bold">Previous CS Courses</p>
     <p>
-      [Other things]
+      <ul>
+        <li>CS 1102</li>
+        <li>CS 210X</li>
+        <li>CS 2022</li>
+        <li>CS 2223</li>
+        <li>CS 3133</li>
+        <li>CS 2303</li>
+        <li>CS 2011</li>
+        <li>CS 4518</li>
+        <li>CS 3013</li>
+        <li>CS 3733</li>
+      </ul>
     </p>
+    <br>
+    <p class="bold">Programming Languages</p>
+    <p>
+      <ul>
+        <li>HTML - <span class="alot">A lot</span></li>
+        <li>CSS - <span class="alot">A lot</span></li>
+        <li>Java - <span class="alot">A lot</span></li>
+        <li>JavaScript - <span class="alot">A lot</span></li>
+        <li>Ruby - <span class="none">None</span></li>
+        <li>Python - <span class="alot">A lot</span></li>
+        <li>unit testing - <span class="some">Some</span> (Depends on language)</li>
+      </ul>
+    </p>
+    <br>
+    <p id="overwatch" class="center"></p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
   </body>
+
+  <script type="text/javascript">
+    
+    fetch("https://api.github.com/users/kylecorry31").then(function(data){
+      return data.json();
+    }).then(function(json){
+      document.getElementById('repo-count').innerHTML = json["public_repos"];
+      document.getElementById('gist-count').innerHTML = json["public_gists"];
+    });
+
+    fetch("/overwatch").then(function(data){
+      if (data.status == 200) {
+        return data.json();
+      } else {
+        return undefined;
+      }
+    }).then(function(json){
+      if (json !== undefined){
+        document.getElementById('overwatch').innerHTML = "Overwatch rank: " + json['rank'];
+      }
+    });
+
+  </script>
+
 </html>

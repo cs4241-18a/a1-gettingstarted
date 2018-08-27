@@ -1,77 +1,25 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
 ===
+Kyle Corry
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to the [Heroku Web platform](http://www.heroku.com/). 
+http://a1-kylecorry31.herokuapp.com
 
-Refer to [Getting started with node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
+This project shows some basic information about me. 
 
-(Thanks to past instructors of the course, here is a short [getting started with Heroku movie](http://web.cs.wpi.edu/~gpollice/Movies/HerokuGettingStarted/) that may also help.)
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Heroku. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skill with these tools throughout the rest of the course.
-
-Assignment details
----
-
-Do the following to complete this assignment:
-
-1. Fork the starting project code. This repo contains:
-    * the server code, `server.js`
-    * the `Procfile` that you need for Heroku deployment
-    * A starting `index.html` file that you will edit as described below
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly.
-4. Deploy your project to Heroku.
-5. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-6. Modify the Readme to the specification below.
-7. Create and submit a Pull Request to the original repo.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Heroku assigns your application a random name.
-To change it, follow [this guide](https://devcenter.heroku.com/articles/renaming-apps).
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Lane Harrison  
-http://codementum-a1.herokuapp.com
-
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+### Technical Achievements
+- **Dynamically loaded content from the web**: As someone with a lot of GitHub repositories, I wanted that number to be displayed on my website, but I didn't want to have to update it whenever I did a new project. I researched the best way to go about dynamically loading the number of GitHub repos from my profile and ended up at the GitHub API website. The API was very easy to use, and I just needed to fetch a URL to receive a JSON response containing the count of repositories. I used the Fetch API to do this, which is built into JavaScript now. After receiving the response, I parse the JSON and write to the innerHTML of a few spans which I gave unique IDs to. I also wanted to display my Overwatch rank (even if it isn't good), and to do that I had to use an NPM package. I research how to include the overwatch-api package into this project and ended up using the `npm install --save overwatch-api` command. This included a line in the `package.json` file and downloaded the source code to the `node_modules` folder. I then added another endpoint to the server, `/overwatch`, which allowed my to use the Fetch API to receive a JSON response containing my rank. Using the existing `sendFile` function, I created a second function which allowed my to send a JSON response containing my Overwatch rank. Using online documentation for the NodeJS http API, I also handled errors getting the data by returning a 500 (internal server error) response, this makes my code more robust to errors. The changes can be found in: `index.html`, `package.json`, and `server.js`.  
+	- References
+		- [GitHub API](https://developer.github.com/v3/)
+		- [MDN - Using Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+		- [NPM - overwatch-api](https://www.npmjs.com/package/overwatch-api)
+		- [NodeJS - HTTP](https://nodejs.org/api/http.html#http_response_statuscode)
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Optimized site for reading**: Using a variety of online resources, I modified the max width of the body tag for the page to allow for the best reading width. According to my research, this was around 560px which allowed about 59-72 characters per line (sans-serif is not a monospace font) at a size 16 sans-serif font. To choose the font color, I wanted a color which was aesthetically pleasing, but still of sufficient contrast for people with seeing trouble. To do this, I used w3's guide on contrast ratios and calculated the contrast ratio of my text color (hex: #555555) to background color (hex: #ffffff). The ratio I calculated with the help of [this website](https://contrast-ratio.com/) was 7.45, meeting the recommended minimum ratio of 7. To choose the font size, I referred to Google's Material Design Guidelines and used their Body 1 recommendations for the size and letter spacing (16px, 0.5 spacing). Using the MDN web docs, I added the meta viewport tag to the page to allow for enhanced mobile usage of the website. I believe this makes the page more "usable" than the original assignment because it is much easier on the eyes, and is backed by research. To view for yourself the difference that styling the page for readability makes, look at the page [with styling](http://a1-kylecorry31.herokuapp.com) and [without style](http://a1-kylecorry31.herokuapp.com/no-style.html). All style changes can be found in `style.css`.
+	- References
+		- [Baymard Institute - Readability: the Optimal Line Length](https://baymard.com/blog/line-length-readability)
+		- [W3C - G17](https://www.w3.org/TR/WCAG20-TECHS/G17.html)
+		- [Material Design - The type system](https://material.io/design/typography/the-type-system.html#type-scale)
+		- [MDN - Using the viewport meta tag to control layout on mobile browsers](https://developer.mozilla.org/en-US/docs/Mozilla/Mobile/Viewport_meta_tag)
 
 
