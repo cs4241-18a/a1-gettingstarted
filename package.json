@@ -6,7 +6,6 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "postinstall": "gulp build"
   },
   "dependencies": {
   }
