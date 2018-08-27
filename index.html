@@ -14,7 +14,7 @@
       I'm a Computer Science major, with no minor.
     </p>
     <p>
-      I enjoy hiking, nature photography, wilderness survival, and open source programming.
+      I enjoy hiking, nature photography, wilderness survival, and open source programming. My GitHub contains <span id="repo-count" class="bold">0</span> public repositories and <span id="gist-count" class="bold">0</span> public gists.
     </p>
     <p class="bold">Previous CS Courses</p>
     <p>
@@ -46,4 +46,22 @@
     </p>
 
   </body>
+
+  <script type="text/javascript">
+    
+    fetch("https://api.github.com/users/kylecorry31").then(function(data){
+      return data.json();
+    }).then(function(json){
+      document.getElementById('repo-count').innerHTML = json["public_repos"];
+      document.getElementById('gist-count').innerHTML = json["public_gists"];
+    });
+
+    fetch("/overwatch").then(function(data){
+      return data.json();
+    }).then(function(json){
+      console.log(json);
+    });
+
+  </script>
+
 </html>

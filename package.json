@@ -8,5 +8,6 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "overwatch-api": "^0.7.0"
   }
 }
