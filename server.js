@@ -35,12 +35,12 @@ function sendFile(res, filename) {
     default:
     case 'index.html':
       fs.readFile(filename, function (error, content) {
-          res.writeHead(200, {'Content-type': 'text/html'})
-          res.end(content, 'utf-8')
+        res.writeHead(200, {'Content-type': 'text/html'})
+        res.end(content, 'utf-8')
       })
       break
     case 'css/styles.css':
-      fs.readFile('styles/styles.css', function(error, content) {
+      fs.readFile('css/styles.css', function(error, content) {
         res.writeHead(200, {'Content-Type': 'text/css'})
         res.end(content, 'utf-8')
       })
