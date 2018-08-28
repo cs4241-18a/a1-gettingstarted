@@ -2,13 +2,4 @@ Elizabeth Del Monaco
 
 https://a1-edelmonaco.herokuapp.com/
 
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
-
-## Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
-
+This project shows the ability to host a project on heroku, as well as following basic setup instructions.
