@@ -1,6 +1,6 @@
 
 Alexandra Wheeler  
-http://codementum-a1.herokuapp.com
+https://a1-wheeleral.herokuapp.com/
 
 This project shows ...
 
@@ -8,6 +8,6 @@ This project shows ...
 - 
 
 ### Design Achievements
-- Looked into HTML tables
+- Looked into HTML tables and some css styling
 
 
