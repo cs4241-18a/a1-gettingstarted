@@ -9,9 +9,11 @@ var server = http.createServer (function (req, res) {
   switch( uri.pathname ) {
     case '/':
       sendFile(res, 'index.html')
+      sendFile(res, 'styles.css')
       break
     case '/index.html':
       sendFile(res, 'index.html')
+      sendFile(res, 'styles.css')
       break
     default:
       res.end('404 not found')
