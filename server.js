@@ -13,6 +13,9 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
+    case '/css/main.css':
+      sendFile(res, 'css/main.css')
+      break
     default:
       res.end('404 not found')
   }
@@ -27,6 +30,11 @@ function sendFile(res, filename) {
 
   fs.readFile(filename, function(error, content) {
     res.writeHead(200, {'Content-type': 'text/html'})
+    res.end(content, 'utf-8')
+  })
+  
+  fs.readFile(filename, function(error, content) {
+    res.writeHead(200, {'Content-type': 'text/css'})
     res.end(content, 'utf-8')
   })
 

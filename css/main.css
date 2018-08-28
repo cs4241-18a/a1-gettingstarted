@@ -1,0 +1,25 @@
+body {
+	/* Center all text */
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul {
+	list-style-position: inside;
+}
+li {
+	font-size: 1em;
+}
+
+#expandable {
+	overflow: hidden;
+	height: calc(1em + 2px); /* font sive + 1px padding on top and bottom */
+	transition: height .5s;
+}
+
+#expandable:hover {
+	height: calc(3 * (1em + 2px));
+	cursor: pointer;
+}
+
