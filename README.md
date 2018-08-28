@@ -1,5 +1,5 @@
 Christian Scillitoe
-http://codementum-a1.herokuapp.com
+https://a1-crscillitoe.herokuapp.com/
 
 This project shows a landing page giving
 details about me for the professor.
