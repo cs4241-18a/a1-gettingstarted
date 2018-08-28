@@ -1,5 +1,5 @@
-#Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku
----
+Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku
+===
 
 Yifei Jin
 https://a1-yifeijin.herokuapp.com
