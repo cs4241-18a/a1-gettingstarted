@@ -19,6 +19,12 @@ var server = http.createServer (function (req, res) {
     case '/processing.js':
       sendFile(res, 'processing.js')
       break
+    case '/boxes/boxes.pde':
+      sendFile(res, 'boxes/boxes.pde')
+      break
+    case '/test/test.pde':
+      sendFile(res, 'test/test.pde')
+      break
     default:
       res.end('404 not found')
   }
@@ -51,6 +57,18 @@ function sendFile(res, filename) {
           res.end(content, 'utf-8')
       })
       break
+    case 'boxes/boxes.pde':
+      fs.readFile('boxes/boxes.pde', function(error, content) {
+          res.writeHead(200, {'Content-Type': 'text/pde'})
+          res.end(content, 'utf-8')
+      })
+      break
+    case 'test/test.pde':
+        fs.readFile('test/test.pde', function(error, content) {
+            res.writeHead(200, {'Content-Type': 'text/pde'})
+            res.end(content, 'utf-8')
+        })
+        break
   }
 
 }
