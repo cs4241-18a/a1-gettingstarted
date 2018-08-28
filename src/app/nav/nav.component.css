@@ -53,3 +53,9 @@ footer img {
   opacity: .4;
   width: 25px;
 }
+
+#back {
+  color: #1A8CFF;;
+  font-weight: bold;
+  font-size: 16px;
+}
