@@ -7,5 +7,16 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sushisoju/a1-gettingstarted.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sushisoju/a1-gettingstarted/issues"
+  },
+  "homepage": "https://github.com/sushisoju/a1-gettingstarted#readme"
 }
