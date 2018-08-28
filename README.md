@@ -1,8 +1,5 @@
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Lane Harrison  
-http://codementum-a1.herokuapp.com
+Elizabeth Del Monaco
+https://a1-edelmonaco.herokuapp.com/
 
 This project shows ...
 
@@ -10,7 +7,7 @@ This project shows ...
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...
 
-### Design Achievements
+## Design Achievements
 - **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
 
 
