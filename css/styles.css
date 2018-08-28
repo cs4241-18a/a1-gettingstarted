@@ -1,0 +1,21 @@
+body {
+    background-color: powderblue;
+}
+
+h1, h2 {
+    font-family: "Arial", Arial, sans-serif;
+}
+
+div {
+    font-family: "Arial", Arial, sans-serif;
+    background-color: #70d8e6;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+p.fancy_header {
+    font-family: "Arial", Arial, sans-serif;
+    background-color: #70d8e6;
+    margin-right: 35%;
+    margin-left: 35%;
+}
