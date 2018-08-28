@@ -8,8 +8,6 @@ var server = http.createServer (function (req, res) {
 
   switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html')
-      break
     case '/index.html':
       sendFile(res, 'index.html')
       break
@@ -46,25 +44,20 @@ function sendFile(res, filename) {
       })
       break
     case 'css/styles.css':
-      fs.readFile('css/styles.css', function(error, content) {
+      fs.readFile(filename, function(error, content) {
         res.writeHead(200, {'Content-Type': 'text/css'})
         res.end(content, 'utf-8')
       })
       break
     case 'processing.js':
-      fs.readFile('processing.js', function(error, content) {
+      fs.readFile(filename, function(error, content) {
           res.writeHead(200, {'Content-Type': 'text/javascript'})
           res.end(content, 'utf-8')
       })
       break
     case 'boxes/boxes.pde':
-      fs.readFile('boxes/boxes.pde', function(error, content) {
-          res.writeHead(200, {'Content-Type': 'text/pde'})
-          res.end(content, 'utf-8')
-      })
-      break
     case 'test/test.pde':
-        fs.readFile('test/test.pde', function(error, content) {
+        fs.readFile(filename, function(error, content) {
             res.writeHead(200, {'Content-Type': 'text/pde'})
             res.end(content, 'utf-8')
         })
