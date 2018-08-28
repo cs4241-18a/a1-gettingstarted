@@ -4,6 +4,9 @@ http://a1-kqsavell.herokuapp.com
 This project shows ...
 
 ## Technical/Design Achievements
+- **External CSS**
+    I wanted to test using an external CSS file since I've used mostly inline CSS in previous projects. I wanted to try using one of hte other kinds of CSS,
+    and though this is a small part of the site it helped me to understand how set things up for external files in the html code and in the server code.
 - **Processing Sketches**:
     Recently I've been interested in the gif art of Bees and Bombs (https://twitter.com/beesandbombs); I really like how abstract, minimal and satisfying the art they make is,
     and I knew it was created using code. For this assignment I decided to dive in and explore this form of art since it is closely tied to the Web. Since they post some of their
