@@ -14,10 +14,10 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'index.html')
       break
     case '/css/styles.css':
-        fs.readFile('styles/styles.css', function(error, content) {
-            res.writeHead(200, {'Content-Type': 'text/css'})
-            res.end(content, 'utf-8')
-        })
+      sendFile(res, 'css/styles.css')
+      break
+    case '/processing.js':
+      sendFile(res, 'processing.js')
       break
     default:
       res.end('404 not found')
@@ -40,11 +40,17 @@ function sendFile(res, filename) {
       })
       break
     case 'css/styles.css':
-        fs.readFile('styles/styles.css', function(error, content) {
-          res.writeHead(200, {'Content-Type': 'text/css'})
+      fs.readFile('styles/styles.css', function(error, content) {
+        res.writeHead(200, {'Content-Type': 'text/css'})
+        res.end(content, 'utf-8')
+      })
+      break
+    case 'processing.js':
+      fs.readFile('processing.js', function(error, content) {
+          res.writeHead(200, {'Content-Type': 'text/javascript'})
           res.end(content, 'utf-8')
-        })
-        break
+      })
+      break
   }
 
 }
