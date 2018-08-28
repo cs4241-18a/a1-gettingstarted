@@ -1,4 +1,5 @@
 .Title {
+    color: #FF8460;
     text-align: center;
 }
 
@@ -26,4 +27,8 @@
 .ElementBody {
     padding: 25px;
     font-size: 20px;
+}
+
+html {
+    background: #EEEDE8;
 }
