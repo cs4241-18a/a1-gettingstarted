@@ -14,7 +14,10 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'index.html')
       break
     case '/css/styles.css':
-      sendFile(res, 'css/styles.css')
+        fs.readFile('styles/styles.css', function(error, content) {
+            res.writeHead(200, {'Content-Type': 'text/css'})
+            res.end(content, 'utf-8')
+        })
       break
     default:
       res.end('404 not found')
