@@ -6,11 +6,11 @@
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar color="primary">Menu</mat-toolbar>
+    <mat-toolbar color="primary" (click)="dontDoThat()">Things</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item href="#personal-info">Personal Information</a>
+      <a mat-list-item href="#skills">Skills</a>
+      <a mat-list-item href="#classes">Classes</a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -23,8 +23,61 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>a1</span>
+      <span>A1-C7C8: "Hello World" Project</span>
     </mat-toolbar>
-    <!-- Add Content Here -->
+
+    <div class="personal-info" id="personal-info">
+      <h1>Personal Information</h1>
+      <mat-card>
+        <mat-card-header (click)="cantClick()">Basic info</mat-card-header>
+        <ul>
+          <li (click)="dontDoThat()"><b>Name:</b> Christopher Myers</li>
+          <li matTooltip="What did you expect, BME or something?" matTooltipPosition="after"><b>Major:</b> Computer Science</li>
+          <li matTooltip="This is a firm MAYBE." matTooltipPosition="after"><b>Minor:</b> Undecided/Data Science (?)</li>
+          <li matTooltip="...hopefully, anyways." matTooltipPosition="after"><b>Year/Class:</b> Junior, Class of 2020</li>
+        </ul>
+      </mat-card>
+
+      <p>I am Chris. I like writing stuff, like short stories and apps! Really, I <span matTooltip="Try it sometime!" matTooltipPosition="above">
+      just love typing</span>, all the time, especially code. Or commands that <span matTooltip="Doesn't matter whose, it's great fun all around!" matTooltipPosition="above">
+      wipe people's hard drives</span>, those are fun too.</p>
+      <p>One day I think I'm going to graduate and maybe go work for a company that'll let me type
+        stuff on their keyboards, the last place I worked for liked it when I did that. Working with big numbers sounds
+        fun, so I might do that as long as I remember not to misplace the decimal point this time. Or, maybe I'll
+        type stuff that stops <i matTooltip="It's perfectly fine when I do it, though!">others</i> from getting at people's
+        hard drives and stuff when they're not supposed to, so that might happen too. Or I'll just keep typing websites
+        and stories. Who knows!</p>
+    </div>
+
+    <div id="skills">
+      <h1 (click)="cantClick()">Skills</h1>
+      <ul>
+        <li matTooltip="It gets into your &lt;head&gt;!" matTooltipPosition="after"><b>HTML:</b> A lot</li>
+        <li matTooltip="&quot;Cascading Style Sheets, or: How I Learned to Stop Worrying and Love Alignment Problems&quot;" matTooltipPosition="after"><b>CSS:</b> A lot</li>
+        <li matTooltip="If 1000 monkeys typed at 1000... eh, this joke is such a given that it's not worth typing out." matTooltipPosition="after"><b>Java:</b> A lot</li>
+        <li matTooltip="Array(16).join(&quot;lol&quot;-1) + &quot; Batman!&quot;" matTooltipPosition="after"><b>JS:</b> Much more than I'd prefer</li>
+        <li (click)="dontDoThat()"><b>Ruby:</b> None</li>
+        <li matTooltip="PLEASE PLEASE PLEASE PLEASE PLEASE PLEASE" matTooltipPosition="after"><b>Python:</b> A lot</li>
+        <li matTooltip="Everyone has a development server; some are even lucky enough to have development servers too!" matTooltipPosition="after"><b>Unit testing:</b> A lot</li>
+      </ul>
+    </div>
+
+    <div id="classes">
+      <h1 (click)="cantClick()">Prior Classes</h1>
+      <p><i>Listed in descending chronological order.</i></p>
+      <ul>
+        <li>CS 4241 Webware (Current)</li>
+        <li>CS 3133 Foundations of Computer Science (Current)</li>
+        <li>CS 3043 Social Implications of Information Processing (Current)</li>
+        <li>CS 3133 Database Systems I</li>
+        <li>CS 3516 Computer Networks</li>
+        <li>CS 2223 Algorithms</li>
+        <li>CS 2011 Machine Organization and Assembly Language</li>
+        <li>CS 3733 Software Engineering</li>
+        <li>CS 3013 Operating Systems</li>
+        <li>CS 210X Advanced Intro OOP Design</li>
+        <li>CS 1102 Intro Program Design</li>
+      </ul>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

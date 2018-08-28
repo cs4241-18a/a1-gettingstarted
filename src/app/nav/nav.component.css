@@ -10,3 +10,34 @@
   position: sticky;
   top: 0;
 }
+
+mat-toolbar {
+  z-index: 10; /* No, really, it has to be 10, or the mat-card shows up above it. */
+}
+
+mat-card {
+  float: left;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.personal-info ul {
+  font-size: 0.75em;
+  list-style-type: none;
+  padding-left: 16px;
+  margin-top: 0.5em;
+}
+
+#skills {
+  clear: both;
+}
+
+h1 {
+  margin-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+p {
+  margin-right: 2em;
+  margin-left: 2em;
+}
