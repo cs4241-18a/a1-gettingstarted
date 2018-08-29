@@ -9,12 +9,12 @@ var server = http.createServer (function (req, res) {
   switch( uri.pathname ) {
     case '/':
       sendFile(res, 'index.html')
-      sendFile(res, 'style.css')
       break
     case '/index.html':
       sendFile(res, 'index.html')
-      sendFile(res, 'style.css')
       break
+    case '/style.css':
+      sendCSS(res,'style.css')
     default:
       res.end('404 not found')
   }
@@ -32,4 +32,11 @@ function sendFile(res, filename) {
     res.end(content, 'utf-8')
   })
 
+}
+
+function sendCSS(res,filename) {
+  fs.readFile(filename, function(error, content) {
+    res.writeHead(200, {'Content-type': 'text/css'})
+    res.end(content)
+  })
 }
