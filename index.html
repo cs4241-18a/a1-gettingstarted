@@ -2,6 +2,18 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 25px;
+      background: #ddddd5;
+      outline: none;
+      opacity: 0.7;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    </style>
   </head>
   <body>
     <h1>Information about Jason King</h1>
@@ -18,11 +30,11 @@
     </p>
     <h2>Language Experience</h2>
     <div class="slidecontainer">
-      <input id="slider" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <input id="slider" readonly="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
       <p id="text" value="" hidden="true"></p>
     </div>
     <ul>
-      <li onmouseover="sliderAdjust(10)">IBM/Rational</li>
+      <li onmouseover="sliderAdjust(10, "HTML")" onmouseout="reset()">IBM/Rational</li>
       <li>HTML</li>
     </ul>
     <h2>Working Experience</h2>
@@ -32,9 +44,15 @@
     </ul>
   </body>
   <script>
-      function sliderAdjust(val) {
+      function sliderAdjust(val, name) {
         document.getElementById("slider").value = val
         //window.alert("yeet we out here")
+        document.getElementById("text").value = name
+        document.getElementById("text").hidden = false
+      }
+      function reset() {
+        document.getElementById("slider").value = 50
+        document.getElementById("text").hidden = true
       }
   </script>
 </html>
