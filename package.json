@@ -7,6 +7,15 @@
   "scripts": {
     "start": "node server.js"
   },
-  "dependencies": {
-  }
+  "dependencies": {},
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cs4241-18a/a1-gettingstarted.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cs4241-18a/a1-gettingstarted/issues"
+  },
+  "homepage": "https://github.com/cs4241-18a/a1-gettingstarted#readme"
 }
