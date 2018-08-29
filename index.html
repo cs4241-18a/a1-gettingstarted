@@ -2,26 +2,54 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+      <style>
+        * {
+            box-sizing: border-box;
+        }
+        .column1 {
+            float: left;
+            width: 30%;
+            padding: 20px;
+        }
+        .column2 {
+            float: left;
+            width: 70%;
+            padding: 10px;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        </style>
   </head>
-  <body>
-    <h1>Information about Jessie</h1>
-    <p>
-      Hi! I'm a computer science major in the class of 2019.
-    </p>
-    <p>
-      Previous computer science courses I've taken include Object-Oriented Design Concepts, Systems Programming Concepts, Operating Systems, Databases, Software Engineering, Human-Computer Interaction, and Software Security Engineering.
-    </p>
-    <h2>Experience</h2>
-    <p>
-      I've had some experience creating websites with HTML and CSS, and I'm pretty comfortable programming in Java, C, C# and Python. I'm also familiar with unit testing. However, I don't have too much experience with JavaScript or Ruby.
-    </p>
+  <body bgcolor="#acabbf">
 
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>Software Developer at Allscripts</li>
-      <li>Student at WPI</li>
-    </ul>
+    <div class="row">
+        <h1 style="text-align:center">Information about Jessie</h1>
+        <div class="column1">
+            <img src="images/jessie-summer-18.png" style="width:100%;">
+        </div>
+        <div class="column2">
+            <h3>Hi there! Welcome to my page. </h3>
+            <p>I'm Jessie and I'm a computer science major in the class of 2019.</p>
+            <p> Previous computer science courses I've taken at WPI include: <br/>
+                Object-Oriented Design Concepts, Systems Programming Concepts, Operating Systems, Databases, Software Engineering, Human-Computer Interaction, and Software Security Engineering.
+            </p>
+            <h2>Experience</h2>
+            <p>
+                I've had some experience creating basic websites with HTML and CSS, and I'm pretty comfortable programming in Java, C, C# and Python. I'm also familiar with unit testing. However, I don't have too much experience with JavaScript or Ruby.
+            </p>
+
+            <p>
+                Work experience
+            </p>
+            <ul>
+                <li>Software Developer at <a href="https://www.allscripts.com" target="_blank">Allscripts</a></li>
+                <li>Student at WPI</li>
+            </ul>
+        </div>
+    </div>
+
   </body>
 </html>
