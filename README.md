@@ -11,7 +11,7 @@ This project shows ...
 - **Included Bootstrap through CDN**: Imported Bootstrap through CDN for better caching in the browser
 
 ### Design Achievements
-- **Typing Animation**: Shown in `style.css`, 3 css animations were used using key-frames.
+- **Typing Animation**: Shown in `style.css`, 3 css animations were made using key-frames.
 - **Bar Graphs**: Shown in `index.html`, bars are shown to represent experience in languages and methodologies, because experience in media is often depicted as bars. So, it would be best to continue the semantic association.   
 - **Hover Effects**: Shown in `style.css`, Hover effects are used to make the background of the Well white when hovered for easy recognition that the link is being hovered & is click-able.
 - **Visited Effects**: Shown in `style.css`, Links will change color once they've been visited.
