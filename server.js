@@ -37,6 +37,6 @@ function sendFile(res, filename) {
 function sendCSS(res,filename) {
   fs.readFile(filename, function(error, content) {
     res.writeHead(200, {'Content-type': 'text/css'})
-    res.end(content)
+    res.write(content)
   })
 }
