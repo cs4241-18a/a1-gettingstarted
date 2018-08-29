@@ -1,0 +1,37 @@
+body{
+    background-color:seashell;
+}
+
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-shadow: initial;
+}
+
+p{
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    width:auto;
+}
+
+td{
+    border: 1px solid black;
+    text-align: center;
+}
+
+li{
+    text-align:left;
+    width:50%;
+    margin-left:30%;
+    margin-right:auto;
+}
