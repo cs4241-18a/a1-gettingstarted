@@ -12,6 +12,7 @@ Utilized a table to list previous experience
 Changed main heading font
 Changed font colors and background colors
 Utilized a table to list previous experience rather than a list
+Utilized list for previous classes
 Added links to the bottom of the page for simple navigation to resources
 
 
