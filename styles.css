@@ -1,10 +1,14 @@
+ /* Custom Styles by Daniel McDonough 8/28*/
+
+
 .typewriter h1,h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #000000; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  overflow: hidden;  /* hide space overtime */
+  border-right: .15em solid #000000; /* cursor */
+  white-space: nowrap; /*one line at at ime*/
+  margin: 0 auto; /* scrolling effect as typing */
 
 }
+
 .typewriter h1 {
   font-size: 4.9vw;
   width: 75%;
@@ -14,37 +18,50 @@
   animation-fill-mode: forwards;
 }
 
-.card-title{
-  text-align: center;
-  font-size: 4.0vw;
-  padding-bottom: 20px;
-}
-
-.well:hover{
-  background-color: #ffffff;
-}
-
-.well:visited a{
-  background-color: #878787;
-  color: #000000;
-}
-
-
+/* mobile styling for h2*/
 .typewriter h2 {
   text-align:center;
   font-size: 3.0vw;
   width: 45%;
   opacity: 0;
-  -webkit-animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
-  animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
+/*bigger headers*/
+.card-title{
+  text-decoration: underline;
+  text-align: center;
+  font-size: 5.5vw;
+  padding-bottom: 20px;
+}
+/*hobbies*/
+.card-title-sm{
+  text-align: center;
+  font-size: 5vw;
+  padding-bottom: 2px;
+}
+/* make white background on wells*/
+.well:hover{
+  background-color: #ffffff;
+}
+
+a:visited {
+  color: #ff00ff;
+}
+/*non mobile styleing*/
 @media(min-width:560px){
+  .card-title-sm{
+    text-align: center;
+    font-size: 2.0vw;
+    padding-bottom: 2px;
+  }
   .card-title{
+    text-decoration: underline;
     text-align: center;
     font-size: 2.0vw;
     padding-bottom: 20px;
@@ -53,8 +70,8 @@
     font-size: 2.1vw;
     width: 50%;
     opacity: 0;
-    -webkit-animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
-    animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
     -webkit-animation-fill-mode: forwards;
@@ -62,7 +79,7 @@
   }
 }
 
-
+/*Faster typing for h1 tag*/
 @keyframes type {
   0% {
     width: 0;
@@ -96,8 +113,8 @@
 }
 
 
-
-@keyframes type3 {
+/*slower typing for h2 tag*/
+@keyframes type2 {
   0% {
     width: 0;
   }
@@ -109,7 +126,7 @@
   }
 }
 
-@-webkit-keyframes type3 {
+@-webkit-keyframes type2 {
   0% {
     width: 0;
   }
@@ -121,6 +138,7 @@
   }
 }
 
+/*blinking cursor animation*/
 @keyframes blink {
   50% {
     border-color: transparent;
