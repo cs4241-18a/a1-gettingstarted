@@ -3,7 +3,7 @@ var http = require('http')
   , url  = require('url')
   , port = 8080;
 
-var server = http.createServer (function (req, res) {
+var server = http.createServer (function (req, res)) {
   var uri = url.parse(req.url)
 
   switch( uri.pathname ) {
