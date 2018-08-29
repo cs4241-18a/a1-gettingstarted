@@ -53,7 +53,7 @@ function sendFileCSS(res, filename) {
 function sendFileImage(res, filename) {
 
   fs.readFile(filename, function(error, content) {
-    res.writeHead(200, {'Content-type': 'image/jpeg'})
+    res.writeHead(200, {'Content-type': 'image/jpg'})
     res.end(content);
   })
 
