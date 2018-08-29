@@ -9,6 +9,7 @@ This project shows ...
 - **Modified Server.JS**: Modified Server.js to handle styles.min.css.
 - **Minified CSS**: Shrunk the CSS loaded min.css to enhance load speed of the site.
 - **Included Bootstrap through CDN**: Imported Bootstrap through CDN for better caching in the browser
+- **VH and VW**: Used VW and VH to allow for dynamic/responsive font sizes
 
 ### Design Achievements
 - **Typing Animation**: Shown in `style.css`, 3 css animations were made using key-frames.

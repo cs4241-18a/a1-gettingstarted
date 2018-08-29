@@ -150,3 +150,20 @@ a:visited {
     border-color: tranparent;
   }
 }
+/*show content after type animation*/
+@keyframes show-content {
+  0% {
+    opacity: none;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+@-webkit-keyframes show-content {
+  0% {
+    opacity: none;
+  }
+  100%{
+    opacity: 1;
+  }
+}
