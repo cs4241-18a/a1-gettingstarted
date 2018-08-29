@@ -16,10 +16,14 @@
     <p>
       yo I take classes yeet
     </p>
-    <h2 onmouseover="htmlAdjust(this)">Language Experience</h2>
+    <h2>Language Experience</h2>
+    <div class="slidecontainer">
+      <input id="slider" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <p id="text" value="" hidden="true"></p>
+    </div>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li onmouseover="sliderAdjust(10)">IBM/Rational</li>
+      <li>HTML</li>
     </ul>
     <h2>Working Experience</h2>
     <ul>
@@ -28,9 +32,9 @@
     </ul>
   </body>
   <script>
-      function htmlAdjust(slider) {
-        slider.value = "10"
-        window.alert("yeet we out here")
+      function sliderAdjust(val) {
+        document.getElementById("slider").value = val
+        //window.alert("yeet we out here")
       }
   </script>
 </html>
