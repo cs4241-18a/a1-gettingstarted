@@ -54,8 +54,8 @@
       <h2>Language Experience</h2>
       <div class="slidecontainer">
         <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
-        <p id="text" value=""></p>
       </div>
+      <p id="text" value="" visibility: hidden></p>
       <ul>
         <li onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</li>
         <li onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</li>
@@ -81,11 +81,11 @@
         document.getElementById("slider").value = val
         //window.alert("yeet we out here")
         document.getElementById("text").value = name
-        document.getElementById("text").hidden = false
+        document.getElementById("text").visibility = visible
       }
       function reset() {
         document.getElementById("slider").value = 50
-        document.getElementById("text").hidden = true
+        document.getElementById("text").visibility = hidden
       }
   </script>
 </html>
