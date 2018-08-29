@@ -10,7 +10,8 @@
 }
 
 .typewriter h1 {
-  font-size: 4.9vw;
+  text-align:center;
+  font-size: 4.5vw;
   width: 75%;
   -webkit-animation: type 3s steps(40, end);
   animation: type 3s steps(40, end);
@@ -22,7 +23,7 @@
 .typewriter h2 {
   text-align:center;
   font-size: 3.0vw;
-  width: 45%;
+  width: 50%;
   opacity: 0;
   -webkit-animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
   animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
