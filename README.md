@@ -62,16 +62,16 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Lane Harrison  
-http://codementum-a1.herokuapp.com
+Surya Vadivazhagu
+https://a1-svadivazhagu.herokuapp.com/
 
-This project shows ...
+This project shows an interest in a minimalistic design while retaining the ability to present information with clarity and efficiency. When designing this website, I had several ideas on how to format the content, as there wasn't a great deal of information required to be submitted, so I was brainstorming of interesting ways on presenting them. During this time my mind was brought back to the installation sequence of Windows 10- how once the core files are installed, relevant text just fades in and out informing the user as to what's going on. This design philosophy felt "clean" to me and I wanted to retain that feeling of smoothness in my project. So, I decided upon having each section/subsection of the page fade in order- this allows viewers to focus on each element as they're loaded in, and fine-tuning the delay and animation duration to ensure that it did not feel laggy- having the introduction be "snappy" every time was my goal. I will discuss this more in the technical achievements. I saw Prof. Harrison's website at WPI and really enjoyed the minimal design he emphasized, where it's not bland yet just feels "cool" to read. My ultimate goal of this website was to integrate a few interesting CSS animation concepts while not going over-the-top with a color scheme and overall design, allowing users to view the
+information at their own pace and leisure.   
 
 ## Technical Achievements
 - **Proved P=NP**: Using a combination of...
 - **Solved AI**: ...
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
+- **Added fade-in tooltips for programmatic experience**: Shown in `style.css`, the code...
 
