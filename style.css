@@ -1,12 +1,12 @@
-.body {
+body {
     background:#373737;
     color: #eeeeee;
 }
 
-.h1, h2 {
+h1, h2 {
     color: #4ec9b0;
 }
 
-.a:visited {
+a:visited {
     color: #a56ba5;
 }
