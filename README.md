@@ -43,14 +43,9 @@ Do the following to complete this assignment:
 Naming and URL Scheme
 ---
 
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
 
 By default Heroku assigns your application a random name.
 To change it, follow [this guide](https://devcenter.heroku.com/articles/renaming-apps).
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
 
 Resources
 ---
@@ -62,8 +57,8 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Lane Harrison  
-http://codementum-a1.herokuapp.com
+Robert Harrison
+http://a1-bobeart.herokuapp.com
 
 This project shows ...
 
