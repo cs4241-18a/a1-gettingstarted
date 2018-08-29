@@ -1,0 +1,24 @@
+body {
+    text-align: center;
+    align: center;
+    align-items: center;
+    background-color: blue;
+}
+h1, h2 {
+    color: gray;
+}
+
+p, ul {
+    color: white;
+}
+
+ul {
+    display: table;
+    margin:0 auto;
+    text-align: left;
+}
+
+img {
+    height: 300;
+    object-fit: contain;
+}

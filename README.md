@@ -1,16 +1,31 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
 ===
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to the [Heroku Web platform](http://www.heroku.com/). 
+Lane Harrison  
+http://codementum-a1.herokuapp.com
+
+This project shows ...
+
+## Technical Achievements
+- **Proved P=NP**: Using a combination of...
+- **Solved AI**: ...
+
+### Design Achievements
+- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+
+
+Sample Readme (delete the below when you're ready to submit, and modify the above with your links and descriptions)
+---
+This assignment is a "warm-up" exercise.
+You will simply deploy the starting Web site that you will use this term to the [Heroku Web platform](http://www.heroku.com/).
 
 Refer to [Getting started with node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
 
 (Thanks to past instructors of the course, here is a short [getting started with Heroku movie](http://web.cs.wpi.edu/~gpollice/Movies/HerokuGettingStarted/) that may also help.)
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Heroku. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
+Treat this assignment as a chance to get up to speed on Git, GitHub, and Heroku.
+If you already know these, great.
+However, if you're new to them, spend several hours practicing, experimenting, and reading documentation.
 In other words, don't just get your website up and done. You will need skill with these tools throughout the rest of the course.
 
 Assignment details
@@ -58,20 +73,3 @@ Resources
 If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
 
 If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Lane Harrison  
-http://codementum-a1.herokuapp.com
-
-This project shows ...
-
-## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
-
-### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
-
