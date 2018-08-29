@@ -14,5 +14,10 @@ This project shows ...
 - **Typing Animation**: Shown in `style.css`, 3 css animations were used using key-frames.
 - **Bar Graphs**: Shown in `index.html`, bars are shown to represent experience in languages and methodologies, because experience in media is often depicted as bars. So, it would be best to continue the semantic association.   
 - **Hover Effects**: Shown in `style.css`, Hover effects are used to make the background of the Well white when hovered for easy recognition that the link is being hovered & is click-able.
-- **Visited Effects**: Shown in `style.css`, Links will change color once they've been visited. 
+- **Visited Effects**: Shown in `style.css`, Links will change color once they've been visited.
 - **Mobile "Compatible"**: Shown in `style.css`, the @media(min-width:560px) allows for specific boundaries to be distinguished to display the mobile view and desktop view at certain device size thresholds.
+
+
+#### Resources Used
+- **W3 Schools**: https://www.w3schools.com/
+- **CSS Tricks**: https://css-tricks.com/
