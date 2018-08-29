@@ -63,6 +63,8 @@ a {
 	background-image: url(timg.jpg);
 	background-size: cover;
 	padding-top: 50px;
+	opacity: 0;
+	animation: 1s fadein 0.2s forwards;
 }
 
 .info-section {
