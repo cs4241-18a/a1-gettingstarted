@@ -5,4 +5,6 @@ https://a1-dxu2.herokuapp.com/
 
 This project contains some basic information about me.
 
-
+Design Achievements
+===
+Add CSS to the project, shown in styles.css
