@@ -1,0 +1,82 @@
+p {
+  color:white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h1 {
+  font-family: fantasy;
+  color: orange;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+h2 {
+  font-family: fantasy;
+  color: orange;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: fantasy;
+  color: orange;
+  font-size: 30px;
+  text-align: center;
+}
+
+.centre {
+  display: -webkit-inline-box;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container {
+  position: relative;
+  width: 23%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(25, 26, 28, 0.5);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 2s ease-in-out;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+}
+
+/*
+Test hyperlinks to see if they color when moused over!
+https://www.w3schools.com/html/html_links.asp
+
+Make hyperlinks to classes
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+Jump down to content in page
+https://www.w3schools.com/html/html_links.asp
+*/
