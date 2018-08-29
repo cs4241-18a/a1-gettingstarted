@@ -2,26 +2,93 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style >
+      table {
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 2px;
+        border-color: grey;
+      }
+    </style>
+
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about <font color="red">Alexandra Wheeler</font></h1>
     <p>
-      [Self introduction]
+       Hello! I'm Alexandra or Alex! I'm a senior (graduating in May). I'm working on an MQP thats about an AR debugger for swarm robotics. I also love robots, cats, videogames and writing!
     </p>
     <p>
-      [Major and other information]
+      Majors: Robotics Engineering and Computer Science
     </p>
     <p>
-      [Other things]
+       Previous CS Courses: CS 1101, CS 2102, CS 2022, CS 4123, CS 3043, CS 2223, CS 3733, CS2303, CS 3133, CS 2011, CS 3013*, CS 3516*
+    </p>
+    <p>
+       *currently taking at the moment
     </p>
 
     <h2>Experience</h2>
+    <table border = "1">
+      <tr>
+        <th>Tech/Methods</th>
+        <th>Experience</th>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>none, some?</td>
+      </tr>
+      <tr>
+        <td>CSS</td>
+        <td>none</td>
+      </tr>
+      <tr>
+        <td>Java</td>
+        <td>alot</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>alot</td>
+      </tr>
+      <tr>
+        <td>Ruby</td>
+        <td>none</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>some</td>
+      </tr>
+      <tr>
+        <td>unit testing</td>
+        <td>kinda some, kinda none</td>
+      </tr>
+    </table>
     <p>
-      Working experience
+     Working experience!
     </p>
     <ul>
-      <li>IBM/Rational</li>
+      <li>Rocket Software</li>
       <li>WPI</li>
+      <li>Random things for FRC</li>
+      <li>Some things with ROS</li>
     </ul>
+    <button type="button" onclick="addimage(this);">Want to see a
+    picture of my cat?</button>
+
+    <script type="text/javascript">
+        function addimage(button) { 
+          var img = document.createElement("img");
+          img.src = "https://i.imgur.com/OfWVIUu.jpg"; 
+          img.height = 400; 
+          img.width = 300;
+
+          //optionally set a css class on the image
+          var class_name = "foo";
+          img.setAttribute("class", class_name);
+
+          document.body.appendChild(img);
+          button.style.visibility = "hidden";
+        }
+  </script>
+
   </body>
 </html>
