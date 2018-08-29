@@ -2,23 +2,40 @@ body {
     text-align: center;
     align: center;
     align-items: center;
-    background-color: blue;
+    background-color: e6ffe6;
 }
 h1, h2 {
     color: gray;
 }
 
 p, ul {
-    color: white;
+    color: black;
 }
 
 ul {
     display: table;
-    margin:0 auto;
+    margin: 0 auto;
     text-align: left;
+    list-style-type: none
 }
 
 img {
     height: 300;
     object-fit: contain;
+}
+
+a:link {
+    color: red
+}
+
+a:visited {
+    color: blue
+}
+
+a:hover {
+    color: green
+}
+
+a:active {
+    color: purple
 }

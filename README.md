@@ -1,17 +1,19 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
 ===
 
-Lane Harrison  
-http://codementum-a1.herokuapp.com
+Peter Maida  
+http://a1-petermaidarobot.herokuapp.com
 
-This project shows ...
+This project shows the deployment of a simple website using the Heroku web platform (http://www.heroku.com).
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **Included Links**: The course descriptions have been linked to the listed courses under the experience section of the website. What I have learned when adding the links and changing the colors of the link, visited, hover, active states is that the ordering of them in the css matters, as one may override the other. The rules for ordering states is that hover must come after link and visited, and that active must come after hover. There are areas where these states overlap, and that is why the importance of each state matters. The source of this can be found at https://www.w3schools.com/css/css_link.asp
+- **Included Image**: a..
+- **Included Alternate CSS**: a..
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **Alignment**: Shown in `style.css`, the code...
+- **Color**: Shown in `style.css`, the code...
 
 
 Sample Readme (delete the below when you're ready to submit, and modify the above with your links and descriptions)
