@@ -1,0 +1,37 @@
+body {
+    background-color: powderblue;
+    font-family: 'Roboto', sans-serif;
+
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: transparent;
+    color: #000000;
+    text-align: right;
+    border-radius: 6px;
+    z-index: 1;
+    top: -5px;
+    left: 105%;
+    font-weight: bold;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border: 7px;
+    border-radius: 50%;
+}
