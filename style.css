@@ -1,11 +1,11 @@
 body {
-    /*background: #0F1626;*/
-    /*background: #262626;*/
-    /*color: #F5F5F5;*/
     color: white;
     font-family: 'Source Sans Pro', Sans-Serif;
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
     background: linear-gradient(to right, #25c481, #25b7c4);
+    /* prevent text squishing */
+    min-width: 700px;
+    margin-top: 20px;
 }
 
 h1, h2 {
@@ -15,10 +15,13 @@ h1, h2 {
 
 h1 {
     font-size: 2.5rem;
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 li {
@@ -30,11 +33,13 @@ p {
     font-size: 16px;
 }
 
+/* Container for tiles */
 .container {
     display: flex;
     justify-content: center;
 }
 
+/* Container for information about me*/
 .info-container {
     line-height: 0.25em;
 }
@@ -61,6 +66,58 @@ div.thumbnail img {
 
 div.spacer {
     box-shadow: none;
+}
+
+/* ------------- Table -------------*/
+.table-container {
+    margin: 0px 10rem;
+}
+
+table {
+    width:100%;
+    table-layout: fixed;
+}
+
+/* Tint header */
+.table-header {
+    background-color: rgba(255,255,255,0.3);
+}
+
+/* Limit content size to enable scrolling */
+.table-content {
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+/* Hide main scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.table-container ::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+/* Display table scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 20px;
 }
 
 /* ------------- Thumbnail hover effects ------------- */
