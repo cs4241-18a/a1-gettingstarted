@@ -1,0 +1,195 @@
+body {
+    /*background: #0F1626;*/
+    /*background: #262626;*/
+    /*color: #F5F5F5;*/
+    color: white;
+    font-family: 'Source Sans Pro', Sans-Serif;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: 'Playfair Display', Serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.info-container {
+    line-height: 0.25em;
+}
+
+/* Thumbnail */
+div.thumbnail {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    align-content: center;
+}
+
+div.thumbnail img {
+    max-width: 100%;
+    height: 210px;
+    padding: 20px;
+}
+
+div.spacer {
+    box-shadow: none;
+}
+
+/* ------------- Thumbnail hover effects ------------- */
+div.thumbnail:hover img {
+    opacity: 0.3;
+    /* Grayout image */
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+div.thumbnail * {
+    transition: all .35s ease-in-out;
+}
+
+div.thumbnail .text-container {
+    opacity: 0;
+    position: absolute;
+    /* Fill thumbnail */
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+div.thumbnail:hover .text-container {
+    opacity: 1;
+}
+
+/* ------------- Programming Experience Hover Content -------------*/
+div.thumbnail .text-container .title {
+    font-size: 2rem;
+}
+
+div.thumbnail .text-container .experience-level {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Underline coloring for dark thumbnails */
+.html-container .title, .css-container .title, .ruby-container .title, #testing-container .title{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+/* Text coloring for light thumbnails */
+.java-container, .javascript-container, .python-container {
+    color: #000000;
+}
+
+/* Underline coloring for light thumbnails */
+.java-container .title, .javascript-container .title, .python-container .title {
+    border-bottom: 1px solid #000000;
+}
+
+/* Stars and rating */
+.rating {
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 25%;
+}
+
+/* Star coloring for dark thumbnails */
+.html-container .star, .css-container .star, .ruby-container .star, #testing-container .star{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+    opacity: 0.5;
+}
+
+.html-container .star-selected, .css-container .star-selected, .ruby-container .star-selected, #testing-container .star-selected{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+
+/* Star coloring for light thumbnails */
+.java-container .star, .javascript-container .star, .python-container .star {
+    height: 2rem;
+    width: 2rem;
+    fill: #101010;
+    opacity: 0.5;
+}
+
+.java-container .star-selected , .javascript-container .star-selected, .python-container .star-selected {
+    height: 2rem;
+    width: 2rem;
+    fill: #101010;
+}
+
+/* ------------- Logo specific coloring ------------- */
+.html-container {
+    background: #E67020;
+}
+
+.css-container {
+    background-color: #0071FC;
+}
+
+.java-container {
+    background-color: white;
+}
+
+.javascript-container {
+    background-color: #f0db4f;
+}
+
+#ruby-img {
+    height: 150px;
+    margin-top: 25px;
+}
+
+.ruby-container {
+    background-color: #C51104;
+}
+
+.python-container {
+    background-color: #E0E0E0;
+    /*background-color: white;*/
+}
+
+#testing-container {
+    background-color: black;
+    height: 250px;
+}
+
+#testing-container img {
+    /*height: 50px;*/
+    height: 60px;
+    margin-top: 65px;
+}
