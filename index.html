@@ -5,13 +5,21 @@
     <style>
     .slider {
       -webkit-appearance: none;
-      width: 100%;
-      height: 25px;
+      width: 50%;
+      height: 2em;
       background: #ddddd5;
-      outline: none;
-      opacity: 0.7;
+      outline: solid;
+      opacity: 0.8;
       -webkit-transition: .2s;
       transition: opacity .2s;
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 25px;
+      background: #ff0000;
+      cursor: pointer;
     }
     </style>
   </head>
@@ -25,22 +33,42 @@
       Bachelors of Compupter Science
     </p>
     <h2>Computer Science Classes</h2>
-    <p>
-      yo I take classes yeet
-    </p>
+    <ul>
+      <li>1101: Introduction to Program Design</li>
+      <li>2011: Introduction to Machine Organization and Assembly Language</li>
+      <li>2022: Discrete Mathmatics</li>
+      <li>2102: Object-Oriented Design Concepts</li>
+      <li>2223: Algorithms</li>
+      <li>2303: Systems Programming Concepts</li>
+      <li>3013: Operating Systems</li>
+      <li>3133: Foundations of Computer Science</li>
+      <li>3431: Database Systems</li>
+      <li>3733: Software Engineering</li>
+      <li>3516: Computer Networks <i>(in progress)</i></li>
+      <li>4241: Webware <i>(in progress)</i></li>
+    </ul>
     <h2>Language Experience</h2>
     <div class="slidecontainer">
-      <input id="slider" readonly="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
       <p id="text" value="" hidden="true"></p>
     </div>
     <ul>
-      <li onmouseover="sliderAdjust(10, "HTML")" onmouseout="reset()">IBM/Rational</li>
-      <li>HTML</li>
+      <li onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</li>
+      <li onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</li>
+      <li onmouseover="sliderAdjust(85, &quot;A LOT&quot;)" onmouseout="reset()">Java</li>
+      <li onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</li>
+      <li onmouseover="sliderAdjust(0, &quot;NONE&quot;)" onmouseout="reset()">Ruby</li>
+      <li onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</li>
+      <li onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</li>
     </ul>
     <h2>Working Experience</h2>
     <ul>
-      <li>CFN</li>
-      <li>Dell</li>
+      <li>Dell EMC, May - August 2018</li>
+      <p>Worked with Technology Research Innovation Group to develop a topology/inventory service to enable contextual resource management using spacial awareness within a datacenter. Started project from inception period and continued to implement features throughout initial development. Practiced Extreme Programming via pair programming and continuous integration. Contributed to architecture design discussions over multiple project iterations. End goal was for the service to act as a foundation for multiple research efforts within product portfolio, including artificial intelligence operated datacenters. Utilized graph databases as an enabling technology to represent datacenter and its subcomponents in a graph view. Built REST API with data access layer to automatically connect and populate nodes in datacenter graph. Concluded summer with presentation of project progress to upper management.</p>
+      <li>Commonwealth Financial Network, May - August 2017 (Development)</li>
+      <p>Worked with lead developer and Scrum team to develop and enhance a major workflow system used daily to conduct highly time sensitive tasks. Objectives were to increase efficiency and effectiveness of a department when using the system. As a full stack web developer, worked on every aspect of the application, from user interface to database interaction. Demonstrated new functionalities to end users on a consistent basis to gather feedback and suggestions throughout the development cycle. Reported to daily standups to give progress updates and team planning meetings. Presented final application and integrated it into the existing system by the end of the summer</p>
+      <li>Commonwealth Financial Network, May - August 2016 (Quality Assurance)</li>
+      <p>Worked with the quality assurance team in two-week development sprints. Wrote test cases for an internal workflow system, executed manual tests on client-facing applications, reported and troubleshot bugs, and attended daily standups to verbally relay completed work. Additionally, worked on ad hoc projects such as testing business rules in a new version of an application to ensure a smooth update.</p>
     </ul>
   </body>
   <script>
