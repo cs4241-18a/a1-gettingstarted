@@ -1,0 +1,35 @@
+body {
+  font-family: helvetica;
+  font-size:20px;
+  background-color: ivory;
+  color: black;
+}
+#left {
+  float: left;
+  margin-right: 15px;
+  margin-left: 20px;
+ background:#D8EDDD;
+ width:400px;
+ height:520px;
+ padding: 1em;
+ padding-top: 8em;
+}
+#center {
+  float: left;
+ background:#CADFF4;
+ width:400px;
+ height:660px;
+ padding: 1em;
+ margin-right: 15px;
+ margin-left: 15px;
+}
+#right {
+  float: left;
+ background:#E7D8ED;
+ width:400px;
+ height:520px;
+ padding: 1em;
+ padding-top: 8em;
+ margin-right: 20px;
+ margin-left: 15px;
+}
