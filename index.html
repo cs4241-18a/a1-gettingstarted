@@ -1,35 +1,121 @@
-<html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about Da Xu</h1>
-    <p>
-      Hello, my name is Da Xu. I'm a junior student major in CS. I conducted several projects related to web development and hope to learn more cool stuff in this class!
-    </p>
-    <p>
-      Major : Computer Science
-      <p>Class : 2020</p>
-      
-      Courses : Object-oriented Design Concepts (Java), Systems Programming Concepts (C, C++), Assembly Language, Algorithm, Operating System, Database Systems, Software Engineering, Foundations of Computer Science,
-    </p>
-    <p>
-      Experience with technologies : HTML CSS JavaScript Java
-    </p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Introduction
+	</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Serif|Roboto+Slab" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" >
+		function onTopClickTech() {
+			window.location.hash = "#techSection";
+		}
+		function onTopClickCourse() {
+			window.location.hash = "#courseSection";
+		}
+		function onTopClickProj() {
+			window.location.hash = "#projectSection";
+		}
+		function onTopClickHome() {
+			window.location.hash = "#mainSection";
+		}
+	</script>
+</head>
 
-    <h2>Experience</h2>
-    <p>
-      Web related experience
-    </p>
-    <ul>
-      <li>Ticket+</li>
-      <ul>
-      	<li>Developed an interactive web page for users to search events and purchase tickets and improved personalized ticket recommendation based on search history and favorite records
-      	<li>Created Java servlets with RESTful APIs to handle HTTP requests and responses</li>
-      	<li>Built Relational Database (MySQL) to capture real ticket data from TicketMaster API</li>
-      	<li>Designed a Content-Based Recommendation Algorithm to implement ticket recommendation</li>
-      </ul>
-    </ul>
-  </body>
+
+<body>
+	<header>
+		<h3><a href="#">Information about Da Xu</a></h3>
+		<nav>
+			<button onclick="javascript:onTopClickHome();"> Home</button>
+			<button onclick="javascript:onTopClickCourse();"> Courses</button>
+			<button onclick="javascript:onTopClickTech();"> Techs</button>
+			<button onclick="javascript:onTopClickProj();"> Projects</button>
+		</nav>
+	</header>
+
+	<section>
+		<div class="main-section" id="mainSection">
+			<div class="info-section">
+				<div><h2>Da Xu</h2></div>
+				<div>Computer Science, Class 2020 
+					<br> Worcester Polytechnic Institute
+				</div>
+			</div>
+			<div class="photo-section"></div>
+		</div>
+		<div class="middle-banner">
+			Hi all! I'm Da Xu, CS major in Junior. I conducted several projects related to web development and hope to learn more cool stuff in this class!
+		</div>
+
+
+		<div class="course-section"  id="courseSection">
+			<div class="course-title">
+				<h2>Computer Science Related Courses Taken </h2>
+			</div>
+			<div class="course-info">
+				<li>Object-oriented Design Concepts (Java)</li>
+				<li>Systems Programming Concepts (C, C++)</li>
+				<li>Assembly Language, Algorithm</li>
+				<li>Operating System</li>
+				<li>Database Systems I</li>
+				<li>Algorithm I</li>
+				<li>Software Engineering</li>
+				<li>Foundations of Computer Science</li>
+				<li>Database Systems II</li>
+				<li>Algorithm II</li>
+			</div>
+		</div>
+
+		<div class="tech-section" id="techSection">
+			<div class="tech-sum">
+				<h2><i class="fas fa-tachometer-alt"></i> Main Techs that I Use</h2>
+			</div>
+
+			<div class="tech-details">
+				<div class="tech-details-name"><h2>Front-End</h2> HTML5, CSS3, JavaScript, BootStrap</div>
+				<div class="tech-details-name"><h2>Back-End</h2>  Java, Servlet, Spring Boot</div>
+				<div class="tech-details-name"><h2>Other</h2> Web-Crawler(PySpider), Solr, Redis</div>
+			</div>
+		</div>
+
+
+		<div class="project-section" id="projectSection">
+			<div class="project-sum">
+				<h2><i class="fas fa-project-diagram"></i>  Web-Related Projects</h2>
+			</div>
+
+			<div class="project-info">
+				<div class="project-name">
+					<h2>Jupiter Ticket</h2>
+				</div>
+				<div class="project-details">
+					<li>Developed an interactive web page for users to search events and purchase tickets and improved personalized ticket recommendation based on search history and favorite records in a team of 3</li>
+					<li>Created Java servlets with RESTful APIs to handle HTTP requests and responses</li>
+					<li>Built Relational Database (MySQL) to capture real ticket data from TicketMaster API</li>
+					<li>Designed a Content-Based Recommendation Algorithm to implement ticket recommendation</li>
+					<li>Deployed server side to Amazon EC2 to handle 150 queries per second tested by Apache JMeter.</li>
+					<li>Link: http://18.223.28.155/Jupiter/ (username: 1111, password: 2222 for demo purpose)</li>
+				</div>
+			</div>
+			<div class="project-info">
+				<div class="project-name">
+					<h2>Chanllon Knowledge</h2>
+				</div>
+				<div class="project-details">
+					<li>Built a Social News Aggregation and Discussion Website using Spring Boot, Velocity and MyBatis on a team of 3</li>
+					<li>Created own Login Controller and Interceptor to implement basic token-based registration/login/logout flow</li>
+					<li>Utilized Redis to build own Asynchronized framework to better handle additional events after some specific operations</li>
+					<li>Designed push & pull model based on number of followers (> 500 followers or not) and followers’ activeness to optimize the implementation of Timeline</li>
+					<li> Used PySpider Web Crawler framework to get 16700+ posts from 3 sites to generate wide-ranged topics and got a satisfaction rate of 87.03%from 54 people in current development state</li>
+				</div>
+			</div>
+		</div>
+		<footer>
+			Website created by Da Xu
+		</footer>
+	</section>
+</body>
 </html>
