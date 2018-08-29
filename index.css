@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+p{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+li{
+    text-align: center;
+}
+ul{
+    list-style-position: inside;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
