@@ -2,11 +2,16 @@
   "name": "lh-4241-simple-node",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Lane Harrison",
+  "author": "Daniel McDonough",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "clean":"node clean-css.js"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "concat": "^1.0.3",
+    "uglify-js": "^3.4.8"
   }
 }

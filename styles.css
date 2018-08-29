@@ -1,0 +1,133 @@
+.typewriter h1,h2 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #000000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+
+}
+.typewriter h1 {
+  font-size: 4.9vw;
+  width: 75%;
+  -webkit-animation: type 3s steps(40, end);
+  animation: type 3s steps(40, end);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.card-title{
+  text-align: center;
+  font-size: 4.0vw;
+  padding-bottom: 20px;
+}
+
+.well:hover{
+  background-color: #ffffff;
+}
+
+.well:visited a{
+  background-color: #878787;
+  color: #000000;
+}
+
+
+.typewriter h2 {
+  text-align:center;
+  font-size: 3.0vw;
+  width: 45%;
+  opacity: 0;
+  -webkit-animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+  animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@media(min-width:560px){
+  .card-title{
+    text-align: center;
+    font-size: 2.0vw;
+    padding-bottom: 20px;
+  }
+  .typewriter h2 {
+    font-size: 2.1vw;
+    width: 50%;
+    opacity: 0;
+    -webkit-animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+    animation: type3 3s steps(20, end), blink .5s step-end infinite alternate;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #000000;
+  }
+  100% {
+    opacity: 1;
+    border:none;
+  }
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  99.9% {
+    border-right: .15em solid #000000;
+  }
+  100% {
+    opacity: 1;
+    border:none;
+  }
+}
+
+
+
+@keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes type3 {
+  0% {
+    width: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    border-color: tranparent;
+  }
+}
