@@ -1,0 +1,67 @@
+body {
+    background-color: #7777f8;
+    margin: 0;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000060;
+}
+
+
+ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+h1, h2, h3 {
+    text-align: center;
+
+}
+
+
+
+#wrapper {
+}
+
+#topBanner {
+    height: 23%;
+    vertical-align: top;
+    text-align: center;
+}
+
+#topContent {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+#middleContent {
+    text-align: center;
+    overflow: auto;
+    vertical-align: middle;
+}
+
+#midMid {
+    display: inline-block;
+    position: center;
+    float: inside;
+    width: 25%;
+}
+
+#midLeft {
+    display: inline-block;
+    float: left;
+    width: 33%;
+}
+
+#midRight {
+    display: inline-block;
+    float: right;
+    width: 40%;
+}
+
+#workExperience {
+    padding-left: -100px;
+}
+
