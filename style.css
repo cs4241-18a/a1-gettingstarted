@@ -1,0 +1,39 @@
+a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color:red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+}
+
+.div-container {
+    background-color: paleturquoise;
+    width: fluid;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.header-container {
+    background-color: teal;
+    width: fluid;
+    padding: 15px;
+    color: white;
+}
