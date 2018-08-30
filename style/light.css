@@ -1,0 +1,5 @@
+#footerImage {
+    /*image source: https://bulbapedia.bulbagarden.net/wiki/File:778Mimikyu.png*/
+    background: url(../img/mimikyu.png) no-repeat right bottom transparent;
+    background-size: cover;
+}

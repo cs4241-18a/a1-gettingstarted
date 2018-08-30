@@ -2,26 +2,74 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/light.css" id="mode">
+    <script src="scripts/main.js"></script>
+    <script>initMode();</script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="content">
+        <h1>Information about Skyler Kim</h1>
+        <p>
+          My name is Skyler Kim. <br/>I'm a junior majoring in CS. <br/>I have a little experience with ASP .NET, but I would like to learn more. 
+          <br/>I look forward to working with all of you this term.
+        </p>
+        <p>
+          In my free time, I like to play Pokemon VGC. <a href="https://pokemonshowdown.com/users/bettyflores">Here is my showdown account.</a>
+          <br/> The new format just got released, so I'm not as high on ladder as I would like to be.
+          <br/> My favorite pokemon is Mimikyu because of how versatile it can be. 
+        </p>
+    
+        <h2>Experience</h2>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                    <h4>Working experience:</h4>
+                    <ul>
+                      <li>Bank of Hawaii: Work with eSolutions team on web applications for company intranet.</li>
+                      <li>SA for WPI: SA for CS1004, CS2301, CS2202</li>
+                    </ul>
+                    <h4>Language Experience:</h4>
+                    <ul>
+                       <li>Java: a lot</li>
+                      <li>Python: a lot</li>
+                      <li>HTML: some</li>
+                      <li>CSS: some</li>
+                      <li>JavaScript: some</li>
+                      <li>Unit Testing: some</li>
+                      <li>Ruby: None</li>
+                    </ul>
+                </td>
+                <td>
+                    <h4>Previous Classes:</h4>
+                    <ul>
+                      <li>CS4432</li>
+                      <li>CS4341</li>
+                      <li>CS3133</li>
+                      <li>CS3013</li>
+                      <li>CS3733</li>
+                      <li>CS3431</li>
+                      <li>CS3043</li>
+                      <li>CS2303</li>
+                      <li>CS2011</li>
+                      <li>CS2223</li>
+                      <li>CS2022</li>
+                      <li>CS2102</li>
+                      <li>CS1101</li>
+                    </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+    </div>
+    <div id="footerImage"></div>
+    <script>
+      document.getElementById("footerImage").addEventListener("click", function() {
+        changeMode();
+      });
+    </script>
   </body>
 </html>
