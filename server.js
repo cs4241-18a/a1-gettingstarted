@@ -13,8 +13,8 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
-    case '/bootstrap.min.css':
-      sendFile(res, 'bootstrap.min.css')
+    case '/bootstrap.css':
+      sendFile(res, 'bootstrap.css')
       break
     default:
       res.end('404 not found')
