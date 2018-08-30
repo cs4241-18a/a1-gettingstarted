@@ -7,4 +7,4 @@ This project shows ...
 - **Simple Static Single Website with Links**: Some names or terms have embedded links
 
 ### Design Achievements
-- **Embedded CSS**: Shown in `index.html` under style tag
+- **External CSS**: External CSS is used to change the style of index.html 
