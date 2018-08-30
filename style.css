@@ -1,29 +1,54 @@
 body {
-    background-color: #0A112A;
+    background-color: white;
 }
 #name, #degree, #about_me, #classes, #experience, #mapid, #lived, #year, footer {
-    background-color: #FBFAF8;
-    border-radius: 25px;
-    border: 5px solid #804E49;
     padding: 20px;
     margin: 10px;
 }
-.padding {
-    background-color: #0A112A;
+
+h2 {
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-top: 0;
 }
+p, th, td {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
 #name {
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
 }
-#degree, #year {
+#header {
+    margin: 10px;
     text-align: center;
+    background: rgb(111,0,0);
+    background: linear-gradient(135deg, rgba(111,0,0,1) 0%, rgba(157,0,0,1) 35%, rgba(204,0,0,1) 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
 }
-h2 {
-    color: #804E49;
-    text-align: center;
+
+/* About me */
+#about_me {
+    background: rgb(8,0,142);
+    background: linear-gradient(135deg, rgba(8,0,142,1) 0%, rgba(11,11,161,1) 35%, rgba(0,93,162,1) 100%);
+    color: white;
 }
 
 /* Classes */
+#classes {
+    background: rgb(57,57,70);
+    background: linear-gradient(135deg, rgba(57,57,70,1) 0%, rgba(76,78,98,1) 35%, rgba(101,108,144,1) 100%);
+    color: white;
+}
 #classes table {
+    color: white;
     width: 100%;
     border: none;
     border-collapse: collapse;
@@ -33,25 +58,77 @@ h2 {
     padding: 2px;
 }
 #classes tr:hover {
-    background-color: #E7DECD;
+    background-color: rgba(0,0,0,0.5);
+}
+#classes table tr:first-child:hover {
+    background-color: inherit;
+}
+#classes tr td:first-child {
+    white-space: nowrap;
+}
+#classes tr th:first-child {
+    white-space: nowrap;
+    width: 80px;
 }
 
 /* Experience */
+#experience {
+    background: rgb(2,84,7);
+    background: linear-gradient(135deg, rgba(2,84,7,1) 0%, rgba(7,114,1,1) 35%, rgba(1,147,10,1) 100%);
+    color: white;
+}
 #experience table {
     width: 100%;
     table-layout: fixed;
+    color: white;
 }
 #experience td {
     vertical-align: top;
 }
 
+/* Places */
+#lived {
+    background: rgb(8,0,142);
+    background: linear-gradient(135deg, rgba(8,0,142,1) 0%, rgba(11,11,161,1) 35%, rgba(0,93,162,1) 100%);
+    color: white;
+}
+#lived table {
+    width: 100%;
+    table-layout: fixed;
+}
+#lived td {
+    text-align: center;
+}
+#lived input {
+    margin-bottom: 10px;
+    width: 135px;
+    height: 40px;
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    color: rgb(8,0,142);
+}
+#lived input:hover {
+    background-color: lightgray;
+}
+#lived p {
+    text-align: center;
+}
+
 /* Map */
 #mapid {
+    border: black solid 2px;
     height: 500px;
+
 }
 
 /* Footer */
+footer{
+    background: rgb(111,0,0);
+    background: linear-gradient(135deg, rgba(111,0,0,1) 0%, rgba(157,0,0,1) 35%, rgba(204,0,0,1) 100%);
+}
 footer table {
+    color: white;
     width: 100%;
     table-layout: fixed;
 }
@@ -61,11 +138,8 @@ footer table {
 #name {
     grid-area: name;
 }
-#degree {
-    grid-area: degree;
-}
-#year {
-    grid-area: year;
+#header{
+    grid-area: head;
 }
 #about_me {
     grid-area: about_me;
@@ -87,12 +161,53 @@ footer {
 }
 body {
     display: grid;
-    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-columns: 13vw 37vw 37vw 13vw;
     grid-template-areas:
             ". name name ."
-            ". degree year ."
+            ". head classes ."
             ". about_me classes ."
             ". experience lived ."
             ". map map ."
             ". foot foot .";
+}
+
+@media (min-width: 950px){
+    body {
+        grid-template-columns: 13vw 37vw 37vw 13vw;
+        grid-template-areas:
+                ". name name ."
+                ". head classes ."
+                ". about_me classes ."
+                ". experience lived ."
+                ". map map ."
+                ". foot foot .";
+    }
+}
+@media (max-width: 949px) and (min-width: 400px){
+    body {
+        grid-template-columns: 13vw 74vw 13vw;
+        grid-template-areas:
+                ". name ."
+                ". head ."
+                ". about_me ."
+                ". classes ."
+                ". experience ."
+                ". lived ."
+                ". map ."
+                ". foot .";
+    }
+}
+@media (max-width: 399px) {
+    body {
+        grid-template-columns: 10px auto 10px;
+        grid-template-areas:
+                ". name ."
+                ". head ."
+                ". about_me ."
+                ". classes ."
+                ". experience ."
+                ". lived ."
+                ". map ."
+                ". foot .";
+    }
 }

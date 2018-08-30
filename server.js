@@ -14,7 +14,7 @@ var server = http.createServer(function (req, res) {
             sendFile(res, 'index.html');
             break;
         case '/style.css':
-            sendFile(res, 'style.css');
+            sendFile(res, 'style.css', 'text/css');
             break;
         default:
             res.end('404 not found')
@@ -26,10 +26,10 @@ console.log('listening on 8080');
 
 // subroutines
 
-function sendFile(res, filename) {
+function sendFile(res, filename, content_type = 'text/html') {
 
     fs.readFile(filename, function (error, content) {
-        res.writeHead(200, {'Content-type': 'text/html'});
+        res.writeHead(200, {'Content-type': content_type});
         res.end(content, 'utf-8')
     })
 
