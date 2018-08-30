@@ -38,6 +38,24 @@ h1 {
     margin: 10px;
 }
 
+.div-right {
+    background-color: paleturquoise;
+    width: 42%;
+    float: right;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.div-left {
+    background-color: paleturquoise;
+    width: 42%;
+    float: left;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
 .header-container {
     background-color: teal;
     width: fluid;
