@@ -6,6 +6,11 @@ h1{
   color:white;
   text-align: center;
 }
+
+img {
+  display: inline-block;
+}
+
 .box1{
   background-color:  #005b96;
   border-width: medium;
