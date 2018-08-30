@@ -1,5 +1,5 @@
 Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
-Lane Harrison  
+Jeffrey Estrada
 http://a1-jestradaramos.herokuapp.com
 
 This project shows an basic web page about me. 
