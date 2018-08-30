@@ -2,8 +2,7 @@
 
 <i>This project is assignment 1 for the Webware class at Worcester Polytechnic Institute, where I deployed a basic portfolio website with information about myself using Heroku, Git, HTML, CSS and NodeJS. It showcases some information about me and my professional goals. It also highlights my experience with different tech stacks. You can view the website here: https://a1-hr23232323.herokuapp.com/</i>
 
-Link to website: https://a1-hr23232323.herokuapp.com/
-<br>
+##
 
 ## Technical Achievements
 - **Proved P=NP**: Using a combination of...
