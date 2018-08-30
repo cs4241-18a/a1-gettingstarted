@@ -16,11 +16,11 @@ var server = http.createServer (function (req, res) {
     case '/style.css':
       sendFile(res, 'style.css')
       break
-    case '/breaking bricks_Trim.mp4':
-      sendFile(res, 'breaking brick_Trim.mp4')
+    case '/breakingBricks.mp4':
+      sendFile(res, 'breakingBricks.mp4')
       break
-    case '/Erika in Utah.jpeg':
-      sendFile(res, 'Erika in Utah.jpeg')
+    case '/erikaUtah.jpeg':
+      sendFile(res, 'erikaUtah.jpeg')
       break
     case '/puppies.jpeg':
       sendFile(res, 'puppies.jpeg')
