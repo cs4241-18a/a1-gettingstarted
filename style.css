@@ -1,0 +1,98 @@
+body {
+    background-color: #0A112A;
+}
+#name, #degree, #about_me, #classes, #experience, #mapid, #lived, #year, footer {
+    background-color: #FBFAF8;
+    border-radius: 25px;
+    border: 5px solid #804E49;
+    padding: 20px;
+    margin: 10px;
+}
+.padding {
+    background-color: #0A112A;
+}
+#name {
+    text-align: center;
+}
+#degree, #year {
+    text-align: center;
+}
+h2 {
+    color: #804E49;
+    text-align: center;
+}
+
+/* Classes */
+#classes table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+#classes th, td {
+    text-align: left;
+    padding: 2px;
+}
+#classes tr:hover {
+    background-color: #E7DECD;
+}
+
+/* Experience */
+#experience table {
+    width: 100%;
+    table-layout: fixed;
+}
+#experience td {
+    vertical-align: top;
+}
+
+/* Map */
+#mapid {
+    height: 500px;
+}
+
+/* Footer */
+footer table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+/* Everything below this line is for grid structure */
+
+#name {
+    grid-area: name;
+}
+#degree {
+    grid-area: degree;
+}
+#year {
+    grid-area: year;
+}
+#about_me {
+    grid-area: about_me;
+}
+#classes {
+    grid-area: classes;
+}
+#experience {
+    grid-area: experience;
+}
+#lived {
+    grid-area: lived;
+}
+#mapid {
+    grid-area: map;
+}
+footer {
+    grid-area: foot;
+}
+body {
+    display: grid;
+    grid-template-columns: 15vw 35vw 35vw 15vw;
+    grid-template-areas:
+            ". name name ."
+            ". degree year ."
+            ". about_me classes ."
+            ". experience lived ."
+            ". map map ."
+            ". foot foot .";
+}
