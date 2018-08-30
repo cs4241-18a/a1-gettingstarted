@@ -8,12 +8,12 @@ var server = http.createServer (function (req, res) {
 
   switch( uri.pathname ) {
     case '/':
-      sendStyle(res, 'style.css')
       sendFile(res, 'index.html')
+      sendStyle(res, 'style.css')
       break
     case '/index.html':
-      sendStyle(res, 'style.css')
       sendFile(res, 'index.html')
+      sendStyle(res, 'style.css')
       break
     default:
       res.end('404 not found')
