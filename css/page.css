@@ -1,0 +1,12 @@
+    #container {
+      display: inline-grid;
+      grid-template-areas:
+        "build-top build-top"
+        "build-left build-right";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    #wave {
+        padding-left: 10px;
+    }
