@@ -2,12 +2,10 @@ Sample Readme (delete the above when you're ready to submit, and modify the belo
 ---
 
 Alexander Antaya
-http://codementum-a1.herokuapp.com
-
 https://git.heroku.com/a1-aantaya.git
 
 
-This project shows ...
+This project shows that I have a basic knowledge of git, heroku, HTML, and CSS. I was able to create a simple website that is using Node.js for server communication, HTML/CSS for web design, and Heroku for deployment. This site could be further developed in the future to include JavaScript for an interactive and enhanced UX.
 
 ## Technical Achievements
   Was able to load images, css files, and other HTML files.
