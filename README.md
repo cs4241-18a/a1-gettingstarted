@@ -1,5 +1,5 @@
 Paul-Henry Schoenhagen
-http://pmschoenhagen-a1.herokuapp.com
+http://a1-pmschoenhagen.herokuapp.com
 
 This project shows ...
 
