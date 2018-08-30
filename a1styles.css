@@ -1,0 +1,65 @@
+body {
+    font-family: "Arvo", serif;
+    background-color: lightgrey;
+    padding: 20px;
+}
+.module#page-content {
+    align: center;
+    background: white;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 9px !important;
+    box-shadow: 0 5px 5px #333333; 
+}
+
+.header {
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+}
+#self-header {
+    background-color: lightblue;
+    border-radius: 9px 9px 0px 0px;	
+}
+#exp-header {
+    background-color: lightgreen;
+}
+#quiz-header {
+    background-color: cyan;
+}
+.content {
+    font-family: "Arvo", serif; 
+    padding: 20px;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 100%}
+}
+#question-panel {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: 0em; 
+    text-align: center;
+    padding: 10px; 20px;
+} .active#question-panel {
+    animation: 
+        typing 1.5s steps(40,end);
+}
+
+
+#submit {
+    font-family: "Arvo", serif; 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
