@@ -62,8 +62,8 @@ If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.c
 Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
 ---
 
-Lane Harrison  
-http://codementum-a1.herokuapp.com
+Paul-Henry Schoenhagen
+http://pmschoenhagen-a1.herokuapp.com
 
 This project shows ...
 
