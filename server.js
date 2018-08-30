@@ -9,7 +9,7 @@ var server = http.createServer (function (req, res) {
   switch( uri.pathname ) {
     case '/':
       sendFile(res, 'index.html')
-      sendFile(res, 'css/page.css')
+      sendFile(res, 'css/style.css')
       break
     case '/index.html':
       sendFile(res, 'index.html')
