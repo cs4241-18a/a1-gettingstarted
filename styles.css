@@ -1,0 +1,63 @@
+html { 
+    background: linear-gradient(rgb(239,239,239),rgb(208,208,208),rgb(239,239,239)) 
+}
+
+p {
+    font: 300 20px "GT Walsheim";
+    color: #333;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    align-content: right;
+}
+
+.nav {
+	list-style-type: none;
+}
+
+.nav-options {
+    float: right;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font: 300 20px "GT Walsheim";
+
+}
+
+a:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+li {
+    font: 300 18px "GT Walsheim";
+    color: #333;
+}
+
+h2 {
+    font: 1.5em "GT Walsheim";
+    font-weight: bold;
+    color: #333;
+}
+
+h1 {
+    font: 3em "GT Walsheim";
+    color: #333;
+}
+
