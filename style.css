@@ -22,7 +22,8 @@ h2 {
 }
 
 button {
-    justify-content: center;
+    margin: auto;
+    display: block;
     background-color: rgb(255, 136, 100);
     color: white;
 }
