@@ -16,6 +16,9 @@ var server = http.createServer (function (req, res) {
     case '/bootstrap.css':
       sendFile(res, 'bootstrap.css')
       break
+    case 'prof.jpg':
+      sendFile(res, 'prof.jpg')
+      break
     default:
       res.end('404 not found')
   }
