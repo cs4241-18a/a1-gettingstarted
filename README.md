@@ -20,4 +20,5 @@ This project demonstrates that students understand the fundamental concepts and 
 
 All these design chosen were a way for me to experiment with and implement some of the basic featured html has to offer.
 
-
+### Additional Sources
+- **https://www.w3schools.com/css/tryit.asp?filename=trycss_line-height
