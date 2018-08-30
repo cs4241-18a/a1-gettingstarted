@@ -3,11 +3,13 @@
 }
 
 .header{
-  border-style:dotted;
+  border-top-style:solid;
+  border-right-style:solid;
+  border-left-style:solid;
+  border-bottom-style:dotted;
 }
 
 html{
-  background:#66ff66;
-  /*#cccfff;
+  background:#cccfff;
   /* #66ff66 for an extreme */
 }
