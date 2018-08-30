@@ -32,6 +32,8 @@ p, th, td {
     background: linear-gradient(135deg, rgba(111,0,0,1) 0%, rgba(157,0,0,1) 35%, rgba(204,0,0,1) 100%);
     color: white;
     font-weight: bold;
+}
+#header p {
     font-size: 20px;
 }
 
