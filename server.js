@@ -13,6 +13,15 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
+	case '/experience.html':
+	  sendFile(res, 'experience.html')
+	  break
+	case '/Africa.mp3':
+	  sendFile(res, 'Africa.mp3')
+	  break
+	case '/dancing.gif':
+	  sendFile(res, 'dancing.gif')
+	  break
     default:
       res.end('404 not found')
   }
