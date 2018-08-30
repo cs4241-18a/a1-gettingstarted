@@ -1,0 +1,18 @@
+
+@-webkit-keyframes FancifyGradient {
+    0%{background-position:100% 0%}
+    100%{background-position:0% 100%}
+}
+@keyframes FancifyGradient { 
+    0%{background-position:100% 0%}
+    100%{background-position:0% 100%}
+    
+}
+p, li, h1, h2 {
+  background: linear-gradient(270deg, #a34c1c, #115f8c);
+  background-size: 400% 400%;
+  -webkit-animation: FancifyGradient 0.5s alternate 0.5s infinite;
+  animation: FancifyGradient 0.5s alternate 0.5s infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
