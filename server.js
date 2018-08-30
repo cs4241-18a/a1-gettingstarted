@@ -8,16 +8,16 @@ var server = http.createServer (function (req, res) {
 
   switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html')
+      sendFile(res, 'index.html','text/html')
       break
     case '/index.html':
-      sendFile(res, 'index.html')
+      sendFile(res, 'index.html','text/html')
       break
 	case '/styles.css':
-      sendFile(res, 'styles.css')
+      sendFile(res, 'styles.css','text/css')
       break
 	case '/AGD_image.png':
-	  sendFile(res, 'AGD_image.png')
+	  sendFile(res, 'AGD_image.png', 'image/png')
 	  break
     default:
       res.end('404 not found')
@@ -29,10 +29,10 @@ console.log('listening on 8080')
 
 // subroutines
 
-function sendFile(res, filename) {
+function sendFile(res, filename, ct) {
 
   fs.readFile(filename, function(error, content) {
-    res.writeHead(200, {'Content-type': 'text/html'})
+    res.writeHead(200, {'Content-type': ct})
     res.end(content, 'utf-8')
   })
 
