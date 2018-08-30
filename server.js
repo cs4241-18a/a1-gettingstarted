@@ -14,7 +14,7 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'index.html')
       break
     case '/background':
-      case
+      break
     default:
       res.end('404 not found')
   }
