@@ -10,7 +10,7 @@ var server = http.createServer (function (req, res) {
     case '/':
         sendFile(res, 'index.html');
         break;
-        case 'stylesheet.css':
+        case '/stylesheet.css':
           sendCssFile(res, 'stylesheet.css');
           break;
       case '/index.html':
