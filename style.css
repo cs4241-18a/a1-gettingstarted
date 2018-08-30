@@ -67,6 +67,7 @@ div.thumbnail img {
     padding: 20px;
 }
 
+/* Spacer for bottom row of skills */
 div.spacer {
     box-shadow: none;
 }
@@ -257,4 +258,29 @@ div.thumbnail .text-container .experience-level {
     /*height: 50px;*/
     height: 60px;
     margin-top: 65px;
+}
+
+/* ------------- Image Gallery ------------- */
+/* Enable images to be stacked next to each other */
+#image-gallery {
+    padding: 0 5.3rem;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#image-gallery * {
+    box-sizing: border-box;
+}
+
+/* Split container width into 3 columns */
+.gallery-column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    width: 100%;
+    margin-top: 8px;
 }
