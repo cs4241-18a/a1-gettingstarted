@@ -66,5 +66,13 @@
         </p>
     </div>
     <div id="footerImage" value=0></div>
+    <script>
+      document.getElementById("footerImage").addEventListener("touch", function() {
+        changeMode();
+      });
+      document.getElementById("footerImage").addEventListener("click", function() {
+        changeMode();
+      });
+    </script>
   </body>
 </html>
