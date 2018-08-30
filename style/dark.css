@@ -1,0 +1,17 @@
+body {
+    background:#373737;
+    color: #eeeeee;
+}
+
+h1, h2 {
+    color: #4ec9b0;
+}
+
+a:visited {
+    color: #a56ba5;
+}
+
+#footerImage {
+    background: url(../img/umi_cry.png) no-repeat right bottom transparent;
+    background-size: cover;
+}
