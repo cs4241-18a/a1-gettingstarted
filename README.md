@@ -4,34 +4,21 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku
 Peter Maida  
 http://a1-petermaidarobot.herokuapp.com
 
-This project shows the deployment of a simple website using the Heroku web platform (http://www.heroku.com).
+This project shows the deployment of a simple website using the Heroku web platform (http://www.heroku.com). It is intended as a chance to get up to speed on Git, GitHub, and Heroku. The website itself is an about page that has information about me.
 
 ## Technical Achievements
-- **Included Links**: The course descriptions have been linked to the listed courses under the experience section of the website. What I have learned when adding the links and changing the colors of the link, visited, hover, active states is that the ordering of them in the css matters, as one may override the other. The rules for ordering states is that hover must come after link and visited, and that active must come after hover. There are areas where these states overlap, and that is why the importance of each state matters. The source of this can be found at https://www.w3schools.com/css/css_link.asp
-- **Included Image**: a..
-- **Included Alternate CSS**: a..
+- **Links**: The course descriptions have been linked to the listed courses under the experience section of the website. What I have learned when adding the links and changing the colors of the link, visited, hover, active states is that the ordering of states in the css matters, as one may override the other. The rules for ordering states is that hover must come after link and visited, and that active must come after hover. There are areas where these states overlap, and that is why the importance of each state matters. The source of this can be found at https://www.w3schools.com/css/css_link.asp
+- **Classes**: By following a walkthrough on Youtube I was able to create classes for different sections of the HTML. By creating these classes, it is much easier to edit variables in an alternative CSS file, which extracts presentation features from the HTML allowing it to focus on semantics.
 
 ### Design Achievements
-- **Alignment**: Shown in `style.css`, the code...
-- **Color**: Shown in `style.css`, the code...
+- **Alignment**: Shown..
+- **Color**: Shown..
 
 
 Sample Readme (delete the below when you're ready to submit, and modify the above with your links and descriptions)
 ---
-This assignment is a "warm-up" exercise.
-You will simply deploy the starting Web site that you will use this term to the [Heroku Web platform](http://www.heroku.com/).
 
-Refer to [Getting started with node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
-
-(Thanks to past instructors of the course, here is a short [getting started with Heroku movie](http://web.cs.wpi.edu/~gpollice/Movies/HerokuGettingStarted/) that may also help.)
-
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Heroku.
-If you already know these, great.
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation.
-In other words, don't just get your website up and done. You will need skill with these tools throughout the rest of the course.
-
-Assignment details
----
+Assignment details:
 
 Do the following to complete this assignment:
 
