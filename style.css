@@ -1,0 +1,20 @@
+body {
+
+	background-image: url(/patterns/newspaper.jpg);
+	background-repeat: repeat-x repeat-y;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+img {
+  -webkit-filter: sepia(60%);
+  
+}
+
+.header {
+	font-family: 'New Rocker', cursive;
+}
+
+#curly {
+	margin: 0 auto;
+}
+
