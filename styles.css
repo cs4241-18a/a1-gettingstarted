@@ -1,0 +1,55 @@
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+li {
+    list-style: none;
+}
+
+#classes {
+    display: flex;
+    text-align: center;
+}
+
+.class-col {
+    width: 33%;
+}
+
+#technologies {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-flow: row wrap;
+    color: white;
+}
+
+.tech-green, .tech-yellow, .tech-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 30%;
+    margin: 1rem;
+}
+
+.tech-green {
+    background-color: green;
+}
+
+.tech-yellow {
+    background-color: #FFCC00;
+}
+
+.tech-red {
+    background-color: red;
+}
+
+.tech-title {
+    display: inline;
+}
+
+.tech-experience {
+    display: none;
+    padding: 1em;
+}
