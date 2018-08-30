@@ -1,4 +1,4 @@
-# Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku
+# Hello World: Basic Deployment w/ Git, GitHub, Heroku
 ## Harsh Rana 
 <br>
 Link to website: https://a1-hr23232323.herokuapp.com/
