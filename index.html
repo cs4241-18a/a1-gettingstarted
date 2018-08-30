@@ -5,7 +5,7 @@
     <style>
     * {
       font-size: 100%;
-      font-family: Courier;
+      font-family: courier;
     }
     .header {
     background-color: #F1F1F1;
@@ -21,6 +21,9 @@
       width: 50%;
       height: 2em;
       background: #ddddd5;
+      /* this should fill before the slider thumb */
+      background-color: #9a905d;
+      overflow: hidden;
       outline: solid;
       opacity: 0.8;
       -webkit-transition: .2s;
@@ -33,6 +36,12 @@
       height: 25px;
       background: #ff0000;
       cursor: pointer;
+    }
+    .slider::-webkit-slider-runnable-track {
+      height: 10px;
+      -webkit-appearance: none;
+      color: #13bba4;
+      margin-top: -1px;
     }
     </style>
   </head>
