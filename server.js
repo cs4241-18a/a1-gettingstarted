@@ -6,13 +6,19 @@ var http = require('http')
 var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
 
-  switch( uri.pathname ) {
+    switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html')
-      break
+	sendFile(res, 'index.html')
+	break
     case '/index.html':
-      sendFile(res, 'index.html')
-      break
+	sendFile(res, 'index.html')
+	break
+    case '/a1styles.css':
+	sendFile(res, 'a1styles.css')
+	break
+    case '/a1scripts.css':
+	sendFile(res, 'a1scripts.js')
+	break
     default:
       res.end('404 not found')
   }
