@@ -2,7 +2,7 @@ Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku
 ===
 
 Amanda Pennie 
-http://codementum-a1.herokuapp.com
+http://a1-anpenniewpi.herokuapp.com
 
 This project shows a basic HTML page with information about me. 
 
