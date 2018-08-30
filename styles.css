@@ -12,7 +12,7 @@
 .typewriter h1 {
   text-align:center;
   font-size: 4.5vw;
-  width: 75%;
+  width: 100%;
   -webkit-animation: type 3s steps(40, end);
   animation: type 3s steps(40, end);
   -webkit-animation-fill-mode: forwards;
@@ -23,7 +23,7 @@
 .typewriter h2 {
   text-align:center;
   font-size: 3.0vw;
-  width: 50%;
+  width: 100%;
   opacity: 0;
   -webkit-animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
   animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
@@ -79,9 +79,19 @@ a:visited {
     font-size: 2.0vw;
     padding-bottom: 20px;
   }
+  .typewriter h1 {
+    text-align:center;
+    font-size: 4.5vw;
+    width: 100%;
+    -webkit-animation: type 3s steps(40, end);
+    animation: type 3s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+  }
   .typewriter h2 {
+    text-align: center;
     font-size: 2.1vw;
-    width: 50%;
+    width: 100%;
     opacity: 0;
     -webkit-animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
     animation: type2 3s steps(20, end), blink .5s step-end infinite alternate;
