@@ -1,6 +1,6 @@
 // Retrieve images from Unsplash API
 let request = new XMLHttpRequest();
-request.open('GET', 'https://api.unsplash.com/photos/random?client_id=9da242ad85084ad7ca951738b8e7d9478fd637ba6d41cf835be09e7e1628c9dc&orientation=landscape&count=30', true);
+request.open('GET', 'https://api.unsplash.com/photos/random?client_id=ac378ef2949e144ad716c3eac981a45f6d290ea1e04b6918c55a58b8bad0b45c&orientation=landscape&count=30', true);
 
 request.onload = function() {
     if (request.status >= 200 && request.status < 400) {

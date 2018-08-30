@@ -289,3 +289,13 @@ div.thumbnail .text-container .experience-level {
     width: 100%;
     margin-top: 8px;
 }
+
+/* View Counter */
+.counterimg, .counter-title {
+    position: absolute;
+    right: 5px;
+}
+
+.counterimg {
+    padding-bottom: 5px;
+}
