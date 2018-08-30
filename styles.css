@@ -1,0 +1,168 @@
+h1 {
+	font-family: Arial Black;
+	font-size: 3em;
+	text-align: center;
+}
+
+h2 {
+	font-family: Arial Black;
+	font-size: 2em;
+}
+
+ul {
+	font-size: 1.33em;
+	font-family: Verdana;
+}
+
+p {
+	margin: 0.1em;
+	padding: 0.1em;
+	font-size: 1.33em;
+	font-family: Verdana;
+}
+
+body {
+	margin-left: 450px;
+	margin-right: 450px;
+	background-color: rgb(100, 38, 38);
+	color: white;
+}
+
+
+.triangle {
+	transform: rotate(-90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 83;
+	left: 90;
+}
+.triangle:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 73;
+	left: 80;
+}
+
+.triangle1 {
+	transform: rotate(90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 83;
+	left: 170;
+}
+.triangle1:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 73;
+	left: 160;
+}
+
+.triangle2 {
+	transform: rotate(90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 197;
+	left: 170;
+}
+.triangle2:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 187;
+	left: 160;
+}
+
+.triangle3 {
+	transform: rotate(-90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 197;
+	left: 90;
+}
+.triangle3:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 187;
+	left: 80;
+}
+
+.triangle4 {
+	transform: rotate(-90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 140;
+	left: 180;
+}
+.triangle4:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 130;
+	left: 170;
+}
+
+.triangle5 {
+	transform: rotate(90deg);
+	transition: top 0.3s ease-in, left 0.3s ease-in,
+				border-left 0.3s ease-in,
+				border-right 0.3s ease-in,
+				border-bottom 0.3s ease-in;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 60px solid rgb(80, 38, 38);
+	position: absolute;
+	z-index: 0;
+	top: 140;
+	left: 80;
+}
+.triangle5:hover {
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 75px solid white;
+	z-index: 1;
+	top: 130;
+	left: 70;
+}
