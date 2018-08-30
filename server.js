@@ -14,7 +14,7 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'index.html')
       break
 	case '/wave.gif':
-	  sendFile(res, 'wave.gif')
+	  sendFile(res, 'img/wave.gif')
 	  break
     default:
       res.end('404 not found')
