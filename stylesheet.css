@@ -18,9 +18,9 @@ ul {
     list-style-type:none
 }
 
-/*li {*/
-    /*cursor: pointer;*/
-/*}*/
+li {
+    cursor: pointer;
+}
 
 a:hover {
     color: red;
@@ -33,6 +33,5 @@ a:link {
 a:visited {
     color: purple;
 }
-
 
 
