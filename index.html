@@ -1,27 +1,70 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <h1>Information about Erika Snow</h1>
+    <img src="erika.jpeg" alt="Erika" style="width:50%;height:50%;" class="center">
     <p>
-      [Self introduction]
+      I'm a senior (Class of 2019) studying Robotics Engineering and Computer Science. I'm from Foxborough
+      MA, but despite living where the Patriot's play, I couldn't care less about football. I have an older
+      brother and two puppies back home, who I love to death (the dogs, not my brother; but I guess he's ok 
+      too).
     </p>
+    <img src="puppies.jpeg" alt="Charlie and Spencer" style="width:50%;height:50%;" class="center">
     <p>
-      [Major and other information]
+      <b>Fun Facts:</b><br />
+      I've earned 3 blackbelts in different forms of martial arts, 
+      and I was the first female on my high school's wrestling team. I spent the summer in Colorado for 
+      an internship, and I climbed my first 14'er while I was there. I wanted to die. I am the pancake master.
     </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="center">
+      <button onClick="showVid()" type="button">Wanna see something cool?</button>
+    </div>
+    <div id="vidDiv" class="center" style="display:none;">
+      <video width="540" height="360" controls>
+        <source src="bricks.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <script>
+    function showVid() {
+      var x = document.getElementById("vidDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 
     <h2>Experience</h2>
     <p>
-      Working experience
+      <b>Classes I've taken:</b><br />
+      Software Engineering, Operating Systems, Algorithms, Foundations of Computer Science, 
+      Theory of Computation, etc.
+    </p>
+    <p>
+      <b>Working experience:</b>
     </p>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+      <li>HTML - none</li>
+      <li>CSS - minimal</li>
+      <li>Java - a lot</li>
+      <li>JavaScript - barely any, but enough to know not having types bothers me SO MUCH</li>
+      <li>Ruby - none</li>
+      <li>Python - none</li>
+      <li>Unit Testing - a lot</li>
+    </ul>
+
+    <p>
+      <b>Internships:</b>
+    </p>
+    <ul>
+      <li>Software Developer at Compassion International</li>
     </ul>
   </body>
 </html>
