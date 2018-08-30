@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/light.css" id="mode">
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="scripts/main.js"></script>
+    <script>initMode();</script>
   </head>
   <body>
     <div class="content">
@@ -65,7 +65,7 @@
           </table>
         </p>
     </div>
-    <div id="footerImage" value=0></div>
+    <div id="footerImage"></div>
     <script>
       document.getElementById("footerImage").addEventListener("touch", function() {
         changeMode();
