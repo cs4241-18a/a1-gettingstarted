@@ -1,0 +1,53 @@
+
+<style type="text/css">
+h1{
+    color:white;
+    font-family:Georgia;
+    
+}
+
+h2{
+    font-family:Georgia;
+    
+}
+
+#title {
+    background-color: #23519b;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+#footer {
+    background-color:#23519b;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+.BasicInfo{
+    color: #709de5;
+    font-family: Comic Sans MS;
+    line-height:2
+    
+}
+
+.Classes{
+    color: #709de5;
+    font-family: Comic Sans MS;
+    line-height:2;
+    style="margin-left:40%";
+    line-height = 30px;
+    align = "left";
+    
+}
+.Language{
+    color: #709de5;
+    font-family: Comic Sans MS;
+    line-height:2;
+    style="margin-left:45%";
+    align = "left";
+    
+}
+
