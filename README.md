@@ -7,7 +7,7 @@ https://a1-adonayz.herokuapp.com/
 This project shows ...
 
 ## Technical Achievements
-- **Depolyed Page on Heroku: Created an app on Heroku using Heroku command line interface and used git push to deploy local project onto the Heroku app.
+- **Depolyed Page on Heroku**: Created an app on Heroku using Heroku command line interface and used git push to deploy local project onto the Heroku app.
 - **Edited HTML file**:
 
 ### Design Achievements
