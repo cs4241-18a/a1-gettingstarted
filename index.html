@@ -18,8 +18,26 @@
       <b>Fun Facts:</b><br />
       I've earned 3 blackbelts in different forms of martial arts, 
       and I was the first female on my high school's wrestling team. I spent the summer in Colorado for 
-      an internship, and I climbed my first 14'er while I was there. I wanted to die.
+      an internship, and I climbed my first 14'er while I was there. I wanted to die. I am the pancake master.
     </p>
+    <button onClick="showVid()" type="button">Wanna see something cool?</button>
+    <div id="vidDiv">
+      <video width="320" height="240" controls>
+        <source src="breaking bricks_Trim.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    
+    <script>
+    function showVid() {
+      var x = document.getElementById("vidDiv");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
 
     <h2>Experience</h2>
     <p>
