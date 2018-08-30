@@ -1,6 +1,6 @@
 https://a1-mariana0pachon.herokuapp.com/
 ---
-This project contains my main interests and the personal projects I have developed in the different fields. Additionally, it includes information on my previous courses and experiences relevant to this course. To accomplish the project I used a combination of HTML and CSS. The project includes stylesheets that I wrote as well as BootStrap stylesheets. The main goals of this project were to achieve multiple Design Achievements and one specific Technical Achievement. These will be described in detail in the following sections.
+This project contains my main interests and links to personal projects I have developed in the different fields. Additionally, it includes information on my previous courses and experiences relevant to this course. To accomplish the project I used a combination of HTML and CSS. The project includes stylesheets that I wrote as well as one external JavaScript file. The main goals of this project were to achieve multiple Design Achievements and two specific Technical Achievements. These will be described in detail in the following sections.
 
 ## Technical Achievements
 
