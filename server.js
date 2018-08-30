@@ -13,8 +13,6 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
-    case '/IMG_5771.jpg':
-      break
     case '/background':
       case
     default:
