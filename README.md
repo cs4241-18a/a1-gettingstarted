@@ -21,5 +21,6 @@ me to learn about the different types of relative length and where they might be
 of the image using vmin in order to accomodate screens of various sizes. I was particularly thinking of people who were using 
 mobile devices or people who have flipped their monitors to be longer vertically in order to see more code on the screen.
 I also foun that a lot of sites that do resize images in this way bound it by vh because computer monitors are usually widescreen. 
+On screens that are widescreen, the use of vmin is essentially the use of vh to limit width and height. 
 
 
