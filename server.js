@@ -15,6 +15,10 @@ var server = http.createServer (function (req, res) {
       break
     case '/IMG_5771.jpg':
       break
+    case '/IMG_5976.jpg':
+      break
+    case '/IMG_5983.jpg':
+      break
     default:
       res.end('404 not found')
   }
