@@ -14,7 +14,7 @@ function changeMode() {
 
 
 $(document).ready(function() {
-    $("#footerImage").on("click touchstart",function() {
+    $("#footerImage").on("click touch",function() {
         changeMode();
     });
 })
