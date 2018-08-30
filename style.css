@@ -1,6 +1,6 @@
 body {
 
-	background-image: url(patterns/newspaper.jpg);
+	background-image: url(/patterns/newspaper.jpg);
 	background-repeat: repeat-x repeat-y;
 	font-family: 'Gentium Book Basic', serif;
 }
