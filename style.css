@@ -22,6 +22,7 @@ h2 {
 }
 
 button {
-    background-color: rgb(255, 113, 70);
+    justify-content: center;
+    background-color: rgb(255, 136, 100);
     color: white;
 }
