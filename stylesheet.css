@@ -1,4 +1,7 @@
 
+div {
+    list-style: none;
+}
 
 ul {
     list-style-type:none
