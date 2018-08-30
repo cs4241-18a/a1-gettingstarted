@@ -9,6 +9,10 @@
   border-bottom-style:dotted;
 }
 
+body{
+  text-align:center;
+}
+
 html{
   background:#cccfff;
   /* #66ff66 for an extreme */
