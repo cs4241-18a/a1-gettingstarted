@@ -8,10 +8,26 @@
     }
     .header {
       background-color: #F1F1F1;
-      text-align: center;
+      height: 55px;
       padding: 20px;
     }
-    .column.main {
+    .header-middle {
+      text-align: center;
+      /* width: 300px; */
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .header-right {
+      float: right;
+      /* width: 300px; */
+      margin-right: 20px;
+    }
+    .header-left {
+      float: left;
+      /* width: 300px; */
+      margin-left: 20px;
+    }
+    .column {
       padding-left: 25%;
       padding-right: 25%;
     }
@@ -50,9 +66,17 @@
   </head>
   <body>
     <div class="header">
-      <h1>Jason King</h1>
+      <div class="header-left">
+        <img src="images/thetachi.jpg">
+      </div>
+      <div class="header-right">
+        <img src="images/thetachi.jpg">
+      </div>
+      <div class="header-middle">
+        <h1>Jason King</h1>
+      </div>
     </div>
-    <div class="column main">
+    <div class="column">
       <p>
         Welcome to my webpage!
       </p>
