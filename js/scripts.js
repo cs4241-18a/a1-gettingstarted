@@ -7,3 +7,7 @@ function showCourse() {
     document.getElementById("experience").style.display = "none";
     document.getElementById("courses").style.display = "block";
 }
+
+function showInfo(){
+    document.getElementById("info").style.display = "block";      
+}
