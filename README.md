@@ -4,7 +4,7 @@
 
 ##
 
-This project dives deeper into the design and technical space than what is highlighted in the assigment by exploring TODO-1 and TODO-2. These are further highlighted below.
+This project dives deeper into the design and technical space than what is highlighted in the assigment by exploring TODO-1 and TODO-2. These are further elaborated below.
 
 ## Technical Achievements
 - **Proved P=NP**: Using a combination of...
