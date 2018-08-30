@@ -176,7 +176,7 @@
       <updated>1535578084016</updated>
       <workItem from="1535578086194" duration="2411000" />
       <workItem from="1535580525650" duration="2891000" />
-      <workItem from="1535600370674" duration="310000" />
+      <workItem from="1535600370674" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="updated index to contain my info">
       <created>1535580069296</created>
@@ -189,11 +189,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5612000" />
+    <option name="totallyTimeSpent" value="5889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="341" y="17" width="1400" height="1000" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2496329" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
