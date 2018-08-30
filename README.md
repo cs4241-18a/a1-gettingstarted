@@ -1,6 +1,7 @@
 # Hello World: Basic Deployment w/ Git, GitHub, Heroku
-## Harsh Rana 
+## Author: Harsh Rana 
 Link to website: https://a1-hr23232323.herokuapp.com/
+<br>
 
 This project shows ...
 
