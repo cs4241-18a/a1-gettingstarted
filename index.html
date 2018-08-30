@@ -4,23 +4,26 @@
     <meta charset="utf-8">
   </head>
   <style>
-    table, th, td {
-	    border: 1px solid gray;
-        border-collapse: collapse;
-    }
-    th, td {
-	    padding: 5px;
-        text-align: left;
-    }
+	table {
+		border: 1px solid white;
+	}
     h2, h4 {
-	    color:darkred;
+		color:darkred;
     }
     body {
-	    color:darkgray;
+		color: darkgray;
     	background-color: black;
     }
 	div {
-		clear: left;
+	    clear: left;
+		padding: 5px;
+	}
+	.cssRow {
+		background-color: black;
+	}
+	.cssCell {	
+		font-family: times;
+		font-size: 15px;
 		padding: 5px;
 	}
   </style>
@@ -72,39 +75,32 @@
     </p>
 	</div>
     <h4 style="clear:left">Skills</h4>
-    <table style="width:25%">
-	    <tr>
-		    <th>Technologies/Methods</th>
-		    <th>Level of Experience</th>
-		    </tr>
-		    <tr>
-			    <td>HTML</td>
-			    <td>some</td>
-		    </tr>
-		    <tr>
-			    <td>CSS</td>
-			    <td>none</td>
-		    </tr>
-		    <tr>
-			    <td>Java</td>
-			    <td>a lot</td>
-		    </tr>
-		    <tr>
-			    <td>JavaScript</td>
-			    <td>some</td>
-		    </tr>
-		    <tr>
-			    <td>Ruby</td>
-			    <td>none</td>
-		    </tr>
-		    <tr>
-			    <td>Python</td>
-			    <td>none</td>
-		    </tr>
-		    <tr>
-			    <td>Unit testing</td>
-			    <td>none</td>
-		    </tr>
-    </table>
+    <div id="skillstable"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	google.charts.load('current', {'packages':['table']});
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+		var data = google.visualization.arrayToDataTable([
+			['Technology/Method', 'Level of Experience'],
+			['HTML', 'some'],
+			['CSS', 'none'],
+			['Java', 'a lot'],
+			['JavaScript', 'some'],
+			['Ruby', 'none'],
+			['Python', 'none'],
+			['Unit testing', 'none']]);
+			
+		var cssClassNames = {
+			'headerRow': 'cssRow',
+			'tableRow': 'cssRow',
+			'headerCell': 'cssCell',
+			'tableCell': 'cssCell'};
+
+		var table = new google.visualization.Table(document.getElementById('skillstable'));
+		table.draw(data, {alternatingRowStyle: false, cssClassNames: cssClassNames, width:'25%'});
+	}
+    </script>
   </body>
 </html>
