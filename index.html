@@ -2,34 +2,56 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <style>
-    body {background-color: powderblue;}
     h1   {
           color: steelblue;
           font-family: verdana;
           font-size: 300%;
           text-align: center;
          }
-    p    {color: red;}
-    .center {
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
+    h2   {
+          color: steelblue;
+          font-family: verdana;
+          font-size: 200%;
+          text-align: center;
+         }
+    h3   {
+          color: steelblue;
+          font-family: verdana;
+          font-size: 130%;
+          text-align: center;
+         }
+
+
+    p    {color: black;}
+
+    .wrapper {
+        max-width: calc(800px - (30px * 2));
+        margin-right: auto;
+        margin-left: auto;
+        padding: 30px 70px;
+}
+
+    .profilepic {
+          float: right;
+          height: 200px;
+          margin-left: 32px;
+          margin-bottom: 16px;
+          border-radius: 50%;
+          padding: 20px;
          }
     </style>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about Trevor Weiler</h1>
+  <div class="wrapper">
     <p>
-    <img src="profilepic.jpg" style="width:500px" alt="Profile Picture" class="center">
+    <img class="profilepic" src="profilepic.jpg">
     </p>
-    <p>
-      I am a member of the Class of 2020 at WPI
-    </p>
-    <p>
-      Computer Science Major / Interactive Media and Game Development Minor
-    </p>
+    <em>
+    <h1>Trevor Weiler</h1>
+    <h2>WPI Class of 2020</h2>
+    <h3>Computer Science Major / Interactive Media and Game Development Minor</h3>
+    </em>
     <h2>Experience</h2>
     <p>
       Previous Computer Science Courses I Have Taken at WPI
@@ -62,5 +84,6 @@
       <a href="https://www.facebook.com/trevor.weiler.7"><img src="facebook.png" style="width:82px; height:86px" title="Facebook Page" alt="Facebook"></a>
       <a href="https://www.instagram.com/trevor_weiler/"><img src="instagram.png" style="width:82px; height:86px" title="Instagram Page" alt="Instagram"></a>
     </p>
+ </div>
   </body>
 </html>
