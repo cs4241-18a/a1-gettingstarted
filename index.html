@@ -2,26 +2,43 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style_stuff.css">
+    <script type="text/javascript" src="scripts.js"></script>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
+    <div id=d_top>
+      <h1 id=h_top><u>Information about Kenneth Levasseur</u></h1>
+    </div>
+    <h3 id="h_intro" onmouseenter="expand('p_intro')" onmouseleave="collapse('p_intro')" onclick="toggleHold('p_intro')">
+      + Self Introduction
+    </h3>
+    <p id="p_intro" style="display:none">
+      I'm a Senior CS Major with relatively little web development experience, but I'm excited to
+      start building beter front-ends.
     </p>
-    <p>
-      [Major and other information]
+    <h3 id="h_acad" onmouseenter="expand('p_acad')" onmouseleave="collapse('p_acad')" onclick="toggleHold('p_acad')">
+      + Academics
+    </h3>
+    <p id="p_acad" style="display:none">
+      - Senior at WPI, class of 2019<br />
+      - Major: Computer Science<br />
+      - Contact: klevasseur@wpi.edu
     </p>
-    <p>
-      [Other things]
+    <h3 id="h_expr" onmouseenter="expand('p_expr')" onmouseleave="collapse('p_expr')" onclick="toggleHold('p_expr')">
+      + Experience
+    </h2>
+    <p id="p_expr" style="display:none">
+      Skills/Certs<br />
+      - JNCIA(2018-2021)<br />
+      - Java<br />
+      - C#<br />
+      - Android<br />
+      - Python<br />
+      Working Experience<br />
+      - Current Employment: WPI Network Operations - Senior Network Asst.<br />
+      - Cigna - Software Development<br />
+      - Tallan - Software Development<br />
+      </ul>
     </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
   </body>
 </html>
