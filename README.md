@@ -14,6 +14,8 @@ This project demonstrates that students understand the fundamental concepts and 
 - **Added photos [photos of past digital artwork]**: Shown in index.htlm and server.js
 - **Created a link to another website [the words Jackpine Technology are a link to the company's website]**: Shown in index.htlm
 - **Created a list of related classes**: Shown in index.htlm
+- **Changed color of background**: Shown in index.htlm
+- **Changed color of Large Text to Blue**: Shown in index.htlm
 
 All these design chosen were a way for me to experiment with and implement some of the basic featured html has to offer.
 
