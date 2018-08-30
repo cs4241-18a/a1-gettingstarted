@@ -12,11 +12,9 @@ function changeMode() {
     }
 }
 
+
 $(document).ready(function() {
-    $("#footerImage").on("click",function() {
-        changeMode();
-    });
-    $("#footerImage").on("touchstart",function() {
+    $("#footerImage").on("click touchstart",function() {
         changeMode();
     });
 })
