@@ -7,43 +7,21 @@ var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
 
   switch( uri.pathname ) {
-
     case '/':
     sendFile(res, 'index.html')
     break
-
     case '/index.html':
     sendFile(res, 'index.html')
     break
-
     case '/style.css':
     sendFile(res, 'style.css')
     break
-
-    case '/introbg.jpg':
-    sendFile(res, 'introbg.jpg')
+    case '/particles.min.js':
+    sendFile(res, 'particles.min.js')
     break
-
-    case '/interestsbg.jpg':
-    sendFile(res, 'interestsbg.jpg')
+    case '/particles-config.js':
+    sendFile(res, 'particles-config.js')
     break
-
-    case '/coursesbg.jpg':
-    sendFile(res, 'coursesbg.jpg')
-    break
-
-    case '/expbg.jpg':
-    sendFile(res, 'expbg.jpg')
-    break
-
-    case '/educationbg.jpg':
-    sendFile(res, 'educationbg.jpg')
-    break
-
-    case '/favicon.png':
-    sendFile(res, 'favicon.png')
-    break
-
     default:
     res.end('404 not found')
   }
@@ -60,4 +38,5 @@ function sendFile(res, filename) {
     res.writeHead(200, {'Content-type': 'text/html'})
     res.end(content, 'utf-8')
   })
+
 }
