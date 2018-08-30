@@ -1,27 +1,199 @@
 <html lang="en">
-  <head>
+<head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-    <h2>Experience</h2>
+    <!-- next 2 links are for the map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+            integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+            crossorigin=""></script>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700|Poppins" rel="stylesheet">
+</head>
+<body>
+<h1 id="name">Lucas Sacherer</h1>
+<div id="header">
+    <p>B.S. in Computer Science</p>
+    <p>WPI Class of 2019</p>
+</div>
+<div id="about_me">
+    <h2>About Me</h2>
     <p>
-      Working experience
+        I'm a senior at WPI interested in massively distributed applications. I've worked on anything from machine
+        learning
+        research to mission critical systems that handle 500+ requests a second. I'm currently taking CS4533 (Compilers)
+        and
+        this is the first term of my MQP, where I will be contributing to a distributed machine learning system that
+        detects
+        fraud in financial transactions. I'm excited to learn more about the web and can't wait to see how much I will
+        improve over the coming months!
     </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+</div>
+
+<div id="classes">
+    <h2>Courses</h2>
+    <table>
+        <tr>
+            <th>Course #</th>
+            <th>Course Name</th>
+        </tr>
+        <tr>
+            <td>CS 1102</td>
+            <td>Accelerated Intro to Program Design</td>
+        </tr>
+        <tr>
+            <td>CS 2011</td>
+            <td>Introduction to Machine Organization and Assembly</td>
+        </tr>
+        <tr>
+            <td>CS 2022</td>
+            <td>Discrete Mathematics</td>
+        </tr>
+        <tr>
+            <td>CS 210X</td>
+            <td>Accelerated Object-Oriented Design Concepts</td>
+        </tr>
+        <tr>
+            <td>CS 2303</td>
+            <td>Systems Programming Concepts</td>
+        </tr>
+        <tr>
+            <td>CS 3013</td>
+            <td>Operating Systems</td>
+        </tr>
+        <tr>
+            <td>CS 3133</td>
+            <td>Foundations of Computer Science</td>
+        </tr>
+        <tr>
+            <td>CS 3431</td>
+            <td>Database Systems I</td>
+        </tr>
+        <tr>
+            <td>CS 3516</td>
+            <td>Computer Networks</td>
+        </tr>
+        <tr>
+            <td>CS 3733</td>
+            <td>Software Engineering</td>
+        </tr>
+        <tr>
+            <td>CS 4120</td>
+            <td>Analysis of Algorithms</td>
+        </tr>
+        <tr>
+            <td>CS 4513</td>
+            <td>Distributed Systems</td>
+        </tr>
+    </table>
+</div>
+
+<div id="experience">
+    <h2>Experience</h2>
+    <table>
+        <tr>
+            <td>
+                <p>Language Experience:</p>
+                <ul>
+                    <li>HTML: some</li>
+                    <li>CSS: some</li>
+                    <li>Java: a lot</li>
+                    <li>JavaScript: some</li>
+                    <li>Ruby: none</li>
+                    <li>Python: a lot</li>
+                    <li>Unit Testing: a lot</li>
+                </ul>
+            </td>
+            <td>
+                <p>Working Experience:</p>
+                <ul>
+                    <li>Research Assistant, WPI </li>
+                    <li>Software Engineer Intern, Worldpay</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="lived">
+    <h2>Places I've Lived</h2>
+    <table>
+        <tr>
+            <td><input type="button" id="highland_park" value="Highland Park, US"></td>
+            <td><input type="button" id="strasbourg" value="Strasbourg, France"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="lake_bluff" value="Lake Bluff, US"></td>
+            <td><input type="button" id="egham" value="Egham, UK"></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="worcester" value="Worcester, US"></td>
+            <td><input type="button" id="holtzheim" value="Holtzheim, France"></td>
+        </tr>
+    </table>
+    <p>Click to view on map</p>
+</div>
+<div id="mapid"></div>
+
+<footer>
+    <table>
+        <tr>
+            <th>Made by Lucas Sacherer</th>
+            <th>WPI CS4241</th>
+            <th>8/29/2018</th>
+        </tr>
+    </table>
+</footer>
+
+<script>
+    const mymap = L.map('mapid').setView([46.41, -32.17], 4);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(mymap);
+
+    const strasbourg = [48.5842, 7.7594];
+    const egham = [51.43070, -0.54803];
+    const holtzheim = [48.55833, 7.63280];
+    const highland_park = [42.18520, -87.80012];
+    const lake_bluff = [42.27978, -87.84604];
+    const worcester = [42.27390, -71.80837];
+    const marker1 = L.marker(strasbourg).addTo(mymap);
+    const marker2 = L.marker(egham).addTo(mymap);
+    const marker3 = L.marker(holtzheim).addTo(mymap);
+    const marker4 = L.marker(highland_park).addTo(mymap);
+    const marker5 = L.marker(lake_bluff).addTo(mymap);
+    const marker6 = L.marker(worcester).addTo(mymap);
+    marker1.bindPopup("<span class='popup'>Strasbourg</span>");
+    marker2.bindPopup("<span class='popup'>Egham</span>");
+    marker3.bindPopup("<span class='popup'>Holtzheim</span>");
+    marker4.bindPopup("<span class='popup'>Highland Park</span>");
+    marker5.bindPopup("<span class='popup'>Lake Bluff</span>");
+    marker6.bindPopup("<span class='popup'>Worcester</span>");
+
+    document.getElementById("strasbourg").onclick = function () {
+        mymap.flyTo(strasbourg, 14)
+    };
+    document.getElementById("egham").onclick = function () {
+        mymap.flyTo(egham, 14)
+    };
+    document.getElementById("holtzheim").onclick = function () {
+        mymap.flyTo(holtzheim, 14)
+    };
+    document.getElementById("highland_park").onclick = function () {
+        mymap.flyTo(highland_park, 14)
+    };
+    document.getElementById("lake_bluff").onclick = function () {
+        mymap.flyTo(lake_bluff, 14)
+    };
+    document.getElementById("worcester").onclick = function () {
+        mymap.flyTo(worcester, 14)
+    };
+</script>
+</body>
 </html>
