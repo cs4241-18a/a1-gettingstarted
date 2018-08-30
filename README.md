@@ -10,17 +10,18 @@ shows a basic understanding of HTML and CSS. I focused almost all my efforts to 
 front-end of this application.
 
 ## Design Achievements
-- **CSS Grid:** Shown at the end of `style.css`, I decided to use CSS grid to setup the
+- **CSS Grid:** Shown at the end of `style.css`, I decided to use CSS grid to set up the
                 "Block" structure of the website. I had never done anything like it, but
-                found it very easy to use and understand (it also enabled my responsive
+                I found it very easy to use and understand (it also enabled my responsive
                 layout discussed below). In general, I looked up other websites that use
-                a "Metro" style and tried to imitate what works with those layouts and
-                colors.
+                a "Metro" style and tried to imitate what worked with those layouts.
 - **Responsive Design:** I set up `style.css` to change the layout of the grid for 
                          specific sized screens. From a design point of view, I tried 
-                         to come up with 3 layouts, one for desktop, one for tablets,
+                         to come up with 3 layouts, one for desktops, one for tablets,
                          and one for phones. I tested them on my devices, and they seem
-                         to work reasonably well.
+                         to work reasonably well. The main difference in-between the layouts
+                         is the amount of columns and the size of the spacing columns on the 
+                         left and right of the layout.
 - **Design Process:** I went through 2 design iterations, first trying my best at making
                       the site look acceptable, then asking for feedback and
                       implementing the changes. The pictures of each phase and the 
@@ -35,11 +36,11 @@ front-end of this application.
                                   to take the content type as an argument.
 - **Map on the Page:** I added a map to the page so that I could better display all the
                        places where I've lived. I set up the map to show a pin at all the
-                       cities where I've lived and set up the buttons with the city names 
-                       in the "PLACES I'VE LIVED" box to focus the map on that city.
+                       cities where I've lived and set up buttons with the city names 
+                       in the "PLACES I'VE LIVED" box to focus the map on those cities.
 - **Responsive Design:** I set up `style.css` to change the layout of the grid for 
                          specific sized screens. From a technical point of view, I 
-                         researched how to use `@media` tags in `style.css` to
+                         researched how to use `@media` queries in `style.css` to
                          conditionally change the layout of the grid. Since I had 3 
                          layouts, I ended up with 2 `@media` tags (and one default 
                          layout).
