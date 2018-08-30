@@ -1,0 +1,64 @@
+a:link {
+    color: blue; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color:red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+* {
+    font-family: HelveticaNeue-Light;
+    font-size: 25;
+}
+
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35;
+}
+
+.div-container {
+    background-color: paleturquoise;
+    width: fluid;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.div-right {
+    background-color: paleturquoise;
+    width: 42%;
+    float: right;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.div-left {
+    background-color: paleturquoise;
+    width: 42%;
+    float: left;
+    border: 15px solid lightseagreen;
+    padding: 25px;
+    margin: 10px;
+}
+
+.header-container {
+    background-color: teal;
+    width: fluid;
+    padding: 15px;
+    color: white;
+}
