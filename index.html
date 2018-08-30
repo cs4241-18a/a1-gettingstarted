@@ -3,17 +3,18 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <style>
+    * {
+      font-size: 100%;
+      font-family: Courier;
+    }
+    .header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    }
     .column.main {
-      width: 67%;
-    }
-    .column.left {
-      width: 33%;
-    }
-    /* this makes the two columns stack */
-    @media screen and (max-width: 700px) {
-      .column.left, .column.main {
-        width: 100%;
-      }
+      padding-left: 25%;
+      padding-right: 25%;
     }
     .slider {
       -webkit-appearance: none;
@@ -36,8 +37,10 @@
     </style>
   </head>
   <body>
+    <div class="header">
+      <h1>Jason King</h1>
+    </div>
     <div class="column main">
-      <h1 align="center">Information about Jason King</h1>
       <p>
         Welcome to my webpage!
       </p>
@@ -62,7 +65,7 @@
       </ul>
       <h2 align="center">Language Experience</h2>
       <h3 id="text" style="visibility: hidden" align="center"></h3>
-      <div class="slidecontainer">
+      <div class="slidecontainer" align="center">
         <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
       </div>
       <ul>
@@ -85,7 +88,7 @@
       </ul>
     </div>
     <div class="column side">
-      
+
     </div>
   </body>
   <script>
