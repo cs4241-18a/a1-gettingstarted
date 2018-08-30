@@ -1,0 +1,112 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* CSS reset ends here */
+
+body {
+    margin-bottom: 20px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.body-gray {
+    background-color: #969696;
+}
+
+h1 {
+    background-color: white;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
+    font-size: 36pt;
+    text-align: center;
+    padding: 15px 0 10px 0;
+}
+
+h2 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #666666;
+    text-align: center;
+    font-size: 30pt;
+    padding: 15px 0 15px 0;
+}
+
+h3 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #444444;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.58;
+    letter-spacing: -.003em;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+}
+
+.main {
+    background-color: white;
+    max-width: 740px;
+    margin: auto;
+    padding: 20px;
+}
+
+p {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1.4em;
+    color: #444444;
+    margin-bottom: 15px;
+}
