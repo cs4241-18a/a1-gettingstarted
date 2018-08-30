@@ -2,6 +2,12 @@
   color:#00004d;
 }
 
+.header{
+  border-style:dotted;
+}
+
 html{
-  background:#cccfff;
+  background:#66ff66;
+  /*#cccfff;
+  /* #66ff66 for an extreme */
 }
