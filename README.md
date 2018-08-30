@@ -4,13 +4,12 @@
 
 ##
 
-This project dives deeper into the design and technical space than what is highlighted in the assigment by exploring TODO-1 and TODO-2. These are further elaborated below.
+This project dives deeper into the technical and design space, than what is highlighted in the assigment, by exploring a custom Navbar and Visual Hierarchy. These are further elaborated below.
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- ** I explored creating a basic navbar from scratch without using any external libraries. I created HTML anchors to different parts of the page so the user experience becomes better. To create the actual navbar, I created an unordered list with the elements styled as inline.
+- ** Additionally, I also explored the various stages on the life cycle of a link which includes the normal, active, visited and hover states and then styled my navbar links based on the principles learnt.
 
 ## Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
-
-
+- ** Explored the concept of "bigger font captures attention" to draw viewer attention towards the main points inside a block of text.
+- ** Utilized human scan patterns to create a page more likely to capture attention. This was done by arranging informtion suitable for the "F scan pattern", where users scan top-down on the left side of the page, looking for headings or short bullet points that may interest them. More information can be found here: https://digitalcommons.wpi.edu/cgi/viewcontent.cgi?article=1018&context=uxdmrl-pubs (Visual Hierarchy and Viewing Behavior: An Eye Tracking Study)

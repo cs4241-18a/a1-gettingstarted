@@ -1,16 +1,109 @@
-@import "https://fonts.googleapis.com/css?family=Roboto";
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 @import url('https://fonts.googleapis.com/css?family=Lora');
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    padding: 5px 20px 0;
+    font-size: 1rem;
+    background-color: #fc3;
+    margin: 0;
+    line-height: 1.6rem;
 }
 
 p, li {
     font-family: 'Lora', serif;
-    font-size: 1.1em;
+    font-size: 1rem;
     font-weight: 300;
     color: #333;
+}
+
+#navbar{
+    position: fixed;
+    background-color: rgba(20, 20, 20, 0.2);
+    display: inline;
+    width: 100%;
+    text-align: right;
+    z-index: 1000;
+}
+
+#nav-list li{
+    list-style: none;
+    display: inline;
+    margin-right: 50px; 
+}
+#nav-list a:link{
+    text-decoration: none;
+    color: white;
+}
+
+#nav-list a:visited{
+    text-decoration: none;
+    color: white;
+}
+#nav-list a:hover{
+    text-decoration: none;
+    color: #000;
+}
+#nav-list a:active{
+    text-decoration: none;
+    color: white;
+}
+
+
+#main-content{
+    width: 60%;
+    align-content: center;
+    background-color: antiquewhite;
+    padding: 3%;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px #777;
+    float: left;
+    margin-top: 80px;
+    margin-left: 2%;
+}
+
+#side-content {
+    margin-left: 65%;
+    position: fixed;
+    max-width: 35%;
+    height: 100%;
+    float: right;
+}
+
+#side-content img{
+    max-width: 100%;
+    margin-top: 20%
+}
+
+hr{
+    background-color: rgba(20, 20, 20, 0.4);
+    border-color: rgba(20, 20, 20, 0.4);
+    margin: 30px;
+    margin-bottom: 40px;
+}
+h1, h2, h3, h4, h5, h6{
+    color: #444;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4{
+    display: inline-block;
+    margin: 0;
+}
+
+.inline-para{
+    display: inline;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.1rem;
 }
