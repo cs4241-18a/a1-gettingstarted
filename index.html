@@ -1,27 +1,140 @@
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+</head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+  <body>
+    <h1>World Of Sam Coache</h1><br>
+    <ul class="nav nav-tabs">
+      <li class="active"><a data-toggle="tab" href="#home">About Me</a></li>
+      <li><a data-toggle="tab" href="#menu1">Professional Experience</a></li>
+      <li><a data-toggle="tab" href="#menu2">Projects</a></li>
+      <li><a data-toggle="tab" href="#menu3">Additional Assignment Requirements</a></li>
     </ul>
+      <div class="tab-content">
+        <div id="home" class="tab-pane active">
+          <p>
+            Senior at Worcester Polytechnic Institute // Class of 2020 // BS in Computer Science // Minor in Data Science // Passion for Cybersecurity and Data Visualization
+          </p>
+        </div>
+        <div id="menu1" class="tab-pane">
+          <p>
+            <h3>Technology Skills</h3>
+            <b>Programming:</b> C/C++, Python, D3, Scala, JavaScript, CSS, HTML, Java, SQL, and Lisp
+            <br>
+            <b>Applications:</b> Metasploit Framework, Wireshark, Kali Linux, Amazon Web Services and AWS S3 Rest API, Microsoft Office, Linux, Git, Bitbucket, and JDBC API
+            <br>
+            <b>Skills:</b> Internal/External/Web Application Vulnerability Assessments, Network Security Assessments, Social Engineering, Security Audits, Control Audits, and the Agile System Development Life Cycle (SDLC)
+          </p>
+          <p>
+            <h3>Courses</h3>
+            <ul>
+              <li>Analysis of Algorithms</li>
+              <li>Applied Statistics</li>
+              <li>Biovisualization</li>
+              <li>Computer Networks</li>
+              <li>Database Systems I & II</li>
+              <li>Foundations of Computer Science</li>
+              <li>Foundations of Data Science</li>
+              <li>Operating Systems</li>
+              <li>Social Implications of Information Processing</li>
+              <li>Software Engineering</li>
+              <li>Webware</li>
+            </ul>
+          </p>
+          <p>
+            <h3>Work</h3>
+            <u><b>Cybersecurity Risk Analyst Intern,</b> Crowe Horwath LLP (May 2018 - August 2018)</u>
+            <br>Engaged in full scope pen testing in a client facing work environment. This included technical documentation and reporting, as well as presentation of these findings to the client. <br>
+            <div>
+              <ul>
+                <li>Internal and External Penetration Assessment</li>
+                <li>Web Application Vulnerability Assessment</li>
+                <li>Social Engineering Campaigns</li>
+                <li>Network Security Assessment</li>
+                <li>Netorking Control Review</li>
+              </ul>
+            <u><b>Senior Assistant,</b> WPI (August 2018 - May 2019)</u>
+            <br>Senior Assistant for the Computer Science Department at Worcester Polytechnic Institute. Responsible for running lab sections for classes, grading assignments and other classwork, as well as hosting open <br> office hours for the undergratuate students at WPI. Currently assigned to 1102 Advanced Introduction to Program Design.
+          </p>
+          </div>
+        </div>
+        <div id="menu2" class="tab-pane">
+          <h3><u>Worldwide Happiness Visualization</u></h3>
+          <p>For this project we created a webpage that allows people to interact and see why some countries are happier than others. To complete this task we started collecting readily available country specific metrics
+            <br>that we believed could cause a certain country’s inhabitants to be relatively more or less happy. The data that we gathered was the reported average reported happiness by country, total population, Gross Domestic Product (GDP),
+            <br>inflation, unemployment, and alcohol consumption, all of this data was gathered from the year 2008 to 2016. We wanted to present this data in a way that would allow people to engage, and explore the information on their own.
+            <br>Take a moment to check out the project for yourself by clicking below, for more information about the methodology and view the source code check out my GitHub repository.
+          </p>
+            <a href="https://sccoache.github.io/Worldwide_Happiness_Visualization/">Click Here to view the Project</a>
+            <br>
+            <a href="https://github.com/sccoache/Worldwide_Happiness_Visualization">Click Here to view the GitHub Repository</a>
+        </div>
+        <div id="menu3" class="tab-pane">
+          <div class="container">
+            <h3>Web Application Programming Experience</h3>
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>Language</th>
+                  <th>Experience?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="success">
+                  <td>HTML</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="danger">
+                  <td>CSS</td>
+                  <td>No</td>
+                </tr>
+                <tr class="success">
+                  <td>Java</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="success">
+                  <td>JavaScript</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="danger">
+                  <td>Ruby</td>
+                  <td>No</td>
+                </tr>
+                <tr class="success">
+                  <td>Python</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="danger">
+                  <td>Unit Testing</td>
+                  <td>No</td>
+                </tr>
+              </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
   </body>
 </html>
