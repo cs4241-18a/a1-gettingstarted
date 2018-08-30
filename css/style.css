@@ -1,0 +1,69 @@
+    #container {
+      display: inline-grid;
+      grid-template-areas:
+        "top top"
+        "bottom bottom";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40% 1fr 20px 100px;
+    }
+
+    #waveImg{
+    width: 450px;
+    height: 300px;
+    }
+
+    #header {
+      background-color: turquoise;
+      grid-row-start: 1;
+      grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    #ME {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+
+    #experience {
+      display: none;
+      margin-left: 20px;
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    #courses {
+      display: none;
+      margin-left: 20px;
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    #info {
+      display: none;
+      margin-left: 20px;
+      grid-column-start: 3;
+      grid-row-start: 2;
+    }
+
+    #buttons{
+      grid-column-start: 1;
+      grid-row-start: 3;
+    }
+
+    #filler{
+    background-color: turquoise;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    animation: random 5s infinite;
+    min-height: 200px;
+    }
+
+    @keyframes  random {
+    15% { background-color: palevioletred; } 
+    30% { background-color: turquoise; } 
+    45% { background-color: coral; } 
+    60% { background-color: cornflowerblue; }
+    75% { background-color: orange; }  
+    }
