@@ -1,7 +1,11 @@
-	h1 {
+	h1, h2 {
 		font-family: "georgia";
 	}
 
 	body {
-		background-color: palegreen;
+		background-color: mintcream;
+	}
+
+	p {
+		font-family: "helvetica";
 	}
