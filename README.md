@@ -1,5 +1,5 @@
 Krysta Murdy
-http://a1-krm1347@herokuapp.com
+https://a1-krm1347.herokuapp.com
 
 This project shows a basic website that tells a little bit about my background, interests, and experience.
 
