@@ -1,0 +1,48 @@
+body {
+    background-color: crimson;
+    text-align: center;
+    font-family: Arial;
+}
+
+ul {
+    text-indent: -20%;
+    padding-left: 20%;
+    font-size: 100%;
+}
+
+h1 {
+    background-color: lightgray;
+    font-size: 300%;
+}
+
+h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 125%;
+}
+
+p {
+    font-size: 100%;
+}
+
+div {
+    background-color: lightgray;
+    width: 48%;
+    height: 50%;
+    margin: .5em;
+}
+
+#academics {
+    float: left;
+}
+
+#experience {
+    float: right;
+}
+
+div:hover {
+    background-color: white;
+}
+
