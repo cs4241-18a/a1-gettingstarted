@@ -5,7 +5,6 @@ This project shows a basic deployment of an app using heroku.The website display
 
 ## Technical Achievements
 - **Adding background img**: updated javascript file to include a background image 
-<<<<<<< HEAD
 - **Adding a shadow and a link**: when you scroll over h3 headers such as "Work Experience", it will create a shadow affect. I also added a link to my github. 
 
 ### Design Achievements
