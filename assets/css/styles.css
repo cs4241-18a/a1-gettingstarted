@@ -1,0 +1,79 @@
+.mainHeader {
+  padding-top:7rem;
+  padding-bottom:6rem;
+  background:linear-gradient(0deg,#009b91,#d9e5ec);
+  background-repeat:no-repeat;
+}
+
+@media (min-width: 300px) {
+  .text-center.heading1 {
+    font-size:2.5rem;
+    color:rgb(255,255,255);
+    font-style:normal;
+    font-family:'Alfa Slab One', cursive;
+  }
+  
+  .text-center.heading2 {
+    font-size:1.875rem;
+    color:rgb(255,255,255);
+    font-family:'Alfa Slab One', cursive;
+  }
+  
+  .profileimage {
+    margin:-4.375rem;
+    width:7.6875rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .text-center.heading1 {
+    font-size:3.75rem;
+    color:rgb(255,255,255);
+    font-style:normal;
+    font-family:'Alfa Slab One', cursive;
+  }
+  
+  .text-center.heading2 {
+    font-size:3.125rem;
+    color:rgb(255,255,255);
+    font-family:'Alfa Slab One', cursive;
+  }
+  
+  .profileimage {
+    margin:-5rem;
+    width:10.625rem;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .profileimage {
+    margin:-4.375rem;
+    width:7.6875rem;
+  }
+  
+  .text-center.heading2 {
+    font-size:0.875rem;
+    color:rgb(255,255,255);
+    font-family:'Alfa Slab One', cursive;
+  }
+  
+  .text-center.heading1 {
+    font-size:1.5rem;
+    color:rgb(255,255,255);
+    font-style:normal;
+    font-family:'Alfa Slab One', cursive;
+  }
+}
+
+.container.information {
+  margin-top:6rem;
+}
+
+.footer1 {
+  background-color:#333e4b;
+  padding:65px;
+}
+
+
+
