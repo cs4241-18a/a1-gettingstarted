@@ -57,7 +57,7 @@ function sendCssFile(res, filename) {
 
 }
 
-// Send CSS Files
+// Send Image Files
 function sendImgFile(res, filename) {
 
     fs.readFile(filename, function(error, content) {
