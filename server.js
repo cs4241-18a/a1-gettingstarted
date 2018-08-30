@@ -18,6 +18,10 @@ var server = http.createServer (function (req, res) {
   }
 })
 
+case '/koda.jpg':
+  sendFile(res, 'koda.jpg')
+  break
+
 server.listen(process.env.PORT || port);
 console.log('listening on 8080')
 
