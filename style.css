@@ -1,6 +1,7 @@
 body {
     color: white;
-    font-family: 'Source Sans Pro', Sans-Serif;
+    /*font-family: 'Source Sans Pro', Sans-Serif;*/
+    font-family: 'Raleway', Sans-Serif;
     background: -webkit-linear-gradient(left, #25c481, #25b7c4);
     background: linear-gradient(to right, #25c481, #25b7c4);
     /* prevent text squishing */
@@ -10,7 +11,9 @@ body {
 
 h1, h2 {
     text-align: center;
-    font-family: 'Playfair Display', Serif;
+    /*font-family: 'Playfair Display', Serif;*/
+    font-family:  'Vollkorn', Serif;
+    font-weight: 300;
 }
 
 h1 {
@@ -81,6 +84,11 @@ table {
 /* Tint header */
 .table-header {
     background-color: rgba(255,255,255,0.3);
+}
+
+.table-header th {
+    font-family:  'Vollkorn', Serif;
+    font-size: 18px;
 }
 
 /* Limit content size to enable scrolling */
