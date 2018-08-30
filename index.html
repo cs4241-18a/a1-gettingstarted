@@ -24,7 +24,6 @@
       opacity: 0.8;
       -webkit-transition: .2s;
       transition: opacity .2s;
-      padding-bottom: 20px
     }
     .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -81,28 +80,17 @@
       <div class="slidecontainer" align="center">
         <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider">
       </div>
-      <div class="btn-group">
+      <div class="btn-group" align="center" style="padding-top: 20px">
         <button onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</button>
         <button onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</button>
         <button onmouseover="sliderAdjust(85, &quot;A LOT&quot;)" onmouseout="reset()">Java</button>
         <button onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</button>
       </div>
-      <div class="btn-group">
+      <div class="btn-group" align="center">
         <button onmouseover="sliderAdjust(5, &quot;NONE&quot;)" onmouseout="reset()">Ruby</button>
         <button onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</button>
         <button onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</button>
       </div>
-      <!-- /*
-      <ul>
-        <li onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</li>
-        <li onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</li>
-        <li onmouseover="sliderAdjust(85, &quot;A LOT&quot;)" onmouseout="reset()">Java</li>
-        <li onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</li>
-        <li onmouseover="sliderAdjust(0, &quot;NONE&quot;)" onmouseout="reset()">Ruby</li>
-        <li onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</li>
-        <li onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</li>
-      </ul>
-      */ -->
       <h2 align="center">Working Experience</h2>
       <ul>
         <li>Dell EMC, May - August 2018</li>
@@ -113,10 +101,6 @@
         <p>Worked with the quality assurance team in two-week development sprints. Wrote test cases for an internal workflow system, executed manual tests on client-facing applications, reported and troubleshot bugs, and attended daily standups to verbally relay completed work. Additionally, worked on ad hoc projects such as testing business rules in a new version of an application to ensure a smooth update.</p>
       </ul>
     </div>
-    <div class="column side">
-
-    </div>
-
   <script>
       function sliderAdjust(val, name) {
         document.getElementById("slider").value = val
@@ -128,5 +112,5 @@
         document.getElementById("text").style.visibility = 'hidden'
       }
   </script>
-
-</body></html>
+  </body>
+</html>
