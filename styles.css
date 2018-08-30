@@ -3,7 +3,7 @@
 	}
 
 	body {
-		background-color: paleturquoise;
+		background-color: lightgrey;
 	}
 
 	p, ul, li {
@@ -12,5 +12,6 @@
 
 	div {
 		background-color: snow;
+		padding: 2px 2px 2px 2px;
 	}
 
