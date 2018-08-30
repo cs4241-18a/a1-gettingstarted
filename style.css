@@ -1,0 +1,26 @@
+.body {
+    width: 700px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    background-color: white;
+}
+
+.backdrop{
+    background-color: rgb(240, 240, 240);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1{
+    margin-top: 0;
+}
+
+p, li {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat', 'sans-serif';
+}
