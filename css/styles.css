@@ -1,10 +1,8 @@
-p{
-    color: red;
-}
 
 .content{
 
-    color: green
+    padding: 30px
+
 
 }
 
@@ -26,8 +24,8 @@ p{
     padding: 0px 0px 100px 0px
 }
 
-.text-focused{
-    color: red
+/* .text-focused{
+    
 }
 
 .courses-list{
@@ -41,5 +39,5 @@ p{
 
 .technologies-list{
 
-}
+} */
 
