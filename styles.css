@@ -1,19 +1,6 @@
 body {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-li {
-    list-style: none;
-}
-
-#classes {
-    display: flex;
-    text-align: center;
-}
-
-.class-col {
-    width: 33%;
+    margin: 50px 10% 50px 10%;
+    font-family: 'Raleway', sans-serif;
 }
 
 #technologies {
