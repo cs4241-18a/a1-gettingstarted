@@ -11,3 +11,12 @@ function changeMode() {
         console.log("switch to light");
     }
 }
+
+$(document).ready(function() {
+    $("#footerImage").on("click",function() {
+        changeMode();
+    });
+    $("#footerImage").on("touchstart",function() {
+        changeMode();
+    });
+})
