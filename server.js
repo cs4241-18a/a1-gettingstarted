@@ -10,6 +10,9 @@ var server = http.createServer (function (req, res) {
     case '/':
         sendFile(res, 'index.html');
         break;
+        case 'stylesheet.css':
+          sendCssFile(res, 'stylesheet.css');
+          break;
       case '/index.html':
         sendFile(res, 'index.html');
         break;
@@ -22,9 +25,7 @@ var server = http.createServer (function (req, res) {
       case '/wpiExperience.html':
           sendFile(res, 'wpiExperience.html');
           break;
-      case 'stylesheet.css':
-          sendCssFile(res, 'stylesheet.css');
-          break
+
     default:
       res.end('404 not found')
   }
