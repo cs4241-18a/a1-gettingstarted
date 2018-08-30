@@ -1,5 +1,4 @@
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <style>
@@ -8,9 +7,9 @@
       font-family: courier;
     }
     .header {
-    background-color: #F1F1F1;
-    text-align: center;
-    padding: 20px;
+      background-color: #F1F1F1;
+      text-align: center;
+      padding: 20px;
     }
     .column.main {
       padding-left: 25%;
@@ -18,12 +17,9 @@
     }
     .slider {
       -webkit-appearance: none;
-      width: 50%;
+      width: 100%;
       height: 2em;
       background: #ddddd5;
-      /* this should fill before the slider thumb */
-      background-color: #9a905d;
-      overflow: hidden;
       outline: solid;
       opacity: 0.8;
       -webkit-transition: .2s;
@@ -34,14 +30,21 @@
       appearance: none;
       width: 15px;
       height: 25px;
-      background: #ff0000;
+      background: #000000;
       cursor: pointer;
     }
-    .slider::-webkit-slider-runnable-track {
-      height: 10px;
-      -webkit-appearance: none;
-      color: #13bba4;
-      margin-top: -1px;
+    .btn-group button {
+      background-color: #000000;
+      color: white;
+      padding: 10px 24px;
+      float: left;
+    }
+    /* this prevents double borders */
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+    .btn-group button:hover {
+      background-color: #303030;
     }
     </style>
   </head>
@@ -73,10 +76,22 @@
         <li>4241: Webware <i>(in progress)</i></li>
       </ul>
       <h2 align="center">Language Experience</h2>
-      <h3 id="text" style="visibility: hidden" align="center"></h3>
+      <h3 id="text" style="visibility: hidden;" align="center">SOME</h3>
       <div class="slidecontainer" align="center">
-        <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider">
       </div>
+      <div class="btn-group">
+        <btn onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</btn>
+        <btn onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</btn>
+        <btn onmouseover="sliderAdjust(85, &quot;A LOT&quot;)" onmouseout="reset()">Java</btn>
+        <btn onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</btn>
+      </div>
+      <div class="btn-group">
+        <btn onmouseover="sliderAdjust(0, &quot;NONE&quot;)" onmouseout="reset()">Ruby</btn>
+        <btn onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</btn>
+        <btn onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</btn>
+      </div>
+      <!-- /*
       <ul>
         <li onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</li>
         <li onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</li>
@@ -86,6 +101,7 @@
         <li onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</li>
         <li onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</li>
       </ul>
+      */ -->
       <h2 align="center">Working Experience</h2>
       <ul>
         <li>Dell EMC, May - August 2018</li>
@@ -99,17 +115,16 @@
     <div class="column side">
 
     </div>
-  </body>
+
   <script>
       function sliderAdjust(val, name) {
         document.getElementById("slider").value = val
-        //window.alert("yeet we out here")
         document.getElementById("text").innerText = name
         document.getElementById("text").style.visibility = 'visible'
       }
       function reset() {
-        document.getElementById("slider").value = 50
         document.getElementById("text").style.visibility = 'hidden'
       }
   </script>
-</html>
+
+</body></html>
