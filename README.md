@@ -15,14 +15,14 @@ This project shows the information about me.
 - **Taught myself html&css**:
 I had almost zero experience in HTML and CSS before. I modified the font and alignment.
 - **Usage of div**:
-I used <div> to make 3 main different sections of this website.
+I used div to make 3 main different sections of this website.
 - **Usage of ul**:
-The left section contains the CS courses I have taken at WPI. I used <ul> to make a list to clearly show the courses.
-The right section contains my experience with various programming languages. I used <ul> to make a list to clearly show each of them.
+The left section contains the CS courses I have taken at WPI. I used ul to make a list to clearly show the courses.
+The right section contains my experience with various programming languages. I used ul to make a list to clearly show each of them.
 - **Usage of img**:
-The middle section contains basic information about me. I used <img> to insert my favorite meme into this section.
+The middle section contains basic information about me. I used img to insert my favorite meme into this section.
 - **css**:
-I used <link> and <style> for the CSS part. I had to add a few lines in server.js to make the external CSS file work.
+I used link and style for the CSS part. I had to add a few lines in server.js to make the external CSS file work.
 
 ## Design Achievements
 - **Color Combination**:
