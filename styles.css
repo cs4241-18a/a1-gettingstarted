@@ -3,9 +3,14 @@
 	}
 
 	body {
-		background-color: mintcream;
+		background-color: paleturquoise;
 	}
 
 	p, ul, li {
 		font-family: "helvetica";
 	}
+
+	div {
+		background-color: snow;
+	}
+
