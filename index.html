@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <style>
     * {
-      font-size: 100%;
+      /* font-size: 100%; */
       font-family: courier;
     }
     .header {
@@ -24,6 +24,7 @@
       opacity: 0.8;
       -webkit-transition: .2s;
       transition: opacity .2s;
+      padding-bottom: 20px
     }
     .slider::-webkit-slider-thumb {
       -webkit-appearance: none;
@@ -87,7 +88,7 @@
         <btn onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</btn>
       </div>
       <div class="btn-group">
-        <btn onmouseover="sliderAdjust(0, &quot;NONE&quot;)" onmouseout="reset()">Ruby</btn>
+        <btn onmouseover="sliderAdjust(5, &quot;NONE&quot;)" onmouseout="reset()">Ruby</btn>
         <btn onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</btn>
         <btn onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</btn>
       </div>
@@ -123,6 +124,7 @@
         document.getElementById("text").style.visibility = 'visible'
       }
       function reset() {
+        document.getElementById("slider").value = 0
         document.getElementById("text").style.visibility = 'hidden'
       }
   </script>
