@@ -10,6 +10,9 @@ var server = http.createServer (function (req, res) {
     case '/':
       sendFile(res, 'index.html')
       break
+    case '/Images/selfie.jpg':
+      sendFile(res, '/Images/selfie.jpg', 'image/jpg')
+      break
     case '/CSS/style.css':
       sendFile(res, '/CSS/style.css', 'text/css')
       break
