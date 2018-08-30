@@ -1,20 +1,29 @@
 var http = require('http')
-  , fs   = require('fs')
-  , url  = require('url')
-  , port = 8080;
+, fs   = require('fs')
+, url  = require('url')
+, port = 8080;
 
 var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
 
   switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html')
-      break
+    sendFile(res, 'index.html')
+    break
     case '/index.html':
-      sendFile(res, 'index.html')
-      break
+    sendFile(res, 'index.html')
+    break
+    case '/style.css':
+    sendFile(res, 'style.css')
+    break
+    case '/particles.min.js':
+    sendFile(res, 'particles.min.js')
+    break
+    case '/particles-config.js':
+    sendFile(res, 'particles-config.js')
+    break
     default:
-      res.end('404 not found')
+    res.end('404 not found')
   }
 })
 
