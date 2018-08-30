@@ -9,3 +9,8 @@
     pointer-events: auto;
     cursor: pointer;
 }
+
+.content {
+    max-width: 80%;
+    min-width: 400px;
+}
