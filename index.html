@@ -3,8 +3,17 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
     <style>
-    .wrapper {
-      padding-left: 20px;
+    .column.main {
+      width: 67%;
+    }
+    .column.left {
+      width: 33%;
+    }
+    /* this makes the two columns stack */
+    @media screen and (max-width: 700px) {
+      .column.left, .column.main {
+        width: 100%;
+      }
     }
     .slider {
       -webkit-appearance: none;
@@ -27,16 +36,16 @@
     </style>
   </head>
   <body>
-    <div class=wrapper>
-      <h1>Information about Jason King</h1>
+    <div class="column main">
+      <h1 align="center">Information about Jason King</h1>
       <p>
         Welcome to my webpage!
       </p>
-      <h2>Major</h2>
+      <h2 align="center">Major</h2>
       <p>
         Bachelors of Compupter Science
       </p>
-      <h2>Computer Science Classes</h2>
+      <h2 align="center">Computer Science Classes</h2>
       <ul>
         <li>1101: Introduction to Program Design</li>
         <li>2011: Introduction to Machine Organization and Assembly Language</li>
@@ -51,11 +60,11 @@
         <li>3516: Computer Networks <i>(in progress)</i></li>
         <li>4241: Webware <i>(in progress)</i></li>
       </ul>
-      <h2>Language Experience</h2>
+      <h2 align="center">Language Experience</h2>
+      <h3 id="text" style="visibility: hidden" align="center"></h3>
       <div class="slidecontainer">
         <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider" id="myRange">
       </div>
-      <p id="text" value="" style="display: none"></p>
       <ul>
         <li onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</li>
         <li onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</li>
@@ -65,7 +74,7 @@
         <li onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</li>
         <li onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</li>
       </ul>
-      <h2>Working Experience</h2>
+      <h2 align="center">Working Experience</h2>
       <ul>
         <li>Dell EMC, May - August 2018</li>
         <p>Worked with Technology Research Innovation Group to develop a topology/inventory service to enable contextual resource management using spacial awareness within a datacenter. Started project from inception period and continued to implement features throughout initial development. Practiced Extreme Programming via pair programming and continuous integration. Contributed to architecture design discussions over multiple project iterations. End goal was for the service to act as a foundation for multiple research efforts within product portfolio, including artificial intelligence operated datacenters. Utilized graph databases as an enabling technology to represent datacenter and its subcomponents in a graph view. Built REST API with data access layer to automatically connect and populate nodes in datacenter graph. Concluded summer with presentation of project progress to upper management.</p>
@@ -75,17 +84,20 @@
         <p>Worked with the quality assurance team in two-week development sprints. Wrote test cases for an internal workflow system, executed manual tests on client-facing applications, reported and troubleshot bugs, and attended daily standups to verbally relay completed work. Additionally, worked on ad hoc projects such as testing business rules in a new version of an application to ensure a smooth update.</p>
       </ul>
     </div>
+    <div class="column side">
+      
+    </div>
   </body>
   <script>
       function sliderAdjust(val, name) {
         document.getElementById("slider").value = val
         //window.alert("yeet we out here")
-        document.getElementById("text").value = name
-        document.getElementById("text").style.display = 'block'
+        document.getElementById("text").innerText = name
+        document.getElementById("text").style.visibility = 'visible'
       }
       function reset() {
         document.getElementById("slider").value = 50
-        document.getElementById("text").style.display = 'none'
+        document.getElementById("text").style.visibility = 'hidden'
       }
   </script>
 </html>
