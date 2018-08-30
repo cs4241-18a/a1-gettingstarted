@@ -1,5 +1,9 @@
 <html lang="en">
+    
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+<script type="text/javascript" src="js/scripts.js"></script>
+
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
@@ -9,7 +13,7 @@
       
       
     <div id="header">
-    <h1>Information about Paul-Henry Schoenhagen</h1>
+    <h1><center>Information about Paul-Henry Schoenhagen</center></h1>
     </div>  
     <div id="ME">
     <p>
@@ -21,8 +25,8 @@
     <p><img id="waveImg" src="img/wave.gif"></p>
     </div>
       
-    <div class="experience">
-    <h2>Experience:</h2>
+    <div id="experience">
+    <h3>Experience:</h3>
     <p>
     Here are conservative guesses on the experience I have with the following languages:
     <br>
@@ -43,7 +47,7 @@
     </p>
     </div>   
       
-    <div class="courses">
+    <div id="courses">
     <h3>Previous Computer Science Courses To Note:</h3>
     <p>
     CS 3733 SOFTWARE ENGINEERING
@@ -60,13 +64,12 @@
     <br>
     CS 4432 DATABASE SYSTEMS II
     <br>
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>    
+    </p> 
     </div>
-    
+    <div id="buttons">
+    <button type="button" onclick="showExp()" >EXPERIENCE</button>
+    <button type="button" onclick="showCourse()" >COURSES</button>  
+    </div>
 
   </body>
 </div>

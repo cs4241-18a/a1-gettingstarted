@@ -2,13 +2,9 @@
       display: inline-grid;
       grid-template-areas:
         "top top"
-        "build-left build-right";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 25% 1fr 1fr;
-    }
-
-    #wave {
-        padding-left: 10px;
+        "bottom bottom";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40% 1fr 20px 100px;
     }
 
     #waveImg{
@@ -17,8 +13,35 @@
     }
 
     #header {
-      grid-area: top;
+
       background-color: turquoise;
       grid-row-start: 1;
       grid-row-end: 1;
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    #ME {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+
+
+    #experience {
+      display: none;
+      margin-left: 20px;
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    #courses {
+      display: none;
+      margin-left: 20px;
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    #buttons{
+      grid-column-start: 1;
+      grid-row-start: 3;
     }
