@@ -8,11 +8,20 @@ var server = http.createServer (function (req, res) {
 
   switch( uri.pathname ) {
     case '/':
-      sendFile(res, 'index.html')
-      break
-    case '/index.html':
-      sendFile(res, 'index.html')
-      break
+        sendFile(res, 'index.html');
+        break;
+      case '/index.html':
+        sendFile(res, 'index.html');
+        break;
+      case '/bio.html':
+        sendFile(res, 'bio.html');
+        break;
+      case '/workExp.html':
+          sendFile(res, 'workExp.html');
+          break;
+      case '/wpiExperience.html':
+          sendFile(res, 'wpiExperience.html');
+          break;
     default:
       res.end('404 not found')
   }
