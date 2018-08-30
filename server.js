@@ -19,22 +19,22 @@ var server = http.createServer (function (req, res) {
 	case '/img/self.jpg':
 	  sendFile( res, '/img/self.jpg' )
 	  break
-    case '/img/arista.jpg'
+	case '/img/arista.jpg':
 	  sendFile(res, '/img/arista.jpg')
 	  break
-    case '/img/idT.jpg'
+	case '/img/idT.jpg':
 	  sendFile(res, '/img/idT.jpg')
 	  break
-    case '/img/curly.jpg'
+	case '/img/curly.jpg':
 	  sendFile(res, '/img/curly.jpg')
 	  break
-    case '/img/climb.jpg'
+	case '/img/climb.jpg':
 	  sendFile(res, '/img/climb.jpg')
 	  break
-    case '/img/acm.png'
+	case '/img/acm.png':
 	  sendFile(res, '/img/acm.png')
 	  break
-    case '/patterns/newspaper.jpg'
+	case '/patterns/newspaper.jpg':
 	  sendFile(res, '/patterns/newspaper.jpg')
 	  break
     default:
