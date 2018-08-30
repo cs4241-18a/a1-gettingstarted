@@ -3,25 +3,104 @@
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
   </head>
+  <style>
+	table {
+		border: 1px solid white;
+	}
+    h2, h4 {
+		color:darkred;
+    }
+    body {
+		color: darkgray;
+    	background-color: black;
+    }
+	div {
+	    clear: left;
+		padding: 5px;
+	}
+	.cssRow {
+		background-color: black;
+	}
+	.cssCell {	
+		font-family: times;
+		font-size: 15px;
+		padding: 5px;
+	}
+  </style>
   <body>
-    <h1>Information about [Your name here]</h1>
+    <a href="https://www.wpi.edu">
+      <img src="https://www.wpi.edu/sites/default/files/inline-image/Offices/Marketing-Communications/WPI_Inst_Prim_FulClr.png" alt="WPI logo" style="width:250px;height:200px;border:0;">
+    </a>
+    <h1>Information about Joan Wong</h1>
     <p>
-      [Self introduction]
+      I'm in the Class of 2019 at <a href="https://www.wpi.edu">Worcester Polytechnic Institute (WPI)</a>, majoring in Computer Science. To give a brief introduction about myself,   
+      I like challenges because I believe that the process of figuring things out is crucial to me learning and improving. That's why you will usually find me sitting somewhere and ponder about a problem.
+      To me, being able to solve a problem is very satisfying. I can be very quiet, but I also can be very talkative because I may ask a lot of questions.
     </p>
     <p>
-      [Major and other information]
+      Fun Facts About Me:
+      <ol>
+	      <li>I enjoy daydreaming when I'm alone. That's one of the most relaxing methods I found and is very effective.</li>
+	      <li>My hobbies include (but not limited to) swimming, listening to music, watching television, and coding (as what I'm doing right now)...</li>
+      </ol>
     </p>
-    <p>
-      [Other things]
-    </p>
-
+    <h2>Education</h2>
+    <p>Bachelors of Science in Computer Science</p>
     <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
+    <h4>Courses</h4>
     <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
+	    <li>Intro To Program Design</li>
+	    <li>Object-oriented Design Concepts</li>
+	    <li>Systems Programming Concepts</li>
+	    <li>Intro To Machine Organization and Assembly</li>
+	    <li>Software Engineering</li>
+	    <li>Operating Systems</li>
+	    <li>Database Systems I</li>
+	    <li>Software Security Engineering</li>
+	    <li>Distributed Computer Systems</li>
+	    <li>WEBWARE* (of course!)</li>
+	    <li>Computer Networks*</li>
+	    <li>Analysis of Algorithms*</li>
     </ul>
+    <p><i>* Currently taking this term</i>
+    <h4>Internship</h4>
+	<div>
+    <a href="https://www.novomaticamericas.com">
+      <img src="https://eegaming.org/wp-content/uploads/2017/10/Novomatic_Americas-ft.-2280x1052_c.jpg" alt="NovomaticAmericas logo" style="width:200px;height:100px;float:left;padding:10px;">
+    </a>
+    <p>
+      This past summer I was a Software Engineering Intern at <a href="https://www.novomaticamericas.com">Novomatic Americas</a>. I was responsible for improving one of the 
+      company's current simulator (C++) that runs all of its new game designs for testing, in Visual Studio.
+      The new features I added to this simulator included the display of wins on the user-interface (using SDL) and the functionality to run a different type of game than it currently can.
+    </p>
+	</div>
+    <h4 style="clear:left">Skills</h4>
+    <div id="skillstable"></div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+	google.charts.load('current', {'packages':['table']});
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+		var data = google.visualization.arrayToDataTable([
+			['Technology/Method', 'Level of Experience'],
+			['HTML', 'some'],
+			['CSS', 'none'],
+			['Java', 'a lot'],
+			['JavaScript', 'some'],
+			['Ruby', 'none'],
+			['Python', 'none'],
+			['Unit testing', 'none']]);
+			
+		var cssClassNames = {
+			'headerRow': 'cssRow',
+			'tableRow': 'cssRow',
+			'headerCell': 'cssCell',
+			'tableCell': 'cssCell'};
+
+		var table = new google.visualization.Table(document.getElementById('skillstable'));
+		table.draw(data, {alternatingRowStyle: false, cssClassNames: cssClassNames, width:'25%'});
+	}
+    </script>
   </body>
 </html>
