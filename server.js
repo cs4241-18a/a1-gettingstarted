@@ -31,3 +31,7 @@ function sendFile(res, filename) {
   })
 
 }
+
+case '/styles.css':
+  sendFile(res, 'styles.css')
+  break
