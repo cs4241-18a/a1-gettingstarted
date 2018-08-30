@@ -13,13 +13,13 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
-	case '/wallpaper.jpg':
+	case '/images/wallpaper.jpg':
       sendFile(res, 'images/wallpaper.jpg')
       break
-	case '/github_logo.png':
+	case '/images/github_logo.png':
       sendFile(res, 'images/github_logo.png')
       break
-	case '/main.css':
+	case '/styles/main.css':
       sendFile(res, 'styles/main.css')
       break
     default:
