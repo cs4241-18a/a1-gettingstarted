@@ -9,14 +9,15 @@ h1{
 
 .center {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px auto;
 }
 
 .box1{
   background-color:  #005b96;
   border-width: medium;
-  width: 800px;
+  width: 100%;
+  padding-bottom: 10;
+  margin-bottom: 15;
 }
 
 .box2{
