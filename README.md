@@ -14,6 +14,7 @@ Rewrote sendFile() function in server.js in order to handle 404 errors.
 Added CSS, JS, and images to their own respective directories.
 Implemented a Javascript library called SweetAlert to give the user some extra information.
 Added comments to ensure code readability.
+Added CSS animations (interactive expandable list, see "Previous CS Courses" section on webpage)
 
 
 ### Design Achievements
