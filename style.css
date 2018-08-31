@@ -1,0 +1,301 @@
+body {
+    color: white;
+    /*font-family: 'Source Sans Pro', Sans-Serif;*/
+    font-family: 'Raleway', Sans-Serif;
+    background: -webkit-linear-gradient(left, #25c481, #25b7c4);
+    background: linear-gradient(to right, #25c481, #25b7c4);
+    /* prevent text squishing */
+    min-width: 700px;
+    margin-top: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    /*font-family: 'Playfair Display', Serif;*/
+    font-family:  'Vollkorn', Serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Container for tiles */
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Container for information about me*/
+.info-container {
+    line-height: 0.25em;
+}
+
+/* Thumbnail */
+div.thumbnail {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 310px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    align-content: center;
+}
+
+div.thumbnail img {
+    max-width: 100%;
+    height: 210px;
+    padding: 20px;
+}
+
+/* Spacer for bottom row of skills */
+div.spacer {
+    box-shadow: none;
+}
+
+/* ------------- Table -------------*/
+.table-container {
+    margin: 0px 10rem;
+}
+
+table {
+    width:100%;
+    table-layout: fixed;
+}
+
+/* Tint header */
+.table-header {
+    background-color: rgba(255,255,255,0.3);
+}
+
+.table-header th {
+    font-family:  'Vollkorn', Serif;
+    font-size: 18px;
+}
+
+/* Limit content size to enable scrolling */
+.table-content {
+    height:300px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+}
+
+td {
+    padding: 15px;
+    font-size: 14px;
+    text-align: center;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+/* Hide main scrollbar */
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.table-container ::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+/* Display table scrollbar on hover */
+::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 20px;
+}
+
+/* ------------- Thumbnail hover effects ------------- */
+div.thumbnail:hover img {
+    opacity: 0.3;
+    /* Grayout image */
+    -webkit-filter: grayscale(100%) blur(3px);
+    filter: grayscale(100%) blur(3px);
+}
+
+div.thumbnail * {
+    transition: all .35s ease-in-out;
+}
+
+div.thumbnail .text-container {
+    opacity: 0;
+    position: absolute;
+    /* Fill thumbnail */
+    top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+div.thumbnail:hover .text-container {
+    opacity: 1;
+}
+
+/* ------------- Programming Experience Hover Content -------------*/
+div.thumbnail .text-container .title {
+    font-size: 2rem;
+}
+
+div.thumbnail .text-container .experience-level {
+    position: absolute;
+    bottom: 35%;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Underline coloring for dark thumbnails */
+.html-container .title, .css-container .title, .ruby-container .title, #testing-container .title{
+    border-bottom: 1px solid #FFFFFF;
+}
+
+/* Text coloring for light thumbnails */
+.java-container, .javascript-container, .python-container {
+    color: #000000;
+}
+
+/* Underline coloring for light thumbnails */
+.java-container .title, .javascript-container .title, .python-container .title {
+    border-bottom: 1px solid #000000;
+}
+
+/* Stars and rating */
+.rating {
+    float: left;
+    width: 100%;
+    position: relative;
+    top: 25%;
+}
+
+/* Star coloring for dark thumbnails */
+.html-container .star, .css-container .star, .ruby-container .star, #testing-container .star{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+    opacity: 0.5;
+}
+
+.html-container .star-selected, .css-container .star-selected, .ruby-container .star-selected, #testing-container .star-selected{
+    height: 2rem;
+    width: 2rem;
+    fill: white;
+}
+
+/* Star coloring for light thumbnails */
+.java-container .star, .javascript-container .star, .python-container .star {
+    height: 2rem;
+    width: 2rem;
+    fill: #101010;
+    opacity: 0.5;
+}
+
+.java-container .star-selected , .javascript-container .star-selected, .python-container .star-selected {
+    height: 2rem;
+    width: 2rem;
+    fill: #101010;
+}
+
+/* ------------- Logo specific coloring ------------- */
+.html-container {
+    background: #E67020;
+}
+
+.css-container {
+    background-color: #0071FC;
+}
+
+.java-container {
+    background-color: white;
+}
+
+.javascript-container {
+    background-color: #f0db4f;
+}
+
+#ruby-img {
+    height: 150px;
+    margin-top: 25px;
+}
+
+.ruby-container {
+    background-color: #C51104;
+}
+
+.python-container {
+    background-color: #E0E0E0;
+    /*background-color: white;*/
+}
+
+#testing-container {
+    background-color: black;
+    height: 250px;
+}
+
+#testing-container img {
+    /*height: 50px;*/
+    height: 60px;
+    margin-top: 65px;
+}
+
+/* ------------- Image Gallery ------------- */
+/* Enable images to be stacked next to each other */
+#image-gallery {
+    padding: 0 5.3rem;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#image-gallery * {
+    box-sizing: border-box;
+}
+
+/* Split container width into 3 columns */
+.gallery-column {
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.gallery-column img {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* View Counter */
+.counterimg, .counter-title {
+    position: absolute;
+    right: 5px;
+}
+
+.counterimg {
+    padding-bottom: 5px;
+}
