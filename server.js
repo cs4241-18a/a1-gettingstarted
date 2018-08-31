@@ -20,22 +20,22 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'materialize.min.css')
       break
     case '/materialize.min.js':
-      sendFile(res, 'materialize.min.js')
+      sendFile(res, 'materialize.min.js', 'text/javascript')
       break
     case '/images/wpi.jpg':
-      sendFile(res, '/images/wpi.jpg', 'image/jpg')
+      sendFile(res, 'images/wpi.jpg', 'image/jpg')
       break
     case '/images/wpilogo.png':
-      sendFile(res, '/images/wpilogo.png', 'image/png')
+      sendFile(res, 'images/wpilogo.png', 'image/png')
       break
     case '/images/work.jpg':
-      sendFile(res, '/images/work.jpg', 'image/jpg')
+      sendFile(res, 'images/work.jpg', 'image/jpg')
       break
     case './images/code.jpg':
-      sendFile(res, '/images/code.jpg', 'image/jpg')
+      sendFile(res, 'images/code.jpg', 'image/jpg')
       break
     case '/images/class.jpg':
-      sendFile(res, '/images/class.jpg', 'image/jpg')
+      sendFile(res, 'images/class.jpg', 'image/jpg')
       break
     default:
       res.end('404 not found')
