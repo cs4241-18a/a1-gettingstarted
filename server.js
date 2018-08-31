@@ -14,6 +14,7 @@ var server = http.createServer (function (req, res) {
       sendFile(res, 'index.html')
       break
     case '/kitten':
+      res.writeHead(200, {'Content-Type': 'image/jpg'})
       sendFile(res, 'kitten.jpg')
       break
     default:
