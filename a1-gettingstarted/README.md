@@ -9,7 +9,6 @@ This project shows the information about me.
 - **Usage of ul**: I use ul to present unordered lists.
 - **Usage of CSS file**: I use CSS file to define the style of the html.
 - **Usage of footer**: I use footer to insert footer to the html.
-- **Change of JS file**: I change the .js file in the sake of showing picture and using CSS file correctly.
 
 ## Design Achievements
 - **Font Selection**: I choose Apple SD Gothic Neo, a Humanistic Scans Serif font, for the whole html for the purpose of readability and beauty.
