@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+	background-color: #4169e1;
+}
+
+h1 {
+	text-align: center;
+}
+
+footer {
+	background-color: #91a8ee;
+	text-align: center;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.column {
+	display: none;
+	float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}

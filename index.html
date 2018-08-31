@@ -1,27 +1,125 @@
 <html lang="en">
   <head>
     <title>CS4241 Assignment 1</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <header>
+      <h1>Information about Brady Snowden</h1>
+    </header>
+    <hr>
+    <div style="background-color: #91a8ee;">
+      <p>
+        Hello, my name is Brady! I am a fifth year cs major graduating in December 2018. Click each option below to find out more about me!
+      </p>
+      <br>
+    </div>
+    <div class="row" style="background-color: #91a8ee;">
+      <div class="column" style="display: block;">
+        <h2>About Me</h2>
+        <p>
+          <button onclick="classes()">Courses I've Taken</button>
+        </p>
+        <p>
+          <button onclick="languages()">Known Languages</button>
+        </p>
+        <p>
+          <button onclick="outside()">Outside of Class</button>
+        </p>
+      </div>
+      <div class="column" id="class">
+        <p>
+          <h3>Courses I've Taken</h3>
+          <ul>
+            <li>Algorithms</li>
+            <li>Artificial Intelligence</li>
+            <li>Assembly</li>
+            <li>Database Systems I</li>
+            <li>Database Systems II</li>
+            <li>Distributed Systems</li>
+            <li>Foundations</li>
+            <li>Networks</li>
+            <li>Operating Systems</li>
+            <li>Software Engineering</li>
+          </ul>
+        </p>
+      </div>
+      <div class="column" id="language">
+        <p>
+          <h3>Known Languages</h3>
+          <ul>
+            <li>C</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </p>
+      </div>
+      <div class="column" id="outside">
+        <p>
+          <h3>Outside of Class</h3>
+          <ul>
+            <li><a href="http://wpiaudiophiles.wixsite.com/wpiaudiophiles/" target="_blank">The Audiophiles</a></li>
+            <li><a href="https://users.wpi.edu/~gleeclub/" target="_blank">Men's Glee Club</a></li>
+          </ul>
+        </p>
+      </div>
+      <script type="text/javascript">
+        function classes() {
+          var c = document.getElementById("class");
+          var l = document.getElementById("language");
+          var o = document.getElementById("outside");
+          if(c.style.display === "none" && l.style.display === "none" && o.style.display === "none") {
+            c.style.display = "block";
+          }
+          else if (l.style.display != "none" || o.style.display != "none") {
+            l.style.display = "none";
+            o.style.display = "none";
+            c.style.display = "block";
+          }
+          else {
+            c.style.display = "none";
+          }
+        }
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+        function languages() {
+          var c = document.getElementById("class");
+          var l = document.getElementById("language");
+          var o = document.getElementById("outside");
+          if(c.style.display === "none" && l.style.display === "none" && o.style.display === "none") {
+            l.style.display = "block";
+          }
+          else if (c.style.display != "none" || o.style.display != "none") {
+            c.style.display = "none";
+            o.style.display = "none";
+            l.style.display = "block";
+          }
+          else {
+            l.style.display = "none";
+          }
+        }
+
+        function outside() {
+          var c = document.getElementById("class");
+          var l = document.getElementById("language");
+          var o = document.getElementById("outside");
+          if(c.style.display === "none" && l.style.display === "none" && o.style.display === "none") {
+            o.style.display = "block";
+          }
+          else if (c.style.display != "none" || l.style.display != "none") {
+            c.style.display = "none";
+            l.style.display = "none";
+            o.style.display = "block";
+          }
+          else {
+            o.style.display = "none";
+          }
+        }
+      </script>
+    </div>
+    <footer>
+      <a href="http://github.com/basnowden" target="_blank">Github</a> &diams; <a href="mailto:basnowden@wpi.edu">Contact Me</a>
+    </footer>
   </body>
 </html>
