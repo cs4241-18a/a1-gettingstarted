@@ -23,9 +23,12 @@ h1{
 .box2{
   background-color: #6497b1;
   width: 100%;
+  padding: 15px;
 }
 
 .box3{
   background-color: #b3cde0;
   width: 100%;
+  padding: 15;
+  margin-top: 15;
 }
