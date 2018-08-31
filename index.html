@@ -1,27 +1,120 @@
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s3"></div>
+      <div class="col s6">
+        <nav class="nav-extended blue">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">Thomas Schweich</a>
+          </div>
+          <div class="nav-content center">
+            <ul class="tabs tabs-transparent center">
+              <li class="tab"><a href="#home">Home</a></li>
+              <li class="tab"><a href="#about">About</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="col s3"></div>
+    </div>
+  </div>
+  <div id="home" class="container">
+    <div class="row">
+      <div class="col s3"></div>
+      <div class="col s6 center">
+        <div class="card">
+          <div class="card-image">
+            <img src="https://media.licdn.com/dms/image/C5603AQGWe7q420LK6w/profile-displayphoto-shrink_200_200/0?e=1541030400&v=beta&t=sjnAS8sERDX34zsDz6LPfY8nUFbhRuz0ojTLHt3csRM">
+            <span class="card-title">Thomas Schweich</span>
+          </div>
+          <div class="card-content">
+            <p>
+              I am a Junior at Worcester Polytechnic Institute with a passion for history and the progress of technology over time.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s3"></div>
+    </div>
+  </div>
+  <div id="about" class="container" hidden>
+    <div class="row">
+      <div class="col s2"></div>
+      <div class="col s8 center">
+        <p>
+          I am a Computer Science major with a Physics minor.
+        </p>
+
+        <div class="card">
+          <div class="card-title">
+            <h3><i class="material-icons">school</i> Computer Science Classes</h3>
+          </div>
+          <div class="card-content">
+            <ul class="collection">
+              <li class="collection-item">Accellerated Introduction to Program Design</li>
+              <li class="collection-item">Accelerated Introduction to Object Oriented Design</li>
+              <li class="collection-item">Independent study: Context-aware Event Stream Analysis</li>
+              <li class="collection-item">Discrete Mathematics</li>
+              <li class="collection-item">Systems Programming</li>
+              <li class="collection-item">Foundations of Computer Science</li>
+              <li class="collection-item">Introduction to Machine Organization &amp; Assembly Language</li>
+              <li class="collection-item">Human-Computer Interaction</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <h3><i class="material-icons">work</i> Computer Science Work Experience</h3>
+          </div>
+          <div class="card-content">
+            <ul class="collection">
+              <li class="collection-item">Computer Emulation &amp; Restoration Intern, Living Computers Museums + Labs</li>
+              <li class="collection-item">Lab &amp; Data Analysis Intern, Washington University Gravitation &amp; Earth Exploration
+                Lab
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p>
+
+        </p>
+
+      </div>
+      <div class="col s2"></div>
+    </div>
+  </div>
+</body>
+
 </html>
+
+<script type="text/javascript">
+  var hideall = function () {
+    $('#about').hide()
+    $('#home').hide()
+  }
+
+  $(document).ready(function () {
+    $('a[href="#home"]').click(function () {
+      hideall()
+      $('#home').show({ duration: 1000 })
+    })
+    $('a[href="#about"]').click(function () {
+      hideall()
+      $('#about').show({ duration: 1000 }).done(function () {
+
+      })
+    })
+    $('.collapsible').collapsible();
+  })
+</script>
