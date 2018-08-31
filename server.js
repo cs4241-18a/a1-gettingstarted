@@ -22,8 +22,8 @@ var server = http.createServer (function (req, res) {
     case '/materialize.min.js':
       sendFile(res, 'materialize.min.js')
       break
-    case '/images/wpi.jpg':
-      sendFile(res, 'wpi.jpg', 'image/jpg')
+    case '/images/wpi.jpeg':
+      sendFile(res, 'wpi.jpg', 'image/jpeg')
       break
     case '/images/wpilogo.png':
       sendFile(res, 'wpilogo.png', 'image/png')
