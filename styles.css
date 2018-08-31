@@ -1,0 +1,19 @@
+body {
+	background-color: #e0e1e2;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 18px;
+	line-height: 2;
+}
+
+h {
+	font-size: 24px;
+}
+
+h1 {
+	color: #a40202;
+}
+
+h2 {
+	color: #e10000;
+}
