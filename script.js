@@ -20,7 +20,6 @@ request.onload = function() {
                let source = images[index].urls.regular;
                if (source == "https://images.unsplash.com/photo-1503322056338-171bb3538ffb?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM1Mjk5fQ&s=c1384ddc407ac61c9eff1e629f1685fa") {
                    source = "https://www.planwallpaper.com/static/images/free-wallpaper-images-nature-24.jpg";
-                   console.log("Change image");
                }
                columnImage.src = source;
                index++;
