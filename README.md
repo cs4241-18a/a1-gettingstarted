@@ -8,7 +8,7 @@ This project shows that I have a working knowledge of Git, Github, and Heroku. W
 
 ## Technical Achievements
 - **Depolyed Page on Heroku**: Created an app on Heroku using Heroku command line interface and used git push to deploy local project onto the Heroku app.
-- **Edited HTML file**:
+- **Edited HTML file**
 - **Edited Server Code**: The server code was edited in order to provide access to the new images and CSS stylesheets created for this assignment. All I had to do was add the new paths as new cases to the switch statement that located the path of the requested files in server.js.
 
 ### Design Achievements
