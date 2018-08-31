@@ -1,27 +1,131 @@
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
+<head>
+  <title>CS4241 Assignment 1</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <a class="navbar-brand" href="#">About Yuanda Song</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#block1">Basic Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#block2">Previous Courses</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#block3">Experience</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main">
+
+
+    <div>
+      <h1 class="my-heading">Yuanda Song (Danny)</h1>
+      <p class="text-content">Computer Science Major Class of 2020</p>
+      <p class="text-content">Software Engineer, Photographer, Gamer</p>
+    </div>
+
+    <div class="icons-group">
+      <a class="fa fa-github" href="https://github.com/dannysongyd " style="font-size:48px;" role="button"></a>
+      <a class="fa fa-instagram" href="https://www.instagram.com/dannys0ng/" style="font-size:48px;" role="button"></a>
+      <a class="fa fa-steam-square" href="https://steamcommunity.com/id/dannysongyd/" style="font-size:48px;" role="button"></a>
+    </div>
+
+    <div class="content">
+      <hr class="featurette-divider">
+
+      <div id="block1" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Basic information about <span class="text-focused">Yuanda Song(Danny)</span></h2>
+          <p class="lead"> Yuanda Song (Danny), class of 2020 majoring in Computer Science, is in his junior year at Worcester
+            Polytechnic Institute. He is a Software Engineer, a Photographer and a Gamer</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-fluid mx-auto" src="pic1.jpeg" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="block2" class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Previous computer science courses</h2>
+          <ul class="courses-list">
+            <li>CS1101 - Introduction to Program Design</li>
+            <li>CS2102 - Object-Oriented Design Concepts</li>
+            <li>CS2303 - System Programming Concepts</li>
+            <li>CS2011 - Machine Organization and Assembly Language</li>
+            <li>CS3013 - Operating Systems</li>
+            <li>CS3041 - Human Computer Interaction</li>
+            <li>CS3431 - Database Systems I</li>
+            <li>CS2223 - Algorithms</li>
+            <li>CS3733 - Software Engineering</li>
+            <li>CS3133 - Foundations of Computer Science</li>
+            <li>CS4120 - ANALYSIS OF ALGORITHMS</li>
+            <li class="course-focused">CS4241 - WEBWARE</li>
+          </ul>
+        </div>
+        <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="pic2.png" >
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div id="block3" class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Experience with the following technologies and methods</h2>
+          <ul class="technologies-list">
+            <li>HTML - A lot</li>
+            <li>CSS - A lot</li>
+            <li>Javascript - A lot</li>
+            <li>VueJS - Some</li>
+            <li>Java - Some</li>
+            <li>Ruby - None</li>
+            <li>Python - Some</li>
+            <li>Unit Testing - Some</li>
+          </ul>
+        </div>
+        <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="pic3.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div>
+</body>
+</div>
+</main>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
 </html>
