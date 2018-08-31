@@ -15,6 +15,7 @@ var server = http.createServer (function (req, res) {
       break
     case '/kitten':
       sendFile(res, 'kitten.jpg')
+      break
     default:
       res.end('404 not found')
   }
