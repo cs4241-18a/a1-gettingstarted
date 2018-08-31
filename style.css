@@ -1,0 +1,84 @@
+h1, h2, p, ul {
+    color: #262626;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+    list-style-type: none
+}
+
+a:link {
+    color: #404040
+}
+
+a:visited {
+    color: #262626;
+}
+
+a:hover {
+    color: #707070
+}
+
+a:active {
+    color: #262626
+}
+
+a {
+    text-decoration: none;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Trajan";
+}
+
+.page, body {
+    background-color: cceeff;
+    text-align: center;
+}
+
+.overview {
+    margin: 20px;
+}
+
+.overview h1 {
+    font-size: 28px;
+}
+
+.overview h2 {
+    font-size: 16px;
+}
+
+.overview img {
+    height: 300;
+    object-fit: contain;
+    margin: 10px;
+    border-radius: 10%;
+}
+
+.tab h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+}
+
+.info {
+    height: 0px;
+    overflow: hidden;
+}
+
+.info:target {
+    height: auto;
+}
+
+.info h4 {
+    color: #404040;
+    margin-bottom: 10px;
+}
