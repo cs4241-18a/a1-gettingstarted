@@ -16,7 +16,7 @@ var server = http.createServer (function (req, res) {
     case '/a1styles.css':
 	sendFile(res, 'a1styles.css')
 	break
-    case '/a1scripts.css':
+    case '/a1scripts.js':
 	sendFile(res, 'a1scripts.js')
 	break
     default:
