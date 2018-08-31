@@ -11,6 +11,7 @@ I have also created a css to give my web app a unique look.
 Used heading 2 "<h2>" multiple times in my HTML file so my subcategories would be consistent.
 
 ### Design Achievements
-I made an attempt to use a grey/red color scheme, I thought it loked kinda nice
+I made an attempt to use a grey/red color scheme, I thought it looked nice
+I also managed to insert an image after 1 hour of difficulties
 
 
