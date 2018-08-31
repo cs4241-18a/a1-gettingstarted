@@ -1,77 +1,25 @@
-Assignment 1 - Hello World: Basic Deployment w/ Git, GitHub, Heroku  
-===
+Quinn Averill
+https://a1-qaverill.herokuapp.com/
 
-This assignment is a "warm-up" exercise. 
-You will simply deploy the starting Web site that you will use this term to the [Heroku Web platform](http://www.heroku.com/). 
 
-Refer to [Getting started with node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction).
+This project shows my ability to set up a basic client server web application using HTML, CSS, and JS.
+The website is hosted by Heroku.
 
-(Thanks to past instructors of the course, here is a short [getting started with Heroku movie](http://web.cs.wpi.edu/~gpollice/Movies/HerokuGettingStarted/) that may also help.)
+I also showed my React skills just a little bit by writing my experience section in JS using the React Library.
+More information on React can be found here: https://reactjs.org/
 
-Treat this assignment as a chance to get up to speed on Git, GitHub, and Heroku. 
-If you already know these, great. 
-However, if you're new to them, spend several hours practicing, experimenting, and reading documentation. 
-In other words, don't just get your website up and done. You will need skill with these tools throughout the rest of the course.
+Most of my CSS uses flexbox, which makes it extremely easy to center and scale elements in the webpage.
+More information can be found here: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
-Assignment details
----
+The web page itself is a basic portfolio of my career at WPI. It shows the CS classes that I have taken, and my experience with a list of technologies. This web app can be found at the following URL: https://a1-qaverill.herokuapp.com/
 
-Do the following to complete this assignment:
-
-1. Fork the starting project code. This repo contains:
-    * the server code, `server.js`
-    * the `Procfile` that you need for Heroku deployment
-    * A starting `index.html` file that you will edit as described below
-2. Edit `index.html` to show the following information about you:
-    * your name and class at WPI (e.g. class of 2020) Note: Do not put any contact or personal information that you do not potentially want other people outside of this class to see.
-    * your major(s) and minor(s)
-    * previous computer science courses that you have taken at WPI
-    * your experience with the following technologies and methods (none, some, a lot)
-        * HTML
-        * CSS
-        * Java
-        * JavaScript
-        * Ruby
-        * Python
-        * unit testing
-3. Test your project to make sure that when someone goes to your main page, it displays correctly.
-4. Deploy your project to Heroku.
-5. Ensure that your project has the proper naming scheme (guide follows) so we can find it.
-6. Modify the Readme to the specification below.
-7. Create and submit a Pull Request to the original repo.
-
-Naming and URL Scheme
----
-
-You must use a consistent naming scheme for all projects in this course.
-If we can't find it, we can't grade it.
-
-By default Heroku assigns your application a random name.
-To change it, follow [this guide](https://devcenter.heroku.com/articles/renaming-apps).
-
-The name scheme should be `a1-yourGitHubUsername`.
-The `a1` will need to be updated to `a2`, `a3`, and so on in future projects.
-
-Resources
----
-
-If you need a JavaScript/HTML/CSS refresher, see [Technology Fundamentals by Scott Murray](http://chimera.labs.oreilly.com/books/1230000000345/ch03.html#_html) and/or [JavaScript Codeacademy](https://www.codecademy.com/en/tracks/javascript).
-
-If you need a Git/GitHub refreseher, see [GitHub Bootcamp](https://help.github.com/categories/bootcamp/), the [GitHub Guides](https://guides.github.com/) (especially the ones on Hello World, and Understanding the GitHub Flow, and Forking Projects), and [CodeSchool's Try Git Course](https://www.codeschool.com/courses/try-git).
-
-Sample Readme (delete the above when you're ready to submit, and modify the below so with your links and descriptions)
----
-
-Lane Harrison  
-http://codementum-a1.herokuapp.com
-
-This project shows ...
 
 ## Technical Achievements
-- **Proved P=NP**: Using a combination of...
-- **Solved AI**: ...
+- **External CSS**: Using a file dedicated to CSS, I imported this file to the index.html page and modified the server to send the CSS file when requested.
+- **React JS Library**: I imported the React JS library to my project, and altered the server to send the react.js file to the client when requested. I used React because I am very familiar with it, and I like being able to manipulate memory so easily. Also, I really like JSX.
+
 
 ### Design Achievements
-- **Re-vamped Apple's Design Philosophy**: Shown in `style.css`, the code...
+- **My touch of CSS**: I made the theme 'electric' and simple using two css sheets: elements.css and flexbox.css. I incorporated flexbox because I feel that it is most easy to work with, and causes the least amount of headaches possible.
 
 
