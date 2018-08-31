@@ -1,0 +1,105 @@
+html {
+	height: 100%;
+}
+
+body {
+	/* Center all text */
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	color: white;
+	font-family: Georgia,Times,Times New Roman,serif; 
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+ul {
+	list-style-position: inside;
+	width: 36%;
+	margin-left: auto;
+	margin-right: auto;
+}
+li {
+	text-align: start;
+}
+
+#more-span:after {
+	content: "More...";
+	position: relative;
+}
+
+#expandable:hover #more-span:after {
+	content: "Software Security";
+}
+
+#expandable {
+	overflow: hidden;
+	height: calc(1em + 2px); /* font sive + 1px padding on top and bottom */
+	transition: height .5s;
+	width: fit-content;
+}
+
+#expandable:hover {
+	height: calc(3 * (1em + 2px));
+	cursor: pointer;
+}
+
+.page {
+	text-align: center;
+	height: 100%;
+	
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.user_icon {
+    right: 15%;
+    width: 18%;
+    position: absolute;
+}
+
+img {
+	border-radius: 32%;
+}
+
+
+/* Generated with: http://www.colorzilla.com/gradient-editor/ */
+.page:nth-child(1) {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a373a0+0,a849a3+16,c85ec7+47,ce86ac+100 */
+background: #a373a0; /* Old browsers */
+background: -moz-linear-gradient(top, #dda373a0 0%,#c85ec7 47%,#ce86ac 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #dda373a0 0%,#c85ec7 47%,#ce86ac 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #dda373a0 0%,#c85ec7 47%,#ce86ac 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a373a0', endColorstr='#ce86ac',GradientType=0 ); /* IE6-9 */
+}
+
+.page:nth-child(2) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cc869a+0,d88291+100 */
+	background: #cc869a; /* Old browsers */
+	background: -moz-linear-gradient(top, #cc869a 0%, #d28495b7 40%, #d88291 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #cc869a 0%,#d28495b7 40%, #d88291 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #cc869a 0%,#d28495b7 40%, #d88291 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc869a', endColorstr='#d88291',GradientType=0 ); /* IE6-9 */
+}
+
+.page:nth-child(3) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d88984+0,d3a28b+100 */
+	background: #d88984; /* Old browsers */
+	background: -moz-linear-gradient(top, #d88984 0%, #d3a28b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d88984 0%,#d3a28b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d88984 0%,#d59587cc 50%, #d3a28b 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d88984', endColorstr='#d3a28b',GradientType=0 ); /* IE6-9 */
+}
+
+.page:nth-child(4) {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#d8c08f+0,d6e58e+100 */
+	background: #d8c08f; /* Old browsers */
+	background: -moz-linear-gradient(top, #d8c08f 0%, #d6e58e 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #d8c08f 0%,#d6e58e 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #d8c08f 0%,#d7d28ecc 50%,#d6e58e 100%), url("https://www.reddheads.com/wp-content/uploads/2015/11/network-node-gif.gif"); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8c08f', endColorstr='#d6e58e',GradientType=0 ); /* IE6-9 */
+}

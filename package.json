@@ -2,11 +2,13 @@
   "name": "lh-4241-simple-node",
   "version": "0.1.0",
   "description": "WPI CS 4241 first assignment",
-  "author": "Lane Harrison",
+  "author": "Jacob Fakult",
   "private": true,
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
+    "npm": "^6.4.0",
+    "sweetalert2": "^7.26.12"
   }
 }
