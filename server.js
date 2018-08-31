@@ -22,8 +22,8 @@ var server = http.createServer (function (req, res) {
     case '/materialize.min.js':
       sendFile(res, 'materialize.min.js')
       break
-    case '/images/wpi.jpeg':
-      sendFile(res, 'wpi.jpg', 'image/jpeg')
+    case '/images/wpi.jpg':
+      sendFile(res, 'wpi.jpg', 'image/jpg')
       break
     case '/images/wpilogo.png':
       sendFile(res, 'wpilogo.png', 'image/png')
@@ -47,10 +47,12 @@ console.log('listening on 8080')
 
 // subroutines
 
-function sendFile(res, filename) {
+
+  function sendFile(res, filename, contentType) {
+  contentType = contentType || 'text/html';
 
   fs.readFile(filename, function(error, content) {
-    res.writeHead(200, {'Content-type': 'text/html'})
+    res.writeHead(200, {'Content-type': contentType})
     res.end(content, 'utf-8')
   })
 
