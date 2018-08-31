@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Apple SD Gothic Neo";
+    text-align: center;
+    background-color: rgb(30, 30, 30);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px 0;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    animation: 0.5s fadein 0.3s forwards;
+    vertical-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+h1 {
+    color: rgb(230, 230, 230);
+}
+
+h2 {
+    color: rgb(175, 175, 175);
+}
+
+p {
+    color: rgb(110, 110, 110);
+}
+
+footer {
+    color: rgb(230, 230, 230);
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+}
+
+.below {
+    position: relative;
+    text-align-last: right;
+    bottom: -50px;
+}
