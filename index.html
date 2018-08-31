@@ -1,40 +1,59 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CS4241 Assignment 1</title>
-	<link rel="stylesheet" href="css/main.css">
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <h1>Information about Jacob Fakult</h1>
-    <p>
-      I like being outside.
-    </p>
-    <p>
-      CS Major, class of 2019
-    </p>
-    <p>
-      I am interested in internet and telecommunications infrastructure and Internet Governance.
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      I have experience with:
-      <ul>
-      <li>HTML/CSS/JS</li>
-      <li>C, C++, Java, Python, SHELL</li>
-    </ul>
-    </p>
-    <p>
-      Previous CS courses
-      <ul>
-      <li>Advanced Competer Networks</li>
-	  <li>Artificial Intelligence</li>
-	  <div id="expandable">
-      	<li>more...</li>
-		<li>more...</li>
-		<li>more...</li>
-	  </div>
-    </ul>
-    </p>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			CS4241 Assignment 1
+		</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<div class="page">
+			<h1>Jacob Fakult</h1>
+			<img alt="Picture of me!" src="images/me.jpg" class="user_icon">
+		</div>
+		<div class="page">
+			<h2>Hobbies</h2>
+			<p>
+				I like being outside.
+			</p>
+		</div>
+		<div class="page">
+			<h2>
+				School Information
+			</h2>
+			<p>
+				CS Major, class of 2019
+			</p>
+			<p>
+				I am interested in internet and telecommunications infrastructure and Internet Governance.
+			</p>
+		</div>
+		<div class="page">
+			<h2>Web-dev (and other) experience</h2>
+			<ul>
+				<li>HTML/CSS/JS
+				</li>
+				<li>C, C++, Java, Python, SHELL
+				</li>
+			</ul>
+			<h2 style="white-space: pre">Previous CS courses                         </h2>
+			<ul>
+				<li>Advanced Computer Networks
+				</li>
+				<li>Artificial Intelligence
+				</li>
+				<div id="expandable">
+				<li id="more-label"><span id="more-span"></span>
+				</li>
+				<li>Computer Graphics
+				</li>
+				<li>Human Computer Interaction
+				</li>
+				</div>
+			</ul>
+		</div>
+		<script src="js/sweetalert2.js"></script>
+		<script src="js/main.js"></script>
+	</body>
 </html>

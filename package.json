@@ -8,6 +8,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "npm": "^6.4.0"
+    "npm": "^6.4.0",
+    "sweetalert2": "^7.26.12"
   }
 }
