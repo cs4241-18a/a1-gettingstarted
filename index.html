@@ -1,27 +1,142 @@
-<html lang="en">
-  <head>
+<html lang="en"><head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <style>
+    * {
+      font-family: courier;
+    }
+    .header {
+      background-color: #F1F1F1;
+      height: 150px;
+      padding: 20px;
+    }
+    .header-middle {
+      text-align: center;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .header-right {
+      text-align: center;
+      float: right;
+      width: 35%;
+      margin: auto
+    }
+    .header-left {
+      text-align: center;
+      float: left;
+      width: 35%;
+      margin: auto;
+    }
+    .column {
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+    .slider {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 2em;
+      background: #ddddd5;
+      outline: solid;
+      opacity: 0.8;
+      -webkit-transition: .2s;
+      transition: opacity .2s;
+    }
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 15px;
+      height: 25px;
+      background: #000000;
+      cursor: pointer;
+    }
+    .btn-group button {
+      background-color: #000000;
+      color: white;
+      padding: 10px 24px;
+      float: center;
+    }
+    /* this prevents double borders */
+    .btn-group button:not(:last-child) {
+      border-right: none; /* Prevent double borders */
+    }
+    .btn-group button:hover {
+      background-color: #303030;
+    }
+    </style>
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
+    <div class="header">
+      <div class="header-left">
+        <img src="thetachi.jpg" height="140px" width="200px">
+      </div>
+      <div class="header-right">
+        <img src="mexico.jpg" height="140px" width="200px">
+      </div>
+      <div class="header-middle">
+        <h1>Jason King</h1>
+      </div>
+    </div>
+    <div class="column">
+      <p>
+        Welcome to my webpage!
+      </p>
+      <h2 align="center">Major</h2>
+      <p>
+        Bachelors of Compupter Science
+      </p>
+      <h2 align="center">Computer Science Classes</h2>
+      <ul>
+        <li>1101: Introduction to Program Design</li>
+        <li>2011: Introduction to Machine Organization and Assembly Language</li>
+        <li>2022: Discrete Mathmatics</li>
+        <li>2102: Object-Oriented Design Concepts</li>
+        <li>2223: Algorithms</li>
+        <li>2303: Systems Programming Concepts</li>
+        <li>3013: Operating Systems</li>
+        <li>3133: Foundations of Computer Science</li>
+        <li>3431: Database Systems</li>
+        <li>3733: Software Engineering</li>
+        <li>3516: Computer Networks <i>(in progress)</i></li>
+        <li>4241: Webware <i>(in progress)</i></li>
+      </ul>
+      <h2 align="center">Language Experience</h2>
+      <h3 id="text" style="visibility: hidden;" align="center">SOME</h3>
+      <div class="slidecontainer" align="center">
+        <input id="slider" disabled="true" type="range" min="1" max="100" value="50" class="slider">
+      </div>
+      <div class="btn-group" align="center" style="padding-top: 20px">
+        <button onmouseover="sliderAdjust(25, &quot;SOME&quot;)" onmouseout="reset()">HTML</button>
+        <button onmouseover="sliderAdjust(10, &quot;NONE&quot;)" onmouseout="reset()">CSS</button>
+        <button onmouseover="sliderAdjust(85, &quot;A LOT&quot;)" onmouseout="reset()">Java</button>
+        <button onmouseover="sliderAdjust(40, &quot;SOME&quot;)" onmouseout="reset()">JavaScript</button>
+      </div>
+      <div class="btn-group" align="center">
+        <button onmouseover="sliderAdjust(5, &quot;NONE&quot;)" onmouseout="reset()">Ruby</button>
+        <button onmouseover="sliderAdjust(75, &quot;A LOT&quot;)" onmouseout="reset()">Python</button>
+        <button onmouseover="sliderAdjust(70, &quot;A LOT&quot;)" onmouseout="reset()">Unit Testing</button>
+      </div>
+      <h2 align="center">Working Experience</h2>
+      <ul>
+        <li>Dell EMC, May - August 2018</li>
+        <p>Worked with Technology Research Innovation Group to develop a topology/inventory service to enable contextual resource management using spacial awareness within a datacenter. Started project from inception period and continued to implement features throughout initial development. Practiced Extreme Programming via pair programming and continuous integration. Contributed to architecture design discussions over multiple project iterations. End goal was for the service to act as a foundation for multiple research efforts within product portfolio, including artificial intelligence operated datacenters. Utilized graph databases as an enabling technology to represent datacenter and its subcomponents in a graph view. Built REST API with data access layer to automatically connect and populate nodes in datacenter graph. Concluded summer with presentation of project progress to upper management.</p>
+        <li>Commonwealth Financial Network, May - August 2017 (Development)</li>
+        <p>Worked with lead developer and Scrum team to develop and enhance a major workflow system used daily to conduct highly time sensitive tasks. Objectives were to increase efficiency and effectiveness of a department when using the system. As a full stack web developer, worked on every aspect of the application, from user interface to database interaction. Demonstrated new functionalities to end users on a consistent basis to gather feedback and suggestions throughout the development cycle. Reported to daily standups to give progress updates and team planning meetings. Presented final application and integrated it into the existing system by the end of the summer</p>
+        <li>Commonwealth Financial Network, May - August 2016 (Quality Assurance)</li>
+        <p>Worked with the quality assurance team in two-week development sprints. Wrote test cases for an internal workflow system, executed manual tests on client-facing applications, reported and troubleshot bugs, and attended daily standups to verbally relay completed work. Additionally, worked on ad hoc projects such as testing business rules in a new version of an application to ensure a smooth update.</p>
+      </ul>
+    </div>
+  <script>
+      function sliderAdjust(val, name) {
+        document.getElementById("slider").value = val
+        document.getElementById("text").innerText = name
+        document.getElementById("text").style.visibility = 'visible'
+      }
+      function reset() {
+        document.getElementById("slider").value = 0
+        document.getElementById("text").style.visibility = 'hidden'
+      }
+  </script>
 
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
-  </body>
-</html>
+
+</body></html>
