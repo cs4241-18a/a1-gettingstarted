@@ -11,6 +11,29 @@ body {
     color: white;
 }
 
+#less {
+    display: none;
+    list-style: none;
+    margin-left: 2.5em;
+}
+
+#less:hover {
+    cursor: pointer;
+}
+
+#more {
+    display: inline;
+    margin-left: 2.5em;
+}
+
+#more:hover {
+    cursor: pointer;
+}
+
+.second {
+    display: none;
+}
+
 .tech-green, .tech-yellow, .tech-red{
     display: flex;
     justify-content: center;
