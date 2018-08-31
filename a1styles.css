@@ -49,7 +49,12 @@ body {
     animation: 
         typing 1.5s steps(40,end);
 }
-
+.floatright {
+    float: right;   
+}
+.floatleft {
+    float: left;
+}
 
 #submit {
     font-family: "Arvo", serif; 
@@ -58,8 +63,20 @@ body {
     color: white;
     padding: 15px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
+}
+
+button.quiz {
+    font-family: "Arvo", serif; 
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    display: none;
+    
+    margin: 30; /* this will center  it */    
 }
