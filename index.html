@@ -2,26 +2,104 @@
   <head>
     <title>CS4241 Assignment 1</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+    <link rel="stylesheet" type="text/css" href="a1styles.css">
   </head>
   <body>
-    <h1>Information about [Your name here]</h1>
-    <p>
-      [Self introduction]
-    </p>
-    <p>
-      [Major and other information]
-    </p>
-    <p>
-      [Other things]
-    </p>
-
-    <h2>Experience</h2>
-    <p>
-      Working experience
-    </p>
-    <ul>
-      <li>IBM/Rational</li>
-      <li>WPI</li>
-    </ul>
+    <div class="module" id="page-content">
+      <div class="header" id="self-header">Information about Adam Camilli</div>
+      <div class="content" id="self-content">
+	<p>
+	  Hello! I am a senior majoring in CS and minoring in Spanish (WPI class of 2019). 
+	  I’m the vice president of the WPI sailing team, and try to go on hikes with the outing club 
+	  when I can. In my spare time I enjoy working out, listening to as much new music as possible,
+	  and playing guitar and video games.
+	</p>
+	<p>
+	  As a senior I've taken a number of CS courses in my time at WPI:
+	  <ul>	    
+	    <li>CS 1102: Accel. Intro to Program Design</li>
+	    <li>CS 2102: Obj.-Oriented Design Concepts</li>
+	    <li>CS 2223: Algorithms</li>
+	    <li>CS 2303: Systems Prog. Concepts</li>
+	    <li>CS 2022: Discrete </li>
+	    <li>CS 2011: Mach. Org & Assembly</li>
+	    <li>CS 3133: Foundations of CS</li>
+	    <li>CS 3431: Database I</li>
+	    <li>CS 3733: Soft. Eng. (favorite so far)</li>
+	    <li>CS 3013: OS</li>
+	    <li>CS 3516: Computer Networks</li>
+	    <li>CS 4513: Dist. Systems</li>
+	    <li>CS 4341: AI</li>
+	    <li>CS 4120: Analysis of Algorithms</li>
+	  </ul>
+	</p>
+      </div>
+      <div class="header" id="exp-header">Experience</div>
+      <div class="content" id="exp-content">
+	<p>
+	  Working experience:
+	  <ul>
+	    <li><a href="https://www.tallan.com/">Tallan</a> (full stack development)</li>
+	    <li>WPI</li>
+	  </ul>
+	</p>
+	<p>
+	  I also have experience with the following technologies and methods:
+	  <dl>
+	    <dt><strong>HTML, CSS, and JS:</strong> <em>Some - A lot</em></dt>
+	    <dd>From internships + playing with browser tools</dd>
+	    <br>
+	    <dt><strong>Java:</strong> <em>A lot</em> </dt> 
+	    <dd>My first programming language</dd>
+	    <br>
+	    <dt><strong>Python:</strong> <em>Some - A lot</em></dt> 
+	    <dd>2 and 3</dd>
+	    <br>
+	    <dt><strong>Ruby:</strong> <em>None - Some</em></dt> 
+	    <dd>Haven't needed it so far, but find it interesting</dd>
+	    <br>
+	    <dt><strong>Unit testing:</strong> <em>Some-A lot</em> </dt> 
+	    <dd>Courses at WPI + internships + testing fun projects</dd>
+	  </dl>
+	</p>
+      </div>
+      <div class="header" id="quiz-header">A fun quiz on Adam</div>
+      <div class="content" id="quiz-content">
+	<div id="question-panel"></div>
+	<div align="center" id="choices">
+	  <!-- Multiple choice -->
+	  <div class="floatleft">
+	    <button class="quiz multi" id="choice1"></button>
+	  </div>
+	  <div class="floatright">
+	    <button class="quiz multi" id="choice2"></button>
+	  </div>
+	  <div style="clear: both;"></div>
+	  <br/>
+	  <div class="floatleft">
+	    <button class="quiz multi" id="choice3"></button>
+	  </div>
+	  <div class="floatright">
+	    <button class="quiz multi" id="choice4"></button>
+	  </div>
+	  <div style="clear: both;"></div>
+	  <!-- True/False -->
+	  <div class="floatleft">
+	    <button class="quiz tf" id="choice-true"></button>
+	  </div>
+	  <div class="floatright">
+	    <button class="quiz tf" id="choice-false"></button>
+	  </div>
+	  <div style="clear: both;"></div>
+	  <br/><br/>
+	</div>
+	<div align="center">
+	  <button id="submit">New Question</button>
+	</div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script type="text/javascript" src="a1scripts.js"></script>
   </body>
 </html>
