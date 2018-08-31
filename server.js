@@ -16,6 +16,27 @@ var server = http.createServer (function (req, res) {
     case '/styles.css':
       sendFile(res, 'styles.css')
       break
+    case '/materialize.min.css':
+      sendFile(res, 'materialize.min.css')
+      break
+    case '/materialize.min.js':
+      sendFile(res, 'materialize.min.js')
+      break
+    case '/images/wpi.jpg':
+      sendFile(res, 'wpi.jpg', 'image/jpg')
+      break
+    case '/images/wpilogo.png':
+      sendFile(res, 'wpilogo.png', 'image/png')
+      break
+    case '/images/work.jpg':
+      sendFile(res, 'work.jpg', 'image/jpg')
+      break
+    case '/images/code.jpg':
+      sendFile(res, 'code.jpg', 'image/jpg')
+      break
+    case '/images/class.jpg':
+      sendFile(res, 'class.jpg', 'image/jpg')
+      break
     default:
       res.end('404 not found')
   }
