@@ -13,6 +13,15 @@ var server = http.createServer (function (req, res) {
     case '/index.html':
       sendFile(res, 'index.html')
       break
+    case '/styles.css':
+      sendFileCSS(res, 'styles.css')
+      break
+    case '/picture.jpg':
+      sendFileImage(res, 'picture.jpg')
+      break
+    case '/timg.jpg':
+	  sendFileImage(res, 'timg.jpg')
+	  break
     default:
       res.end('404 not found')
   }
@@ -28,6 +37,24 @@ function sendFile(res, filename) {
   fs.readFile(filename, function(error, content) {
     res.writeHead(200, {'Content-type': 'text/html'})
     res.end(content, 'utf-8')
+  })
+
+}
+
+function sendFileCSS(res, filename) {
+
+  fs.readFile(filename, function(error, content) {
+    res.writeHead(200, {'Content-type': 'text/css'})
+    res.end(content, 'utf-8')
+  })
+
+}
+
+function sendFileImage(res, filename) {
+
+  fs.readFile(filename, function(error, content) {
+    res.writeHead(200, {'Content-type': 'image/jpg'})
+    res.end(content);
   })
 
 }

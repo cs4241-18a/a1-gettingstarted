@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: 16px Montserrat;
+	font-weight: 100;
+}
+
+nav {
+	list-style: none;
+
+}
+
+h3 {
+	padding-bottom: 10px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 100px 0;
+	background-color: black;
+	color: white;
+	opacity: 0;
+	animation: 0.5s fadein 0.3s forwards;
+	vertical-align: center;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
+}
+
+header nav {
+	display: flex;
+	margin-right: 100px;
+}
+
+header nav li {
+	margin: 5px 17px;
+	margin-bottom: 16px;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.main-section {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	background-image: url(timg.jpg);
+	background-size: cover;
+	padding-top: 50px;
+	opacity: 0;
+	animation: 1s fadein 0.2s forwards;
+}
+
+.info-section {
+	padding-top: 70px;
+	padding-right:70px;
+	font-size: 26px;
+	opacity: 0;
+	animation: 1s fadein 1s forwards;
+}
+
+.photo-section {
+	height: 236px;
+	width: 236px;
+	background-size: cover;
+	background-image: url(picture.jpg);
+	border-radius:30px;
+	opacity: 0;
+	animation: 1s fadein 0.6s forwards;
+}
+
+.middle-banner {
+	background-color: #F1EEE9;
+	padding-top: 20px;
+	padding-bottom: 20px;
+    text-align: center;
+    opacity: 0;
+	animation: 0.5s fadein 0.3s forwards;
+}
+
+.course-section {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	padding-top: 30px;
+	padding: 50px;
+}
+
+.course-title {
+	width: 330px;
+	height: 0px;
+	opacity: 0;
+	padding-right: 20px;
+	border-width: 0 4px 0 0;
+	border-style: groove;
+	border-color: #f1f7f9;
+	animation: 1s slidefade 1.2s forwards;
+}
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		height: 298px;
+	}
+}
+
+.course-info {
+	padding-left: 20px;
+	font-size: 20px;
+	font: 22px Open Sans;
+	letter-spacing: 1px;
+	opacity: 0;
+	animation: 1s fadein 1.2s forwards;
+}
+
+.tech-section {
+	padding: 30px;
+	background-color: #F9F5F4;
+	text-align: center;
+	opacity: 0;
+	animation: 0.5s fadein 0.3s forwards;
+}
+
+.tech-sum {
+	margin-bottom: 20px;
+}
+
+.tech-details {
+	display: flex;
+	justify-content: space-around;
+	font-size: 18px;
+	font: 17px Open Sans;
+	letter-spacing: 1px;
+}
+
+.tech-details-name{
+	width: 33%;
+	font: 16px Montserrat;
+	font-weight: 70;
+}
+
+span {
+	font-weight: bold;
+	font-size: 19px;
+}
+
+.project-section {
+	padding: 15px;
+}
+
+.project-sum {
+	padding: 20px;
+}
+
+.project-info {
+	display: flex;
+	list-style: none;
+	padding-bottom: 80px;
+}
+
+.project-name {
+	margin-left: 60px;
+	margin-right: 30px;
+	width: 220px;
+}
+
+.project-details {
+	list-style: disc;
+	padding-right: 50px;
+	font: 20px Open Sans;
+	padding-bottom: 50px;
+}
+
+footer {
+	padding: 30px;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+
+
+
+button{
+  background:#000000;
+  font: 16px Montserrat;
+  color:#ffffff;
+  border:none;
+  position:relative;
+  height:23px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}
+button:hover{
+  background:#fff;
+  color:#000000;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ffffff;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:0.28s ease all;
+}
