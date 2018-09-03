@@ -1,0 +1,34 @@
+.Title {
+    color: #FF8460;
+    text-align: center;
+}
+
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.FlexElement {
+    width: 30%;
+    height: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.FlexElement, .ElementHeader {
+    border: black solid;
+}
+
+.ElementHeader {
+    font-size: 25px;
+}
+
+.ElementBody {
+    padding: 25px;
+    font-size: 20px;
+}
+
+html {
+    background: #EEEDE8;
+}
