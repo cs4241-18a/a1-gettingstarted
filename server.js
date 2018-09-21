@@ -3,6 +3,10 @@ var http = require('http')
   , url  = require('url')
   , port = 8080;
 
+var movies = [
+	{'id': "jaw",'title':"Jaws",'rating': 8},
+	{'id': "game",'title':"Game",'rating': 9},
+]
 var server = http.createServer (function (req, res) {
   var uri = url.parse(req.url)
 
@@ -25,6 +29,9 @@ var server = http.createServer (function (req, res) {
     case '/Ariandi.otf':
       sendFile(res, 'Ariandi.otf')
       break
+    case '/movies':
+    res.end(JSON.stringify(movies))
+    break
     
 
     default:

@@ -7,11 +7,14 @@
   <body>
     <h1 class="trang">Trang Ha</h1>
     <div class="nav">
+      <a href="#contact">Contact</a>
   		<a href="#home">Home</a>
+      <a href="#course_taken">Courses</a>
+      <a href="#exp">Experience</a>
   		<a href="#about">About</a>
-  		<a href="#course_taken">Courses</a>
-  		<a href="#exp">Experience</a>
-  		<a href="#contact">Contact</a>
+  		
+  		
+  		
   		
 </div>
     <h2 style="font-family:Verdana;font-style:bold;font-size: 24px" >
@@ -23,6 +26,15 @@
       I'm currently a senior in Computer Science at WPI with a minor in Statistics. </p>
       <p>I'm an energetic and sociable girl who seeks to make friends wherever she goes
     </p>
+    I invite you to visit my pages!
+    <a href="http://github.com/sushisoju">Github</a>
+    <a href="https://www.linkedin.com/in/trang-ha-850546117/">LinkedIn</a>
+    <a href="http://facebook.com/trang.ha.520">Facebook</a>
+    <br></br>
+    Check out my resume! 
+
+    <a href="Resume.pdf" download> Trang Ha</a>
+
     <h2 id="course_taken"> Courses taken at WPI:</h2>
     <p>
       
@@ -76,5 +88,25 @@
       </ul>
     </p>
 
+<!--     <div id="moviess"> </div>
   </body>
+  <script>
+  console.log('hello T')
+  xhr = new XMLHttpRequest();
+	xhr.onreadystatechange = handle_res;
+	xhr.open('GET', '/movies')
+	xhr.send()
+	function handle_res() {
+		if(this.readyState != 4) return;
+		if(this.status != 200) {
+		// error!
+		}
+		console.log(this.responseText);
+		var movies = JSON.parse(this.responseText)
+		movies.forEach(function (d) {
+		document.getElementById('moviess').innerHTML = document.getElementById('moviess').innerHTML + d.title
+	})
+	}
+	
+	  </script> -->
 </html>
