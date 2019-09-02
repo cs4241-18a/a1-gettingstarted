@@ -1,0 +1,296 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100wh;
+  height: 90vh;
+  color: #fff;
+  background: linear-gradient(-45deg,  #2866ce, #6e28ce, #a523ac, #b60c73);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 20s ease infinite;
+  -moz-animation: Gradient 20s ease infinite;
+  animation: Gradient 20s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+
+}
+a:link {
+  color:white
+}
+a:visited{
+  color:darkgray
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: transparent;
+  color: #f2f2f2    ;
+  text-align: right;
+  border-radius: 6px;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+  font-weight: bold;
+
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opacity: */
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+img {
+  width: 150px;
+  height: 150px;
+  border: 7px;
+  border-radius: 50%;
+}
+
+#fadeName{
+  animation:0.9s ease 0.5s normal forwards 1 fadein;
+  -webkit-animation:0.9s ease 0.5s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+#fadeNav{
+  animation:1s ease 1.5s normal forwards 1 fadein;
+  -webkit-animation:1 ease 1.5s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+
+
+}
+
+#fadeAvatar{
+  animation:1s ease 1s normal forwards 1 fadein;
+  -webkit-animation:1s ease 1s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+#fadeNav{
+  animation:1s ease 1.5s normal forwards 1 fadein;
+  -webkit-animation:1 ease 1.5s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeObjectiveTitle{
+  animation:1s ease 2s normal forwards 1 fadein;
+  -webkit-animation:1s ease 2s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeObjectiveContent{
+  animation:1s ease 2.5s normal forwards 1 fadein;
+  -webkit-animation:1s ease 2.5s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeEducationTitle{
+  animation:1s ease 3.3s normal forwards 1 fadein;
+  -webkit-animation:1s ease 3.3s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeEducationContent{
+  animation:1s ease 3.8s normal forwards 1 fadein;
+  -webkit-animation:1s ease 3.8s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeCoursesTitle{
+  animation:1s ease 4.6s normal forwards 1 fadein;
+  -webkit-animation:1s ease 4.6s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeCoursesContent{
+  animation:1s ease 5.1s normal forwards 1 fadein;
+  -webkit-animation:1s ease 5.1s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeSkillsTitle{
+  animation:1s ease 5.9s normal forwards 1 fadein;
+  -webkit-animation:1s ease 5.9s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeSkillsContent{
+  animation:1s ease 6.4s normal forwards 1 fadein;
+  -webkit-animation:1s ease 6.4s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+#fadeWorkTitle{
+  animation:1s ease 7.2s normal forwards 1 fadein;
+  -webkit-animation:1s ease 7.2s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+#fadeWorkContent{
+  animation:1s ease 7.7s normal forwards 1 fadein;
+  -webkit-animation:1s ease 7.7s normal forwards 1 fadein;
+  opacity: 0
+
+}
+
+@keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
+
+@-webkit-keyframes fadein{from{opacity:0}
+to{opacity:1}
+}
